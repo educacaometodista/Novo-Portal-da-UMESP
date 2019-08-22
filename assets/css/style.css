@@ -1,6 +1,8 @@
 /*
 * PORTAL UNIVERSIDADE METODISTA DE SÃO PAULO
 *
+* GitHub: https://github.com/educacaometodista/Portal-UMESP-Plone-5
+*
 * Autor: Fernando Henrique Zancopé
 * Assistente: Léu Almeida
 *
@@ -3198,7 +3200,7 @@ body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
-    min-height: 100px;
+    min-height: 120px;
 }
 body.section-enade .container-fluid.nopadding .contagem {
     padding-top: 92px;
