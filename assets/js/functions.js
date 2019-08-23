@@ -15,38 +15,37 @@ $(function() {
 });
 
 /* Insert news to event */
+        $(document).ready(function(jq) {
+          $("#relatedItemBox a").each(function(){
 
-$(document).ready(function(jq) {
-  $("#relatedItemBox a").each(function(){
+              var url = jq(this).attr('href');
 
-      var url = jq(this).attr('href');
+              var seletor = "#parent-fieldname-text"; 
+              $(".hiddenStructure").load(url + " " + seletor) 
+              
+           });
+        }) 
 
-      var seletor = "#parent-fieldname-text"; 
-      $(".hiddenStructure").load(url + " " + seletor) 
-      
-   });
-}) 
+        $(function() {
+            if (!window.location.href.indexOf("noticias-anteriores")) {
+                var target_date = new Date("november 24, 2019").getTime();
+                    var dias, horas, minutos, segundos;
+                    var regressiva = document.getElementById("regressiva");
 
-/* Insert news to event */
+                    setInterval(function () {
 
-$(function() {
-   var target_date = new Date("november 24, 2019").getTime();
-    var dias, horas, minutos, segundos;
-    var regressiva = document.getElementById("regressiva");
+                        var current_date = new Date().getTime();
+                        var segundos_f = (target_date - current_date) / 1000;
 
-    setInterval(function () {
+                    dias = parseInt(segundos_f / 86400);
+                        segundos_f = segundos_f % 86400;
 
-        var current_date = new Date().getTime();
-        var segundos_f = (target_date - current_date) / 1000;
-
-    dias = parseInt(segundos_f / 86400);
-        segundos_f = segundos_f % 86400;
-
-        document.getElementById('dia').innerHTML = dias;
+                        document.getElementById('dia').innerHTML = dias;
 
 
-    }, 1000); 
-});
+                    }, 1000); 
+        }
+    });
 
 jQuery(document).ready(function(){ 
 
@@ -63,3 +62,30 @@ var direitos = substr[0] + "/preview";
 
 });
 });
+
+    function mascara(o,f){
+        v_obj=o
+        v_fun=f
+        setTimeout("execmascara()",1)
+    }
+
+    function execmascara(){
+        v_obj.value=v_fun(v_obj.value)
+    }
+
+    function mtel(v){
+        v=v.replace(/\D/g,"");
+        v=v.replace(/^(\d{2})(\d)/g,"($1) $2");
+        v=v.replace(/(\d)(\d{4})$/,"$1-$2");
+        return v;
+    }
+
+    function id( el ){
+      return document.getElementById( el );
+    }
+
+    window.onload = function(){
+      id('telefone').onkeypress = function(){
+        mascara( this, mtel );
+      }
+    }
