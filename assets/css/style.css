@@ -26,7 +26,8 @@ p.facebookModal{
 p.facebookModal a:hover{
     color: #344a5f !important;
 }
-#ouibounce-modal form input[type=submit]:hover{
+#ouibounce-modal form input[type=submit]:hover,
+button.envia-form:hover{
     background: #344a5f;
 }
 #ouibounce-modal .modal-footer p:hover{
@@ -107,7 +108,8 @@ p.facebookModal a:hover{
     -webkit-font-smoothing: antialiased;
     float: left;
 }
-#ouibounce-modal form input[type=submit] {
+#ouibounce-modal form input[type=submit],
+button.envia-form{
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -3224,6 +3226,9 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrap
 body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row {
     width: 1540px;
 }
+body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid{
+    width:100%;
+}
 body.section-enade .container-fluid.nopadding .contagem {
     padding-top: 80px;
     font-size: 110px;
@@ -3232,9 +3237,10 @@ body.section-enade .container-fluid.nopadding .contagem {
     .container-fluid.nopadding .banner-fluido-novo{
     max-width:1540px;
     }
-    
-    body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row{
-    max-width:1570px;
+
+    body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.curoslato.mosaic-grid-row-fluid{
+        width:100%;
+        max-width:100%;
     }
 }
 
