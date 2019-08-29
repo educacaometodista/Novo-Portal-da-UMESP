@@ -87,5 +87,5 @@ var direitos = substr[0] + "/preview";
     window.onload = function(){
       id('telefone').onkeypress = function(){
         mascara( this, mtel );
-      }
+      } || null;
     }
