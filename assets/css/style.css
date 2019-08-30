@@ -1251,8 +1251,8 @@ body.section-faculdade-de-teologia.subsection-corpo-docente #main-container h4:b
     line-height: 1;
 }
 
-body.userrole-authenticated .container-fluid.nopadding,
-body.frontend.icons-off.no-portlet-columns.pat-markspeciallinks.portaltype-folder.section-graduacao-presencial.site-Metodista.template-layout.thumbs-off.userrole-anonymous.viewpermission-none.layout-default-basic.mosaic-grid.pat-plone.patterns-loaded .container-fluid.nopadding
+body.userrole-authenticated .container-fluid.nopadding
+/* body.frontend.icons-off.no-portlet-columns.pat-markspeciallinks.portaltype-folder.section-graduacao-presencial.site-Metodista.template-layout.thumbs-off.userrole-anonymous.viewpermission-none.layout-default-basic.mosaic-grid.pat-plone.patterns-loaded .container-fluid.nopadding */
 {
     display:none;
     }
