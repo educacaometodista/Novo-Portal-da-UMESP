@@ -1016,6 +1016,8 @@ div .event ul.hiddenStructure a {
 body.section-financeiro .container-fluid.nopadding{background:url(/Metodista/financeiro/imagens/topo-financeiro.jpg) no-repeat;background-size: cover;}
 
 /* IMAGENS DOS TOPOS DE GRADUAÇÃO */
+body.section-graduacao-presencial .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/gastronomia/imagens/topo-titulos.jpg) no-repeat;background-size: cover;}
+
 body.section-graduacao-presencial.subsection-gastronomia .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/gastronomia/imagens/topo-titulos.jpg) no-repeat;background-size: cover;}
 body.section-graduacao-presencial.subsection-biomedicina .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/biomedicina/imagens/topo-biomedicina.jpg) no-repeat center;background-size: cover;}
 body.section-graduacao-presencial.subsection-ciencias-biologicas .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/ciencias-biologicas/imagens/topo-ciencias-bio.jpg) no-repeat center;background-size: cover;}
@@ -1062,6 +1064,7 @@ body.section-graduacao-presencial.subsection-sistemas-de-informacao .container-f
 body.section-graduacao-presencial.subsection-teologia .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/teologia/imagens/topo-teologia.jpg) no-repeat center;background-size: cover;}
 
 /* IMAGENS DE GRADUAÇÃO A DISTÂNCIA */
+body.section-graduacao-a-distancia .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/imagens/topo-ead.jpg) no-repeat center;background-size: cover;}
 body.section-graduacao-a-distancia.subsection-administracao .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/administracao/imagens/topo-administracao.jpg) no-repeat center;background-size: cover;}
 body.section-graduacao-a-distancia.subsection-analise-e-desenvolvimento-de-sistemas .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/analise-e-desenvolvimento-de-sistemas/imagens/analise-desenvolvimento-sistemas.jpg) no-repeat center;background-size: cover;}
 body.section-graduacao-a-distancia.subsection-ciencias-contabeis .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/ciencias-contabeis/imagens/topo-ciencias-contabeis.jpg) no-repeat center;background-size: cover;}
