@@ -105,7 +105,7 @@
      <drop css:content="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador"/>
 <!--       <drop css:content="body.section-enade .mosaic-grid-row.contador-enade"/>-->
        
-       <!--<replace css:theme-children=".banner-fluido-novo" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>-->
+       <!-- replace css:theme-children=".banner-fluido-novo" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>-->
        
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
