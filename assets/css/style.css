@@ -240,6 +240,10 @@ body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before{
     padding-top: 35px;
     text-align: center;
 }
+h6.atendimento-modal {
+    color: #FFF;
+    font-size: 30px;
+}
 
 a.plone-modal-close{
     color:#fff !important;

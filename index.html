@@ -45,8 +45,7 @@
             <li class="atend-online">
                 
                 <i class="material-icons">chat</i>
-                <a href="#atendimentoUMESP" class="pat-plone-modal"
-                     data-pat-plone-modal="width: 65%">Atendimento Online</a>
+                <a href="#atendimentoUMESP" class="pat-plone-modal" data-pat-plone-modal="width: 65%">Atendimento Online</a>
             </li>
             <li class="">
                 <a href="http://portal.metodista.br/english" title="English">English</a>
@@ -335,7 +334,7 @@
       
       
       <div id="atendimentoUMESP" style="display: none">
-    <h1>Atendimento Online</h1>
+    <h6 class="atendimento-modal">Atendimento Online</h6>
      <div class="row">
 
         <a href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1082&idtemplate=0" target="_blank">
@@ -367,6 +366,7 @@
       
 
 	  <div id="ouibounce-modal">
+		  <script type="text/javascript" charset="utf-8" src="//optin-static.akna.com.br/lib/integracaoForm/main.js"></script>
 	<div class="underlay"></div>
 
 		<div class="modal">
@@ -387,15 +387,17 @@
 			<p>Para receber informações sobre o vestibular e cursos, cadastre seu e-mail.</p>
 
 			<div id="mc_embed_signup">
+				
+				<form id="lista-integracao-form" hash="5fe06a4a" class="lista-integracao-form" onsubmit="return false;">
 
-			<form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://portal.metodista.br/teste-de-exit-intent-em-processo-seletivo/cadastro-e-mail" id="fg-base-edit">
+			<!--<form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://portal.metodista.br/teste-de-exit-intent-em-processo-seletivo/cadastro-e-mail" id="fg-base-edit">-->
 				
 				<div id="pfg-fieldwrapper">
-					<div class="field ArchetypesStringWidget " data-fieldname="replyto" id="archetypes-fieldname-replyto">
-						<div class="fieldErrorBox"></div>
-						<input type="text" name="replyto" class="blurrable firstToFocus" id="replyto" size="30" maxlength="255" placeholder="Insira seu e-mail aqui">
-						<input class="envia-form" type="submit" name="form_submit" value="Receber informações">
+					<div class="field ArchetypesStringWidget" data-fieldname="replyto" id="archetypes-fieldname-replyto">
+						<input id="lista-integracao-email" type="text" placeholder="Digite seu e-mail">
+						<button class="envia-form" onclick="onSubmitClick(this)">Receber informações</button>
 					</div>
+					<div id="lista-integracao-sucessmsg"></div>
 				</div>
 				
 			</form>
@@ -424,8 +426,8 @@
       $('#ouibounce-modal .modal').on('click', function(e) {
         e.stopPropagation();
       });
-    
     </script>
+	  
 	  
   </body>
 </html>
