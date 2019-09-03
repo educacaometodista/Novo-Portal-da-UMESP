@@ -2114,6 +2114,7 @@ a.col-md-5ths.boxes{
     font-family: 'Oswald', sans-serif;
     float: left;
     line-height: 70px;
+
     background: #153f67;
     color: #fff;
     text-transform: uppercase;
@@ -2628,6 +2629,47 @@ body.fixedmenu #mainnavigation-wrapper{
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/*FORMULÁRIOS*/
+
+fieldset#pfg-fieldsetname-formulario-campos{
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .field,
+fieldset#pfg-fieldsetname-formulario-campos .field,
+.pfg-form.formid-fale-conosco form textarea#comentarios{
+	width: 49%;
+	float: left;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
+fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
+	margin-left: 2%;
+}
+fieldset#pfg-fieldsetname-formulario-campos .field.ArchetypesTextAreaWidget,
+fieldset#pfg-fieldsetname-formulario-campos select{
+	width: 100%;
+}
+fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion,
+.pfg-form.formid-fale-conosco form .field label.formQuestion{
+	font-weight: 400;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .formControls,
+.pfg-form.formid-fale-conosco form .formControls{
+	clear: both;
+	padding: 12px 0;
+	box-shadow: none;
+	background: transparent;
+	border:none;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"],
+.pfg-form.formid-fale-conosco form .formControls input[type="submit"]{
+	background: #3776B0;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 15px;
+	}
+	
 body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
 body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix{
     width: 23%;
@@ -3064,6 +3106,7 @@ footer#portal-footer .footer-copy img.educacao{
         width: 20%;
         float: left;
     }
+
 
 a.col-md-2.boxes-lato{
     width: 15.4%;
