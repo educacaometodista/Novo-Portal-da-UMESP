@@ -249,6 +249,51 @@ a.plone-modal-close{
     color:#fff !important;
     opacity:0.6 !important;
 }
+
+/* FORMULÁRIOS */
+fieldset#pfg-fieldsetname-formulario-campos .field.ArchetypesTextAreaWidget,
+fieldset#pfg-fieldsetname-formulario-campos select{
+	width: 100%;
+}
+fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion,
+.pfg-form.formid-fale-conosco form .field label.formQuestion{
+	font-weight: 400;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .formControls,
+.pfg-form.formid-fale-conosco form .formControls{
+	clear: both;
+	padding: 12px 0;
+	box-shadow: none;
+	background: transparent;
+	border:none;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"],
+.pfg-form.formid-fale-conosco form .formControls input[type="submit"]{
+	background: #3776B0;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 35px;
+}
+label .required::after{
+	font-family: "Font Awesome 5 Free";
+   -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+   line-height: 1;
+	top: 0;
+    font-weight: 900;
+    content: "\f06a";
+    margin-left:7px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin: 0;
+    color: #c4183c;
+	font-size: 12px;
+}
+
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer, 
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-header, 
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-title, 
@@ -359,6 +404,10 @@ body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content{
     border-radius:4px;
 }
 
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre-fale-conosco #content{
+	background: transparent;
+	padding: 0;
+}
 body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencial #content{
     background:transparent;
 }
@@ -2629,46 +2678,6 @@ body.fixedmenu #mainnavigation-wrapper{
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-/*FORMULÁRIOS*/
-
-fieldset#pfg-fieldsetname-formulario-campos{
-	width: 49%;
-	float: left;
-	margin-right: 2%;
-}
-fieldset#pfg-fieldsetname-formulario-padrao .field,
-fieldset#pfg-fieldsetname-formulario-campos .field,
-.pfg-form.formid-fale-conosco form textarea#comentarios{
-	width: 49%;
-	float: left;
-}
-fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
-fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
-	margin-left: 2%;
-}
-fieldset#pfg-fieldsetname-formulario-campos .field.ArchetypesTextAreaWidget,
-fieldset#pfg-fieldsetname-formulario-campos select{
-	width: 100%;
-}
-fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion,
-.pfg-form.formid-fale-conosco form .field label.formQuestion{
-	font-weight: 400;
-}
-fieldset#pfg-fieldsetname-formulario-padrao .formControls,
-.pfg-form.formid-fale-conosco form .formControls{
-	clear: both;
-	padding: 12px 0;
-	box-shadow: none;
-	background: transparent;
-	border:none;
-}
-fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"],
-.pfg-form.formid-fale-conosco form .formControls input[type="submit"]{
-	background: #3776B0;
-    color: #fff;
-    border-radius: 4px;
-    padding: 5px 15px;
-	}
 	
 body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
 body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix{
@@ -3145,6 +3154,31 @@ a.boxes-lato:first-child{
     margin-left:0;
 }
 
+/*FORMULÁRIOS*/
+
+fieldset#pfg-fieldsetname-formulario-campos{
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .field,
+fieldset#pfg-fieldsetname-formulario-campos .field,
+.pfg-form.formid-fale-conosco form textarea#comentarios,
+.pfg-form.formid-fale-conosco form textarea#comments{
+	width: 49%;
+	float: left;
+}
+.pfg-form.formid-fale-conosco form textarea#comentarios,
+.pfg-form.formid-fale-conosco form textarea#comments{
+    min-height: 109px;
+}
+
+fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
+fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
+	margin-left: 2%;
+}
+
+	
 body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
 body.section-pesquisa .tileItem.visualIEFloatFix h2.tileHeadline,
 body.section-area-do-aluno .tileItem.visualIEFloatFix h2.tileHeadline,
