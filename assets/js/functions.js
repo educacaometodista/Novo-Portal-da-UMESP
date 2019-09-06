@@ -48,7 +48,7 @@ $(function() {
     });
     
     $(document).ready(function() {
-            if (window.location.href.indexOf("graduacao-presencial")) { // Pega determinado texto ou palavra dentro da URL
+            if (window.location.href.indexOf("graduacao-presencial" || "graduacao-a-distancia") )  {
             var divcurso = document.getElementsByTagName("h1")[0].textContent;
             document.getElementById("obter-curso").value = divcurso;
                 
