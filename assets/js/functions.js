@@ -47,16 +47,15 @@ $(function() {
         }
     });
     
-      $(function() {
-            if (window.location.href.indexOf==("graduacao-presencial")) {
-				
-        var divcurso = document.getElementsByTagName("h1")[0].textContent;
-        document.getElementById("obter-curso").value = divcurso;
-			
-		var divmodalidade = document.getElementsByClassName("subtit-grad")[0].textContent;
-        document.getElementById("obter-modalidade").value = divmodalidade;
-        }
-    });
+    $(document).ready(function() {
+            if (window.location.href.indexOf("graduacao-presencial")) { // Pega determinado texto ou palavra dentro da URL
+            var divcurso = document.getElementsByTagName("h1")[0].textContent;
+            document.getElementById("obter-curso").value = divcurso;
+                
+            var divmodalidade = document.getElementsByClassName("subtit-grad")[0].textContent;
+            document.getElementById("obter-modalidade").value = divmodalidade;
+            }
+          });
 
 jQuery(document).ready(function(){ 
 
