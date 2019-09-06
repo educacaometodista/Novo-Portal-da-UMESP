@@ -46,6 +46,17 @@ $(function() {
                     }, 1000); 
         }
     });
+    
+      $(function() {
+            if (window.location.href.indexOf==("graduacao-presencial")) {
+				
+        var divcurso = document.getElementsByTagName("h1")[0].textContent;
+        document.getElementById("obter-curso").value = divcurso;
+			
+		var divmodalidade = document.getElementsByClassName("subtit-grad")[0].textContent;
+        document.getElementById("obter-modalidade").value = divmodalidade;
+        }
+    });
 
 jQuery(document).ready(function(){ 
 
