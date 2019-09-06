@@ -294,6 +294,42 @@ label .required::after{
 	font-size: 12px;
 }
 
+/* FORMULÁRIO DE LEADS */
+
+section.portletContent .pfg-form.formid-leads-captacao{
+	padding: 0 15px 15px 15px;
+}
+fieldset#pfg-fieldsetname-formulario-leads .fieldErrorBox{
+	height: 1px;
+}
+.portlet.portletStaticText.portlet-static-receba-informaes header.portletHeader{
+	background: #01396d;
+}
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"]{
+	/*background: #ffd421;*/
+	background: rgb(255,212,33);
+    background: linear-gradient(90deg, rgba(255,212,33,1) 0%, rgba(255,230,124,1) 50%, rgba(255,212,33,1) 100%);
+    color: #01396d;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 5px;
+    display: block;
+    text-align: center;
+	transition: 0.3s;
+}
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"]:hover{
+	/*background: rgb(255,212,33);
+background: linear-gradient(90deg, rgba(255,230,124,1) 0%, rgba(255,212,33,1) 50%, rgba(255,230,124,1) 100%);*/
+	opacity: 0.9;
+}
+.portlet.portletStaticText.portlet-static-receba-informaes .portletContent{
+    background: #01396D;
+	border: none;
+}
+
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer, 
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-header, 
 body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-title, 
@@ -422,6 +458,7 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     color:#fff;
+    text-align: center;
 }
 
 .portlet .portletContent > ul > li a {
@@ -437,14 +474,13 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
     color: #64bee8;
 }
 .portlet .portletContent > ul > li a:hover::after{
-content: "⟩";
+	content: "⟩";
     position: absolute;
     right: 10px;
     font-size: 18px;
     margin-top: -3px;
     color: #777777;
 }
-
 
 .portlet .portletHeader > a {
     color: #ffffff;
@@ -466,7 +502,6 @@ section.portlet-static-coordenadora h6 {
 }
 section.portlet.portletStaticText.portlet-static-coordenadora .portletHeader,
 section.portlet.portletStaticText.portlet-static-coordenador .portletHeader{
-    background: #3776b0 !important;
     color: #FFF;
     text-align: center;
 }
