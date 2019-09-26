@@ -256,11 +256,13 @@
         width: 100%;
     }
     fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion,
-    .pfg-form.formid-fale-conosco form .field label.formQuestion{
+    .pfg-form.formid-fale-conosco form .field label.formQuestion,
+    .pfg-form.formid-reportar-erro form .field label.formQuestion{
         font-weight: 400;
     }
     fieldset#pfg-fieldsetname-formulario-padrao .formControls,
-    .pfg-form.formid-fale-conosco form .formControls{
+    .pfg-form.formid-fale-conosco form .formControls,
+    .pfg-form.formid-reportar-erro form .formControls{
         clear: both;
         padding: 12px 0;
         box-shadow: none;
@@ -268,7 +270,8 @@
         border:none;
     }
     fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"],
-    .pfg-form.formid-fale-conosco form .formControls input[type="submit"]{
+    .pfg-form.formid-fale-conosco form .formControls input[type="submit"],
+    .pfg-form.formid-reportar-erro form .formControls input[type="submit"]{
         background: #3776B0;
         color: #fff;
         border: none;
@@ -2406,6 +2409,7 @@
         margin: 0 10px 0 0;
         line-height: 45px;
     }
+    
 
     /* template notícia simples */
     body.section-noticias article#content #content-core{
@@ -2417,6 +2421,11 @@
     /*body.section-home .mosaic-grid-row.mosaic-grid-row-fluid .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .movable.removable .tileItem.visualIEFloatFix h2.tileHeadline a{
         color: #a09971;
     }*/
+
+    div#divReportarProblema {
+        margin-top: 65px;
+        text-align: right;
+    }
 
     /* EVENTOS */
     .eventos-home h2{
@@ -3033,6 +3042,10 @@
         display:none;
     }
 
+    .addthis-smartlayers, div#at4-follow, div#at4-share, div#at4-thankyou, div#at4-whatsnext {
+        z-index: unset;
+    }
+
 
     /* NOTÍCIAS HOME E STRICTO*/
     body.section-stricto-sensu .mosaic-grid-row.noticias-home-stricto .mosaic-tile-content div .tileItem.visualIEFloatFix,
@@ -3212,7 +3225,15 @@
     }
 
     /*FORMULÁRIOS*/
-
+    div.pfg-form.formid-reportar-erro form#fg-base-edit {
+        border-top: solid 4px #f2ca10;
+        margin-top: 30px;
+    }
+    div#archetypes-fieldname-nome label.formQuestion,
+    div#archetypes-fieldname-email label.formQuestion,
+    div#archetypes-fieldname-comentarios label.formQuestion {
+        margin-top: 30px;
+    }
     fieldset#pfg-fieldsetname-formulario-campos{
         width: 49%;
         float: left;
@@ -3221,12 +3242,16 @@
     fieldset#pfg-fieldsetname-formulario-padrao .field,
     fieldset#pfg-fieldsetname-formulario-campos .field,
     .pfg-form.formid-fale-conosco form textarea#comentarios,
-    .pfg-form.formid-fale-conosco form textarea#comments{
+    .pfg-form.formid-fale-conosco form textarea#comments,
+    .pfg-form.formid-reportar-erro form textarea#comentarios,
+    .pfg-form.formid-reportar-erro form textarea#comments{
         width: 49%;
         float: left;
     }
     .pfg-form.formid-fale-conosco form textarea#comentarios,
-    .pfg-form.formid-fale-conosco form textarea#comments{
+    .pfg-form.formid-fale-conosco form textarea#comments,
+    .pfg-form.formid-reportar-erro form textarea#comentarios,
+    .pfg-form.formid-reportar-erro form textarea#comments{
         min-height: 109px;
     }
 
@@ -3235,6 +3260,11 @@
         margin-left: 2%;
     }
 
+    input.context.btn.plone-btn-block.plone-btn-warning {
+        background: #f2ca10;
+        border-color: #b19305;
+        color: #2d2d2d;
+    }
         
     body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
     body.section-pesquisa .tileItem.visualIEFloatFix h2.tileHeadline,
