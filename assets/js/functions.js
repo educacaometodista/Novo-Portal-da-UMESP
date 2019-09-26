@@ -28,13 +28,38 @@ $(function() {
         /* End of insert news to event */
 
         /* Start of insert AddThis to news */
-        // $(document).ready(function(jq) {
-        //   $("body.section-noticias, body.section-eventos").each(function(){
-        //         const addThis = document.createElement('div');
-        //         addThis.className='addthis_inline_share_toolbox';
-        //         document.querySelector('article#content div#content-core div#parent-fieldname-text').appendChild(addThis)
-        //    });
-        // }) 
+        $(document).ready(function() {
+        //   if (window.location.href.indexOf("noticias")){
+            
+            // URL
+            document.getElementById("url").setAttribute('value',window.location.href);
+
+            // Data e Hora
+            var today = new Date();
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+
+            document.getElementById("data-e-hora").setAttribute('value',dateTime);
+
+            const ReportarProblema = '<a href="#comunicarErro" class="pat-plone-modal" data-pat-plone-modal="width: 65%">Modal basic</a>'
+
+            // Create a new element
+            var newNode = document.createElement('div');
+            newNode.setAttribute("id","divReportarProblema")
+
+            // Get the reference node
+            var referenceNode = document.querySelector('div#content-core div#parent-fieldname-text');
+
+            // Insert the new node after the reference node
+            referenceNode.after(newNode);
+
+            document.getElementById('divReportarProblema').innerHTML = ReportarProblema;
+
+
+
+        //   }
+        }) 
         
         /* End of insert AddThis to news */
 
