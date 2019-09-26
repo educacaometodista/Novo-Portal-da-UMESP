@@ -339,6 +339,7 @@
     body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body,
     body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content{
         padding-left: 0px;
+        text-align: center;
         color:#fff;
         border-bottom:0px !important;
         border-top:0px !important;
