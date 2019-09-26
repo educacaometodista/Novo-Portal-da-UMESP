@@ -14,7 +14,7 @@ $(function() {
     }
 });
 
-/* Insert news to event */
+        /* Start of insert news to event */
         $(document).ready(function(jq) {
           $("#relatedItemBox a").each(function(){
 
@@ -25,6 +25,18 @@ $(function() {
               
            });
         }) 
+        /* End of insert news to event */
+
+        /* Start of insert AddThis to news */
+        // $(document).ready(function(jq) {
+        //   $("body.section-noticias, body.section-eventos").each(function(){
+        //         const addThis = document.createElement('div');
+        //         addThis.className='addthis_inline_share_toolbox';
+        //         document.querySelector('article#content div#content-core div#parent-fieldname-text').appendChild(addThis)
+        //    });
+        // }) 
+        
+        /* End of insert AddThis to news */
 
         $(function() {
             if (!window.location.href.indexOf("noticias-anteriores")) {
