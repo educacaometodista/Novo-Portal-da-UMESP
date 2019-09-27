@@ -41,6 +41,12 @@
   <script type="text/javascript"
     src="/Metodista/++theme++testes-do-lu-no-tema-do-fernando/assets/js/ouibounce.min.js"></script>
 
+    <style>
+      /* Z-index do AddThis em relação aos reportes de erros no mobile */
+      div#at-share-dock {
+          z-index: 0;
+      }
+    </style>
 
 </head>
 
@@ -293,7 +299,14 @@
     <!--/container-->
   </div>
   <!--/outer-wrapper -->
-
+  <div class="reportarErrosDiv">
+    <div class="container">
+      <p>
+        <a class="pat-plone-modal" href="#comunicarErro" data-pat-plone-modal="width: 50%">Reportar Erros <i
+            class="fas fa-exclamation-triangle"></i></a>
+      </p>
+    </div>
+  </div>
   <footer id="portal-footer">
     <div class="container">
       <div class="row">
@@ -513,7 +526,7 @@
       </div>
     </div>
   </div>
-
+  <div class="container">
   <div id="comunicarErro" style="display:none">
     <h1>Comunicar Erros</h1>
     <p>Para comunicar erros nos textos publicados em nosso portal preencha os dados abaixo e clique em Enviar. </p>
@@ -521,6 +534,7 @@
       deseje enviar um e-mail sobre outros assuntos utilize o formulário de <a href="/Metodista/fale-conosco"
         style="color:#FFD50F;">Fale Conosco</a>.</em>
     <div class="pfg-form formid-reportar-erro" style="margin-top:20px;">
+      
       <form name="edit_form" method="post" enctype="multipart/form-data"
         class="fgBaseEditForm enableUnloadProtection enableAutoFocus"
         action="http://docker.umesp.edu.dti:8080/Metodista/reportar-erro" id="fg-base-edit">
@@ -593,10 +607,12 @@
           <input type="hidden" name="add_reference.type:record" value="" />
           <input type="hidden" name="add_reference.destination:record" value="" />
           <input type="hidden" name="last_referer" value="http://docker.umesp.edu.dti:8080/Metodista" />
-          <input type="hidden" name="_authenticator" value="4242762b0898cb2de66faf4668f8bd96dd81de58" />
-          <input class="context btn plone-btn-block plone-btn-warning" type="submit"  name="form_submit" value="Enviar" />
+          <input type="hidden" name="_authenticator" value="8acc7e665588ddffb7564b936072e87a8fe4755f" />
+          <input class="context btn plone-btn-block plone-btn-warning" type="submit" name="form_submit"
+            value="Enviar" />
         </div>
       </form>
+    </div>
     </div>
   </div>
 
@@ -617,7 +633,7 @@
 
   </script>
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d8cd0f7677b58cf"></script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d8cd0f7677b58cf"></script>
 
 
 </body>
