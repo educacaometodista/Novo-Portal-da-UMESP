@@ -91,6 +91,16 @@ $(function() {
                 
             var divmodalidade = document.getElementsByClassName("subtit-grad")[0].textContent;
             document.getElementById("obter-modalidade").value = divmodalidade;
+				
+				
+			var urla = window.location.href;
+			var param = urla.split('/');
+			var local = param[3];
+			var local2 = param[4];
+			var local3 = param[5];
+			document.getElementById("obter-modalidade-url").value = local;
+			document.getElementById("obter-modalidade-url2").value = local2;
+			document.getElementById("obter-curso-url").value = local3;
             }
           });
 
