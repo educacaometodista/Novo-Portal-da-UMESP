@@ -1,4 +1,4 @@
-    /*
+/*
     * PORTAL UNIVERSIDADE METODISTA DE SÃO PAULO
     *
     * GitHub: https://github.com/educacaometodista/Portal-UMESP-Plone-5
@@ -1162,6 +1162,7 @@
     body.section-graduacao-presencial.subsection-secretariado-executivo-bilingue .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/secretariado-executivo-bilingue/imagens/topo-secretariado-executivo-bilingue.jpg) no-repeat center;background-size: cover;}
     body.section-graduacao-presencial.subsection-sistemas-de-informacao .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/sistemas-de-informacao/imagens/topo-sistemas-de-informacao.jpg) no-repeat center;background-size: cover;}
     body.section-graduacao-presencial.subsection-teologia .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/teologia/imagens/topo-teologia.jpg) no-repeat center;background-size: cover;}
+    body.section-graduacao-presencial.subsection-relacoes-internacionais .container-fluid.nopadding{background:url(/Metodista/graduacao-presencial/relacoes-internacionais/imagens/topo-relacoes-internacionais.jpg) no-repeat center;background-size: cover;}
 
     /* IMAGENS DE GRADUAÇÃO A DISTÂNCIA */
     body.section-graduacao-a-distancia .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/imagens/topo-ead.jpg) no-repeat center;background-size: cover;}
@@ -1189,6 +1190,11 @@
     body.section-graduacao-a-distancia.subsection-seguranca-publica .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/seguranca-publica/imagens/topo-seguranca-publica.jpg) no-repeat center;background-size: cover;}
     body.section-graduacao-a-distancia.subsection-servico-social .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/servico-social/imagens/topo-servico-social.jpg) no-repeat center;background-size: cover;}
     body.section-graduacao-a-distancia.subsection-teologia .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/teologia/imagens/topo-teologia.jpg) no-repeat center;background-size: cover;}
+	body.section-graduacao-a-distancia.subsection-ciencia-de-dados-e-big-data .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/ciencia-de-dados-e-big-data/imagens/topo-ciencia-de-dados-e-big-data.jpg) no-repeat center;background-size: cover;}
+	body.section-graduacao-a-distancia.subsection-engenharia-civil .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/engenharia-civil/imagens/topo-engenharia-civil.jpg) no-repeat center;background-size: cover;}
+	body.section-graduacao-a-distancia.subsection-engenharia-de-producao .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/engenharia-de-producao/imagens/topo-engenharia-de-producao.jpg) no-repeat center;background-size: cover;}
+	body.section-graduacao-a-distancia.subsection-jornalismo .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/jornalismo/imagens/topo-jornalismo.jpg) no-repeat center;background-size: cover;}
+	body.section-graduacao-a-distancia.subsection-ciencias-biologicas .container-fluid.nopadding{background:url(/Metodista/graduacao-a-distancia/ciencias-biologicas/imagens/topo-ciencias-biologicas.jpg) no-repeat center;background-size: cover;}
 
     /* STRICTO-SENSU*/
     body.section-stricto-sensu.site-Metodista .container-fluid.nopadding{background:url(/Metodista/stricto-sensu/imagens/bg-stricto.jpg) no-repeat center;background-size: cover;}

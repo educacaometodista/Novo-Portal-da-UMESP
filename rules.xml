@@ -73,7 +73,7 @@
        <replace css:theme-children=".tit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       
+      
        <!--<replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade .mosaic-grid-row.contador-enade" />-->
        <replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
        
