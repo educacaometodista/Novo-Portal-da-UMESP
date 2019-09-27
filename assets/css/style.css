@@ -297,6 +297,14 @@
         font-size: 12px;
     }
 
+    /* FORMULÁRIO DE REPORTE DE ERROS */
+
+    input.context.btn.plone-btn-block.plone-btn-warning {
+        background: #f2ca10;
+        border-color: #b19305;
+        color: #2d2d2d;
+    }
+    
     /* FORMULÁRIO DE LEADS */
 
     section.portletContent .pfg-form.formid-leads-captacao{
@@ -2423,15 +2431,25 @@
         color: #a09971;
     }*/
 
-    div#divReportarProblema {
-        margin-top: 65px;
+    div.reportarErrosDiv {
+        /* height: auto; */
+        font-size: 18px;
+    }
+
+    div.reportarErrosDiv p {
         text-align: right;
+    }
+
+    body.section-home div.reportarErrosDiv {
+        display: none;
     }
 
     /* EVENTOS */
     .eventos-home h2{
         color:#3776B0;
     }
+
+    
 
     .eventos-home h2::before{
         font-family: "Font Awesome 5 Free";
@@ -3047,6 +3065,10 @@
         z-index: unset;
     }
 
+    div#at-share-dock{
+        z-index: 0 !important;
+    }
+
 
     /* NOTÍCIAS HOME E STRICTO*/
     body.section-stricto-sensu .mosaic-grid-row.noticias-home-stricto .mosaic-tile-content div .tileItem.visualIEFloatFix,
@@ -3259,12 +3281,6 @@
     fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
     fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
         margin-left: 2%;
-    }
-
-    input.context.btn.plone-btn-block.plone-btn-warning {
-        background: #f2ca10;
-        border-color: #b19305;
-        color: #2d2d2d;
     }
         
     body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
