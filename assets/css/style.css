@@ -3420,8 +3420,9 @@
     body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row {
         width: 1540px;
     }
+	body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid,
     body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid{
-        width:100%;
+        width:auto;
     }
     body.section-enade .container-fluid.nopadding .contagem {
         padding-top: 80px;
@@ -3432,10 +3433,10 @@
         max-width:1540px;
         }
 
-        body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.curoslato.mosaic-grid-row-fluid{
+        /*body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.curoslato.mosaic-grid-row-fluid{
             width:100%;
             max-width:100%;
-        }
+        }*/
     }
 
 
