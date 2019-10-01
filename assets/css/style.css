@@ -394,6 +394,12 @@
     .slider .rslides_container {
         margin-bottom: 20px;
     }
+
+    .centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a {
+        width: 20px;
+        height: 4px;
+    }
+
     h2.plone-modal-title {
         font-size: 2em;
     }
