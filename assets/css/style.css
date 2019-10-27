@@ -171,13 +171,14 @@ body:not(.userrole-authenticated).section-enade
 }
 
 i.material-icons.icone-atendimento {
-  color: #ffc62c;
+  color: #ffffff;
   font-size: 5em;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.38);
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.38);
+  margin-bottom: 15px;
 }
 
 i.material-icons.icone-atendimento:hover {
-  color: #ffde85;
+  color: #ffffffc4;
 }
 
 .plone-btn-atendimento {
@@ -222,49 +223,27 @@ body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before {
 }
 
 .col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online {
-  background: rgba(2, 104, 199, 1);
-  background: -moz-linear-gradient(
-    top,
-    rgba(2, 104, 199, 1) 0%,
-    rgba(4, 64, 121, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(2, 104, 199, 1)),
-    color-stop(100%, rgba(4, 64, 121, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(2, 104, 199, 1) 0%,
-    rgba(4, 64, 121, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(2, 104, 199, 1) 0%,
-    rgba(4, 64, 121, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(2, 104, 199, 1) 0%,
-    rgba(4, 64, 121, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(2, 104, 199, 1) 0%,
-    rgba(4, 64, 121, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268c7', endColorstr='#044079', GradientType=0 );
-  color: #ffc62c;
-  height: 200px;
-  width: 200px;
-  border-radius: 40px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding-top: 35px;
-  text-align: center;
+  display: block;
+  background: rgba(80, 144, 222, 0.5);
+  border-radius: 4px;
+  padding: 30px 0;
+  margin-top: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-right: 1%;
+
 }
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  background: rgba(59, 90, 128, 0.5);
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online a {
+  color: #fff;
+}
+
 h6.atendimento-modal {
   color: #fff;
   font-size: 30px;
@@ -4605,7 +4584,7 @@ a.link-category:focus {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    box-shadow: 0px 6px 20px 0px #0000008c;
+    box-shadow: 0px 6px 20px 0px #00000038;
   }
 
   .mosaic-grid-row.destaqueshome.mosaic-grid-row-fluid .box-home {
