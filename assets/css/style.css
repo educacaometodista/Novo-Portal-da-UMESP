@@ -3688,7 +3688,7 @@ h2.destaques-home {
   background: transparent;
   color: #fff;
   width: 98%;
-  padding-top: 30px !important;
+  padding-top: 50px !important;
   display: table;
   white-space: nowrap;
 }
@@ -3757,6 +3757,10 @@ h2.noticias-home::before {
 }
 
 /* template notícia simples */
+article#content {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
 body.section-noticias article#content #content-core {
   background: #fff;
   padding: 15px;
@@ -4506,8 +4510,9 @@ a.link-category:focus {
     padding: 15px;
     border-radius: 4px;
     margin: 10px 0;
-    min-height: 224px;
+    height: auto;
     color: #fff;
+    min-height: 355px;
   }
 
   .gradient-bg,
