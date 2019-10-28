@@ -4431,7 +4431,7 @@ a.link-category:focus {
     > .container
     .destaqueshome.mosaic-grid-row-fluid {
     background: url("https://webid.net.br/ouvidoria/assets/img/wallpaper/umesp1.jpg");
-    min-height: 1085px;
+    min-height: 960px;
     margin-top: 50px;
     padding-top: 120px;
     padding-bottom: 50px;
@@ -4483,6 +4483,10 @@ a.link-category:focus {
     opacity: 0.8;
     z-index: -1;
   }
+
+  .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost {
+    margin-top: 20px;
+}
 
   /* NOTÍCIAS HOME E STRICTO*/
   body.section-stricto-sensu
