@@ -4403,7 +4403,9 @@ a.link-category:focus {
   }
   .tileItem.visualIEFloatFix a.summary-image img {
     width: 100%;
+    min-height: 178.41px;
     height: auto;
+    object-fit: cover;
   }
 
   /* Botão AddThis */
