@@ -2846,7 +2846,13 @@ body.template-layout.no-portlet-columns
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
   .outer-wrapper
   > .container
-  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
+
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  {
   background: transparent;
   position: absolute;
   z-index: 9999;
@@ -2856,7 +2862,13 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lat
   .outer-wrapper
   > .container
   .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
-  h2.titulos-lato {
+  h2.titulos-lato,
+
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  h2.titulos-lato{
   background: transparent;
   color: #fff;
   width: 98%;
@@ -2868,10 +2880,20 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lat
   .outer-wrapper
   > .container
   .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  h2.titulos-lato:before,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
   h2.titulos-lato:before {
   right: 1%;
 }
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  h2.titulos-lato:after,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
   .outer-wrapper
   > .container
   .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
@@ -2884,6 +2906,16 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lat
   .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
   h2.titulos-lato:after,
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  h2.titulos-lato:before,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
+  .outer-wrapper
+  > .container
+  .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
+  h2.titulos-lato:after,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
   .outer-wrapper
   > .container
   .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid
@@ -3652,14 +3684,38 @@ h2.inscricoes-abertas::before {
 
 /* DESTAQUES */
 h2.destaques-home {
-  color: #3776b0;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  width: 98%;
+  padding-top: 30px !important;
+  display: table;
+  white-space: nowrap;
+}
+
+h2.destaques-home:before {
+  border-top: 2px solid;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 40%;
+}
+
+h2.destaques-home:after {
+  border-top: 2px solid;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 40%;
 }
 
 .box-home.destaques h3 {
   color: #74a7d6;
 }
 
-h2.destaques-home::before {
+/* h2.destaques-home::before {
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3672,7 +3728,7 @@ h2.destaques-home::before {
   margin: 0 10px 0 0;
   line-height: 45px;
   content: "\f02e";
-}
+} */
 
 /*.box-home.destaques a.saiba-mais{
         background:#3b86d6;
@@ -4713,7 +4769,12 @@ a.link-category:focus {
   body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
     .outer-wrapper
     > .container
-    .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+    .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
+
+    body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
+    .outer-wrapper
+    > .container
+    .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid{
     width: 100%;
   }
 
