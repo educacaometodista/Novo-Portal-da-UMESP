@@ -3914,6 +3914,22 @@ a.link-category:focus {
   cursor: pointer;
 }
 
+div.theme-input-group button i.material-icons {
+  font-size: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  display: block;
+}
+
+div.theme-input-group button {
+  font-size: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  display: block;
+}
+
 @media only screen and (max-width: 767px) {
   #portal-logo {
     float: left;
