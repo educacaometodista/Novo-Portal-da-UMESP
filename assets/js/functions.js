@@ -57,7 +57,7 @@ $(document).ready(function() {
   );
 
   // Insert the new node after the reference node
-  //referenceNode.after(newNode);
+  referenceNode.after(newNode);
 
   document.getElementById("divReportarProblema").innerHTML = ReportarProblema;
 
