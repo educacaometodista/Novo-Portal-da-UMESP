@@ -4784,6 +4784,86 @@ div#lista-integracao-sucessmsg {
     z-index: -1;
   }
 
+  /* INSCRIÇÕES HOME */
+
+  /* HOME INSCRIÇÕES */
+
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div{
+    overflow: hidden;
+}
+
+.mosaic-grid-row.inscricoes-abertas2 {
+    margin-bottom: 30px;
+}
+
+div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    color:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 3px 2px 20px 0px #00000014;
+	  min-height: 220px;
+    background: rgba(69,151,214,1);
+    background: -moz-linear-gradient(45deg, rgba(69,151,214,1) 0%, rgba(0,83,155,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(69,151,214,1)), color-stop(100%, rgba(0,83,155,1)));
+    background: -webkit-linear-gradient(45deg, rgba(69,151,214,1) 0%, rgba(0,83,155,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(69,151,214,1) 0%, rgba(0,83,155,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(69,151,214,1) 0%, rgba(0,83,155,1) 100%);
+    background: linear-gradient(45deg, rgba(69,151,214,1) 0%, rgba(0,83,155,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4597d6', endColorstr='#00539b', GradientType=1 );
+}
+
+div.inscricoes-abertas2 ins.fas {
+    text-decoration: none;
+}
+
+div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(2) {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(3) {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+div.inscricoes-abertas2 ins.fas:before {
+    font-size: 10em;
+    position: absolute;
+    bottom: 60px;
+    right: -45px;
+    color: #ffffff36;
+}
+
+div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
+	display: block;
+    background: #252525;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px 0px 3px 0px;
+    width: 80%;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 40px;
+}
+
+div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type:hover {
+    background: #252525c2;
+    transition: 0.4s;
+}
+
+
+div.inscricoes-abertas2 p a:last-of-type {
+    color: #fff !important;
+}
+
+div.inscricoes-abertas2 p a:last-of-type:hover {
+    text-decoration: none;
+}
+
   /* NOTÍCIAS HOME E STRICTO*/
   body.section-stricto-sensu
     .mosaic-grid-row.noticias-home-stricto
