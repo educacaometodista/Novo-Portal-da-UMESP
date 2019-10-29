@@ -4784,10 +4784,6 @@ div#lista-integracao-sucessmsg {
     z-index: -1;
   }
 
-  .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost {
-    margin-top: 20px;
-  }
-
   /* NOTÍCIAS HOME E STRICTO*/
   body.section-stricto-sensu
     .mosaic-grid-row.noticias-home-stricto
