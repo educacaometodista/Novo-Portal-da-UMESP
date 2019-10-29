@@ -3914,6 +3914,15 @@ a.link-category:focus {
   cursor: pointer;
 }
 
+form#lista-integracao-form div.theme-input-group button.btn.plone-btn.plone-btn-block {
+  margin-top: 5px;
+  background: #ffd421;
+  background: rgb(255, 212, 33);
+  background: linear-gradient( 90deg, rgba(255, 212, 33, 1) 0%, rgba(255, 230, 124, 1) 50%, rgba(255, 212, 33, 1) 100% );
+  color: #01396d;
+  text-transform: uppercase;
+}
+
 div.theme-input-group button i.material-icons {
   font-size: 16px;
   position: absolute;
@@ -3924,10 +3933,15 @@ div.theme-input-group button i.material-icons {
 
 div.theme-input-group button {
   font-size: 16px;
-  position: absolute;
+  /* position: absolute;
   bottom: 8px;
-  right: 30px;
+  right: 30px; */
   display: block;
+}
+
+div#lista-integracao-sucessmsg {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 767px) {
