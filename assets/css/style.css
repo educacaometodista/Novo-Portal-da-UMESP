@@ -302,7 +302,7 @@ label .required::after {
 
 /* FORMULÁRIO DE REPORTE DE ERROS */
 
-input.context.btn.plone-btn-block.plone-btn-warning {
+button.context.btn.plone-btn-block.plone-btn-warning {
   background: #f2ca10;
   border-color: #b19305;
   color: #2d2d2d;
