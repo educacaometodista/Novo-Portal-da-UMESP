@@ -44,24 +44,6 @@ $(document).ready(function() {
 
   document.getElementById("data-e-hora").setAttribute("value", dateTime);
 
-  const ReportarProblema =
-    '<a href="#comunicarErro" class="pat-plone-modal" data-pat-plone-modal="width: 65%">Modal basic</a>';
-
-  // Create a new element
-  var newNode = document.createElement("div");
-  newNode.setAttribute("id", "divReportarProblema");
-
-  // Get the reference node
-  var referenceNode = document.querySelector(
-    "div#content-core div#parent-fieldname-text"
-  );
-
-  // Insert the new node after the reference node
-  referenceNode.after(newNode);
-
-  document.getElementById("divReportarProblema").innerHTML = ReportarProblema;
-
-  //   }
 });
 
 /* End of insert AddThis to news */
