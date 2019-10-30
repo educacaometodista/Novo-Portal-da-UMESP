@@ -563,7 +563,7 @@
     class="fgBaseEditForm enableUnloadProtection enableAutoFocus"
     action="https://portalpreprd.metodista.br/Metodista/reportar-erro"
     id="fg-base-edit"
-    onsubmit="alert('Formulário enviado com sucesso.');"
+    onsubmit="refreshReport()"
   >
   <div id="pfg-fieldwrapper">
     <fieldset class="PFGFieldsetWidget" id="pfg-fieldsetname-formulario-campos">
@@ -582,6 +582,7 @@
         </label>
         <div class="fieldErrorBox"></div>
         <input
+          id="reportar_nome"
           type="text"
           name="nome"
           class="blurrable firstToFocus"
@@ -605,6 +606,7 @@
         </label>
         <div class="fieldErrorBox"></div>
         <input
+          id="reportar_mail"
           type="text"
           name="email"
           class="blurrable firstToFocus"
@@ -725,11 +727,24 @@
       e.stopPropagation();
     });
 
-    window.onload = function() {clear
-
+    window.onload = function() {
       var leadsContact = document.querySelector('body.userrole-authenticated section.portlet.portletStaticText.portlet-static-receba-informaes');
-      leadsContact.remove();
+
+      if (!leadsContact == '') { leadsContact.remove() }
     }
+
+    function refreshReport() {
+      // let verifyName = document.querySelector('input#reportar_nome').value;
+      // let verifyEmail = document.querySelector('input#mail').value;
+
+      // verifyName == '' ? alert('Erro ao enviar o formulario.') : alert('Formulario enviado com sucesso')
+
+      alert('Formulario enviado com sucesso!');
+
+      setTimeout(function () { location.reload(true); }, 3000);
+
+    }
+
   </script>
 
   <!-- ======= AddThis JS ======= -->
