@@ -191,7 +191,11 @@
 
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
-      <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated">
+
+      <!-- Remoção da primeira coluna de portlet caso esteja logado (descomentar a linha abaixo para ativar) -->
+      <!-- <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated"> -->
+
+      <replace css:theme="#column1-container"
         <xsl:variable name="columnone">
           <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
           <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
