@@ -26,6 +26,9 @@ p.facebookModal {
 p.facebookModal a:hover {
   color: #344a5f !important;
 }
+#ouibounce-modal{
+    z-index: 9999 !important;
+}
 #ouibounce-modal form input[type="submit"]:hover,
 button.envia-form:hover {
   background: #344a5f;
