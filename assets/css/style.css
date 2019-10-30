@@ -3710,7 +3710,7 @@ a.col-md-5ths.boxes:hover {
   a.summary:hover {
   background: rgba(173, 196, 226, 0.6);
   border: none;
-  text-decoration: none;
+  transition: 0.5s;
   box-shadow: 2px 2px 5px #8a8686;
 }
 
