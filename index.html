@@ -728,6 +728,10 @@
       e.stopPropagation();
     });
 
+    window.onload = function() {
+      var leadsContact = document.querySelector('body.userrole-authenticated section.portlet.portletStaticText.portlet-static-receba-informaes');
+      leadsContact.remove();
+    }
   </script>
 
   <!-- ======= AddThis JS ======= -->
