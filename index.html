@@ -715,15 +715,12 @@
 
   <script>
     ouibounce(document.getElementById('ouibounce-modal'), { aggressive: false });
-
     $('body').on('click', function () {
       $('#ouibounce-modal').hide();
     });
-
     $('#ouibounce-modal .modal-footer').on('click', function () {
       $('#ouibounce-modal').hide();
     });
-
     $('#ouibounce-modal .modal').on('click', function (e) {
       e.stopPropagation();
     });

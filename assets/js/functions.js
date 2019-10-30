@@ -14,8 +14,6 @@ $(function() {
   }
 });
 
-
-
 // Start of insert news to event
 $(document).ready(function(jq) {
   $("#relatedItemBox a").each(function() {
