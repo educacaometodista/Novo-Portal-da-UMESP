@@ -556,83 +556,158 @@
         style="color:#FFD50F;">Fale Conosco</a>.</em>
     <div class="pfg-form formid-reportar-erro" style="margin-top:20px;">
 
-      <form name="edit_form" method="post" enctype="multipart/form-data"
-        class="fgBaseEditForm enableUnloadProtection enableAutoFocus"
-        action="https://portalpreprd.metodista.br/Metodista/reportar-erro" id="fg-base-edit">
-        <div id="pfg-fieldwrapper">
-          <fieldset class="PFGFieldsetWidget" id="pfg-fieldsetname-formulario-campos">
-            <div class="formHelp" id="formulario-campos_help"></div>
-            <div class="field ArchetypesStringWidget " id="archetypes-fieldname-nome"
-              data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="nome">
-              <span></span>
-              <label class="formQuestion" for="nome">
-                Nome
-                <span class="required" title="Obrigatório"> </span>
-                <span class="formHelp" id="nome_help"></span>
-              </label>
-              <div class="fieldErrorBox"></div>
-              <input type="text" name="nome" class="blurrable firstToFocus" id="nome" size="30" placeholder=""
-                maxlength="255" />
-            </div>
-            <div class="field ArchetypesStringWidget " id="archetypes-fieldname-email"
-              data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="email">
-              <span></span>
-              <label class="formQuestion" for="email">
-                Seu E-mail
-                <span class="required" title="Obrigatório"> </span>
-                <span class="formHelp" id="email_help"></span>
-              </label>
-              <div class="fieldErrorBox"></div>
-              <input type="text" name="email" class="blurrable firstToFocus" id="email" size="30" placeholder=""
-                maxlength="255" />
-            </div>
-            <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-url"
-              data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="url">
-              <span></span>
-              <label class="formQuestion" for="url">
-                URL
-                <span class="formHelp" id="url_help"></span>
-              </label>
-              <div class="fieldErrorBox"></div>
-              <input class="blurrable firstToFocus" type="text" name="url" size="" id="url" placeholder=""
-                maxlength="False" readonly />
-            </div>
-            <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-data-e-hora"
-              data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="data-e-hora">
-              <span></span>
-              <label class="formQuestion" for="data-e-hora">
-                Data e Hora
-                <span class="formHelp" id="data-e-hora_help"></span>
-              </label>
-              <div class="fieldErrorBox"></div>
-              <input class="blurrable firstToFocus" readonly type="text" name="data-e-hora" size="" id="data-e-hora"
-                placeholder="" maxlength="False" />
-            </div>
-          </fieldset>
-          <div class="field ArchetypesTextAreaWidget " id="archetypes-fieldname-comentarios"
-            data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="comentarios">
-            <span></span>
-            <label class="formQuestion" for="comentarios">
-              Comentários
-              <span class="formHelp" id="comentarios_help"></span>
-            </label>
-            <div class="fieldErrorBox"></div>
-            <textarea class="blurrable firstToFocus" name="comentarios" id="comentarios" cols="40" rows="5"
-              placeholder=""></textarea>
-          </div>
-        </div>
-        <div class="formControls">
-          <input type="hidden" name="fieldset" value="default" />
-          <input type="hidden" name="form.submitted" value="1" />
-          <input type="hidden" name="add_reference.field:record" value="" />
-          <input type="hidden" name="add_reference.type:record" value="" />
-          <input type="hidden" name="add_reference.destination:record" value="" />
-          <input type="hidden" name="last_referer" value="https://portalpreprd.metodista.br/Metodista" />
-          <input type="hidden" name="_authenticator" value="8acc7e665588ddffb7564b936072e87a8fe4755f" />
-          <input class="context btn plone-btn-block plone-btn-warning" type="submit" name="form_submit"
-            value="Enviar" />
-        </div>
-      </form>
+      <form
+  name="edit_form"
+  method="post"
+  enctype="multipart/form-data"
+  class="fgBaseEditForm enableUnloadProtection enableAutoFocus"
+  action="https://portalpreprd.metodista.br/Metodista/reportar-erro"
+  id="fg-base-edit"
+>
+  <div id="pfg-fieldwrapper">
+    <fieldset class="PFGFieldsetWidget" id="pfg-fieldsetname-formulario-campos">
+      <div class="formHelp" id="formulario-campos_help"></div>
+      <div
+        class="field ArchetypesStringWidget "
+        id="archetypes-fieldname-nome"
+        data-uid="96f46bd0f5474dc38673354e9e380ad6"
+        data-fieldname="nome"
+      >
+        <span></span>
+        <label class="formQuestion" for="nome">
+          Nome
+          <span class="required" title="Obrigatório"> </span>
+          <span class="formHelp" id="nome_help"></span>
+        </label>
+        <div class="fieldErrorBox"></div>
+        <input
+          type="text"
+          name="nome"
+          class="blurrable firstToFocus"
+          id="nome"
+          size="30"
+          placeholder=""
+          maxlength="255"
+        />
+      </div>
+      <div
+        class="field ArchetypesStringWidget "
+        id="archetypes-fieldname-email"
+        data-uid="96f46bd0f5474dc38673354e9e380ad6"
+        data-fieldname="email"
+      >
+        <span></span>
+        <label class="formQuestion" for="email">
+          Seu E-mail
+          <span class="required" title="Obrigatório"> </span>
+          <span class="formHelp" id="email_help"></span>
+        </label>
+        <div class="fieldErrorBox"></div>
+        <input
+          type="text"
+          name="email"
+          class="blurrable firstToFocus"
+          id="email"
+          size="30"
+          placeholder=""
+          maxlength="255"
+        />
+      </div>
+      <div
+        class="field ArchetypesIntegerWidget "
+        id="archetypes-fieldname-url"
+        data-uid="96f46bd0f5474dc38673354e9e380ad6"
+        data-fieldname="url"
+      >
+        <span></span>
+        <label class="formQuestion" for="url">
+          URL
+          <span class="formHelp" id="url_help"></span>
+        </label>
+        <div class="fieldErrorBox"></div>
+        <input
+          class="blurrable firstToFocus"
+          type="text"
+          name="url"
+          size=""
+          id="url"
+          placeholder=""
+          maxlength="False"
+          readonly
+        />
+      </div>
+      <div
+        class="field ArchetypesIntegerWidget "
+        id="archetypes-fieldname-data-e-hora"
+        data-uid="96f46bd0f5474dc38673354e9e380ad6"
+        data-fieldname="data-e-hora"
+      >
+        <span></span>
+        <label class="formQuestion" for="data-e-hora">
+          Data e Hora
+          <span class="formHelp" id="data-e-hora_help"></span>
+        </label>
+        <div class="fieldErrorBox"></div>
+        <input
+          class="blurrable firstToFocus"
+          readonly
+          type="text"
+          name="data-e-hora"
+          size=""
+          id="data-e-hora"
+          placeholder=""
+          maxlength="False"
+        />
+      </div>
+    </fieldset>
+    <div
+      class="field ArchetypesTextAreaWidget "
+      id="archetypes-fieldname-comentarios"
+      data-uid="96f46bd0f5474dc38673354e9e380ad6"
+      data-fieldname="comentarios"
+    >
+      <span></span>
+      <label class="formQuestion" for="comentarios">
+        Comentários
+        <span class="formHelp" id="comentarios_help"></span>
+      </label>
+      <div class="fieldErrorBox"></div>
+      <textarea
+        class="blurrable firstToFocus"
+        name="comentarios"
+        id="comentarios"
+        cols="40"
+        rows="5"
+        placeholder=""
+      ></textarea>
+    </div>
+  </div>
+  <div class="formControls">
+    <input type="hidden" name="fieldset" value="default" />
+    <input type="hidden" name="form.submitted" value="1" />
+    <input type="hidden" name="add_reference.field:record" value="" />
+    <input type="hidden" name="add_reference.type:record" value="" />
+    <input type="hidden" name="add_reference.destination:record" value="" />
+    <input
+      type="hidden"
+      name="last_referer"
+      value="https://portalpreprd.metodista.br/Metodista"
+    />
+    <input
+      type="hidden"
+      name="_authenticator"
+      value="a35ad8a20a660c774f4ecb034947b0106ba1195e"
+    />
+    <input
+      class="context btn plone-btn-block plone-btn-warning"
+      type="submit"
+      name="form_submit"
+      value="Enviar"
+    />
+  </div>
+</form>
+
+
     </div>
     </div>
   </div>
