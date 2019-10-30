@@ -4124,10 +4124,9 @@ form#lista-integracao-form
 
 div.theme-input-group button i.material-icons {
   font-size: 16px;
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  display: block;
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
 }
 
 div.theme-input-group button {
@@ -4189,18 +4188,22 @@ div#lista-integracao-sucessmsg {
 
     /* HOME INSCRIÇÕES */
 
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 .mosaic-tile-content,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div{
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div{
     overflow: hidden;
 }
 
-.mosaic-grid-row.inscricoes-abertas2 {
+.mosaic-grid-row.bolsas-intercambio {
+  margin-bottom: 30px;
+}
+
+.mosaic-grid-row.inscricoes-abertas {
     margin-bottom: 30px;
 }
 
-div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content {
+div.mosaic-grid-row.inscricoes-abertas div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content {
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     color:#FFFFFF;
@@ -4217,21 +4220,21 @@ div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4597d6', endColorstr='#00539b', GradientType=1 );
 }
 
-div.inscricoes-abertas2 ins.fas {
+div.inscricoes-abertas ins.fas {
     text-decoration: none;
 }
 
-div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(2) {
+div.inscricoes-abertas div.mosaic-tile-content p:nth-child(2) {
     font-size: 32px;
     color: #ffffff;
 }
 
-div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(3) {
+div.inscricoes-abertas div.mosaic-tile-content p:nth-child(3) {
     font-size: 15px;
     color: #ffffff;
 }
 
-div.inscricoes-abertas2 ins.fas:before {
+div.inscricoes-abertas ins.fas:before {
     font-size: 10em;
     position: absolute;
     bottom: 60px;
@@ -4239,7 +4242,7 @@ div.inscricoes-abertas2 ins.fas:before {
     color: #ffffff36;
 }
 
-div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
+div.inscricoes-abertas .mosaic-tile-content a:last-of-type {
 	display: block;
     background: #252525;
     text-align: center;
@@ -4251,17 +4254,17 @@ div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
     bottom: 40px;
 }
 
-div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type:hover {
+div.inscricoes-abertas .mosaic-tile-content a:last-of-type:hover {
     background: #252525c2;
     transition: 0.4s;
 }
 
 
-div.inscricoes-abertas2 p a:last-of-type {
+div.inscricoes-abertas p a:last-of-type {
     color: #fff !important;
 }
 
-div.inscricoes-abertas2 p a:last-of-type:hover {
+div.inscricoes-abertas p a:last-of-type:hover {
     text-decoration: none;
 }
 
@@ -4803,6 +4806,10 @@ div.inscricoes-abertas2 p a:last-of-type:hover {
     display: none;
   }
 
+  body:not(.section-noticias) .at-share-dock-outer.addthis-smartlayers.addthis-smartlayers-mobile{
+    display: none;
+  }
+
   .addthis-smartlayers,
   div#at4-follow,
   div#at4-share,
@@ -4879,18 +4886,18 @@ div.inscricoes-abertas2 p a:last-of-type:hover {
 
   /* HOME INSCRIÇÕES */
 
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 .mosaic-tile-content,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
-body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div{
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div{
     overflow: hidden;
 }
 
-.mosaic-grid-row.inscricoes-abertas2 {
+.mosaic-grid-row.inscricoes-abertas {
     margin-bottom: 30px;
 }
 
-div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content {
+div.mosaic-grid-row.inscricoes-abertas div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content {
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     color:#FFFFFF;
@@ -4907,21 +4914,21 @@ div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4597d6', endColorstr='#00539b', GradientType=1 );
 }
 
-div.inscricoes-abertas2 ins.fas {
+div.inscricoes-abertas ins.fas {
     text-decoration: none;
 }
 
-div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(2) {
+div.inscricoes-abertas div.mosaic-tile-content p:nth-child(2) {
     font-size: 32px;
     color: #ffffff;
 }
 
-div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(3) {
+div.inscricoes-abertas div.mosaic-tile-content p:nth-child(3) {
     font-size: 15px;
     color: #ffffff;
 }
 
-div.inscricoes-abertas2 ins.fas:before {
+div.inscricoes-abertas ins.fas:before {
     font-size: 10em;
     position: absolute;
     bottom: 60px;
@@ -4929,7 +4936,7 @@ div.inscricoes-abertas2 ins.fas:before {
     color: #ffffff36;
 }
 
-div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
+div.inscricoes-abertas .mosaic-tile-content a:last-of-type {
 	display: block;
     background: #252525;
     text-align: center;
@@ -4941,17 +4948,17 @@ div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
     bottom: 40px;
 }
 
-div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type:hover {
+div.inscricoes-abertas .mosaic-tile-content a:last-of-type:hover {
     background: #252525c2;
     transition: 0.4s;
 }
 
 
-div.inscricoes-abertas2 p a:last-of-type {
+div.inscricoes-abertas p a:last-of-type {
     color: #fff !important;
 }
 
-div.inscricoes-abertas2 p a:last-of-type:hover {
+div.inscricoes-abertas p a:last-of-type:hover {
     text-decoration: none;
 }
 
