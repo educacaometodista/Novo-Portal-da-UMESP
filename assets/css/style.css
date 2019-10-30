@@ -4144,6 +4144,9 @@ div#lista-integracao-sucessmsg {
 }
 
 @media only screen and (max-width: 767px) {
+  body:not(.section-noticias) div#at-share-dock {
+    display: none;
+  }
   #portal-logo {
     float: left;
     width: 100%;
@@ -4710,10 +4713,6 @@ div#lista-integracao-sucessmsg {
   /* Botão AddThis */
 
   body:not(.section-noticias) div#at4-share {
-    display: none;
-  }
-
-  body:not(.section-noticias) div#at-share-dock {
     display: none;
   }
 
@@ -5318,7 +5317,6 @@ div.inscricoes-abertas2 p a:last-of-type:hover {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
-    min-height: 120px;
   }
   body.section-enade .container-fluid.nopadding .contagem {
     padding-top: 92px;
