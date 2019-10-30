@@ -4886,6 +4886,9 @@ body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div.mos
 body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas div{
     overflow: hidden;
 }
+body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas .mosaic-grid-cell .movable.removable.mosaic-tile{
+	position: relative;
+	}
 
 .mosaic-grid-row.inscricoes-abertas {
     margin-bottom: 30px;
@@ -4932,18 +4935,21 @@ div.inscricoes-abertas ins.fas:before {
 
 div.inscricoes-abertas .mosaic-tile-content a:last-of-type {
 	display: block;
-    background: #252525;
+    /*background: #252525;*/
+	background: rgba(37, 37, 37, 0.7);
     text-align: center;
     border-radius: 5px;
     padding: 6px 0px 3px 0px;
     width: 80%;
+    left: 10%;
     margin-top: 15px;
     position: absolute;
     bottom: 40px;
 }
 
 div.inscricoes-abertas .mosaic-tile-content a:last-of-type:hover {
-    background: #252525c2;
+    /*background: #252525c2;*/
+	background: rgba(37, 37, 37, 0.9);
     transition: 0.4s;
 }
 
