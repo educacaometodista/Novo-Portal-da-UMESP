@@ -24,7 +24,7 @@
     <!--<after css:theme-children="head" css:content="head link" />-->
     <before css:theme="head .customcss" css:content="head link" />
     <after css:theme-children="head" css:content="head style" />
-
+    
     <!-- Script -->
     <after css:theme-children="head" css:content="head script" />
   </rules>
@@ -32,7 +32,7 @@
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
-  <!-- move global nav
+  <!-- move global nav 
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 -->
   <!-- move hero to top -->
@@ -45,7 +45,7 @@
 
   <drop css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider "/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider" />
-
+       
     <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />-->
 
@@ -73,11 +73,11 @@
        <replace css:theme-children=".tit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-
+      
        <!--<replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade .mosaic-grid-row.contador-enade" />-->
        <replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
-
-
+       
+       
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
@@ -101,12 +101,12 @@
        <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
 	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
 	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-
+       
      <drop css:content="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador"/>
 <!--       <drop css:content="body.section-enade .mosaic-grid-row.contador-enade"/>-->
-
+       
        <!-- replace css:theme-children=".banner-fluido-novo" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>-->
-
+       
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-financeiro" css:content-children="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
@@ -153,15 +153,14 @@
        <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-
-
+       
 <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".documentFirstHeading" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
-
+       
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />-->
-
-
+       
+        
   <!-- Central column -->
   <replace css:theme="#content-container" method="raw">
 
@@ -191,6 +190,7 @@
 
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
+<<<<<<< HEAD
 
       <!-- Remoção da primeira coluna de portlet caso esteja logado (descomentar a linha abaixo para ativar) -->
       <!-- <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated"> -->
@@ -206,6 +206,19 @@
           </aside>
         </div>
       </replace>
+=======
+    <replace css:theme="#column1-container">
+      <xsl:variable name="columnone">
+        <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
+      </xsl:variable>
+      <div class="{$columnone} sidebar-offcanvas">
+        <aside id="portal-column-one">
+          <xsl:copy-of css:select="#portal-column-one > *" />
+        </aside>
+      </div>
+    </replace>
+>>>>>>> parent of 3e4935e... Drop no formgen para solução de bugs
   </rules>
 
   <!-- Right column -->
@@ -281,7 +294,7 @@
                       </li>
                     </xsl:for-each>
                   </ul>
-                </xsl:when>
+                </xsl:when> 
                 <xsl:otherwise>
                   <xsl:apply-templates css:select=".portletContent" />
                 </xsl:otherwise>
