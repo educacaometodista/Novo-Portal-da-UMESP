@@ -154,7 +154,6 @@
 	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 
-
 <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".documentFirstHeading" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
@@ -190,17 +189,17 @@
 
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
-      <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated">
-        <xsl:variable name="columnone">
-          <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
-          <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
-        </xsl:variable>
-        <div class="{$columnone} sidebar-offcanvas">
-          <aside id="portal-column-one">
-            <xsl:copy-of css:select="#portal-column-one > *" />
-          </aside>
-        </div>
-      </replace>
+    <replace css:theme="#column1-container">
+      <xsl:variable name="columnone">
+        <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
+      </xsl:variable>
+      <div class="{$columnone} sidebar-offcanvas">
+        <aside id="portal-column-one">
+          <xsl:copy-of css:select="#portal-column-one > *" />
+        </aside>
+      </div>
+    </replace>
   </rules>
 
   <!-- Right column -->
