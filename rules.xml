@@ -64,7 +64,7 @@
        <replace css:theme-children=".tit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
        <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
        <replace css:theme-children=".tit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-assessoria-pedagogica-para-inclusao" css:content-children="body.section-assessoria-pedagogica-para-inclusao .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+       <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
        <replace css:theme-children=".tit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
        <replace css:theme-children=".tit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
        <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
@@ -92,7 +92,7 @@
        <drop css:content="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-assessoria-pedagogica-para-inclusao .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+       <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
        <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
@@ -120,7 +120,7 @@
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-eventos" css:content-children="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-assessoria-pedagogica-para-inclusao" css:content-children="body.section-assessoria-pedagogica-para-inclusao .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+       <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
@@ -141,7 +141,7 @@
        <drop css:content="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-pedagogica-para-inclusao .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+       <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-assessoria-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-assessoria-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-assessoria-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
@@ -157,7 +157,6 @@
 
 <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".documentFirstHeading" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
-
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />-->
 
@@ -191,11 +190,7 @@
 
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
-
-      <!-- Remoção da primeira coluna de portlet caso esteja logado (descomentar a linha abaixo para ativar) -->
-      <!-- <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated"> -->
-
-      <replace css:theme="#column1-container"
+      <replace css:theme="#column1-container" css:if-not-content="body.userrole-authenticated">
         <xsl:variable name="columnone">
           <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
           <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
