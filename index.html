@@ -314,8 +314,6 @@
                 title="Agência Metodista de Consultoria">Agência Metodista de Consultoria</a></li>
             <li><a target="_self" href="https://portalpreprd.metodista.br/Metodista/metodista-lab.com/metodista-lab.com"
                 title="Agência Integrada de Comunicação">Agência Integrada de Comunicação</a></li>
-            <li><a target="_self" href="https://portalpreprd.metodista.br/Metodista/assessoria-pedagogica-para-inclusao"
-                title="Assessoria de Inclusão">Assessoria de Inclusão</a></li>
             <li><a
                 target="_self" href="https://portalpreprd.metodista.br/Metodista/graduacao-presencial/direito/nucleo-de-praticas-juridicas"
                 title="Assistência Jurídica">Assistência Jurídica</a></li>
@@ -335,6 +333,8 @@
             <li><a
                 target="_self" href="https://portalpreprd.metodista.br/Metodista/graduacao-presencial/medicina-veterinaria/infraestrutura"
                 title="Hospital Veterinário">Hospital Veterinário</a></li>
+			<li><a target="_self" href="https://portalpreprd.metodista.br/Metodista/nucleo-de-acessibilidade"
+                title="Núcleo de Acessibilidade">Núcleo de Acessibilidade</a></li>
             <li><a target="_self" href="https://portalpreprd.metodista.br/Metodista/nucleo-de-arte-e-cultura"
                 title="Núcleo de Arte e Cultura">Núcleo de Arte e Cultura</a></li>
             <li><a target="_self" href="https://portalpreprd.metodista.br/Metodista/policlinica"
@@ -703,21 +703,16 @@
     $('#ouibounce-modal .modal').on('click', function (e) {
       e.stopPropagation();
     });
-
     window.onload = function() {
     var leadsContact = document.querySelector('body.userrole-authenticated section.portlet.portletStaticText.portlet-static-receba-informaes');
-
     if (!leadsContact == '') { leadsContact.remove() }
-
     var random= Math.floor(Math.random() * 4) + 0;
     var bigSize = ["url('https://portalpreprd.metodista.br/Metodista/++theme++portal-umesp/assets/img/bg/umesp1.jpg')",
                   "url('https://portalpreprd.metodista.br/Metodista/++theme++portal-umesp/assets/img/bg/umesp2.jpg')",
                   "url('https://portalpreprd.metodista.br/Metodista/++theme++portal-umesp/assets/img/bg/umesp3.jpg')",
                   "url('https://portalpreprd.metodista.br/Metodista/++theme++portal-umesp/assets/img/bg/umesp3.jpg')"]
     document.querySelector("body.section-home .outer-wrapper > .container .destaqueshome.mosaic-grid-row-fluid").style.backgroundImage=bigSize[random];
-
     }
-
   </script>
 
   <!-- ======= AddThis JS ======= -->
