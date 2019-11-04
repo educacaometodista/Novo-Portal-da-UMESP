@@ -529,7 +529,7 @@ body:not(.userrole-authenticated).section-pastoral-universitaria #content,
 body:not(.userrole-authenticated).section-eventos #content,
 body:not(.userrole-authenticated).section-institucional #content,
 body:not(.userrole-authenticated).section-extensao #content,
-body:not(.userrole-authenticated).section-assessoria-pedagogica-para-inclusao
+body:not(.userrole-authenticated).section-nucleo-de-acessibilidade
   #content,
 body:not(.userrole-authenticated).section-policlinica #content,
 body:not(.userrole-authenticated).section-biblioteca #content,
@@ -677,7 +677,7 @@ body.section-eventos .plone-breadcrumb,
 body.section-rh-rapido .plone-breadcrumb,
 body.section-area-do-aluno .plone-breadcrumb,
 body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
-body.section-assessoria-pedagogica-para-inclusao .plone-breadcrumb,
+body.section-nucleo-de-acessibilidade .plone-breadcrumb,
 body.section-policlinica .plone-breadcrumb,
 body.section-biblioteca .plone-breadcrumb,
 body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
@@ -743,7 +743,7 @@ body.userrole-authenticated.section-eventos .plone-breadcrumb,
 body.userrole-authenticated.section-rh-rapido .plone-breadcrumb,
 body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb,
 body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
-body.userrole-authenticated.section-assessoria-pedagogica-para-inclusao
+body.userrole-authenticated.section-nucleo-de-acessibilidade
   .plone-breadcrumb,
 body.userrole-authenticated.section-policlinica .plone-breadcrumb,
 body.userrole-authenticated.section-biblioteca .plone-breadcrumb,
@@ -771,7 +771,7 @@ body.section-eventos .container-fluid.nopadding,
 body.section-rh-rapido .container-fluid.nopadding,
 body.section-area-do-aluno .container-fluid.nopadding,
 body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
-body.section-assessoria-pedagogica-para-inclusao .container-fluid.nopadding,
+body.section-nucleo-de-acessibilidade .container-fluid.nopadding,
 body.section-policlinica .container-fluid.nopadding,
 body.section-biblioteca .container-fluid.nopadding,
 body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
@@ -1942,6 +1942,12 @@ body.section-graduacao-presencial.subsection-relacoes-internacionais
     no-repeat center;
   background-size: cover;
 }
+body.section-graduacao-presencial.subsection-producao-multimidia
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-presencial/producao-multimidia/imagens/topo-producao-multimidia.jpg)
+    no-repeat center;
+  background-size: cover;
+}
 
 /* IMAGENS DE GRADUAÇÃO A DISTÂNCIA */
 body.section-graduacao-a-distancia .container-fluid.nopadding {
@@ -2151,6 +2157,31 @@ body.section-graduacao-a-distancia.subsection-matematica
 /* STRICTO-SENSU*/
 body.section-stricto-sensu.site-Metodista .container-fluid.nopadding {
   background: url(/Metodista/stricto-sensu/imagens/bg-stricto.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+body.section-stricto-sensu.site-Metodista.subsection-administracao .container-fluid.nopadding {
+  background: url(/Metodista/stricto-sensu/administracao/imagens/administracao.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+body.section-stricto-sensu.site-Metodista.subsection-ciencias-da-religiao .container-fluid.nopadding {
+  background: url(/Metodista/stricto-sensu/ciencias-da-religiao/imagens/ciencias-da-religiao.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+body.section-stricto-sensu.site-Metodista.subsection-comunicacao-social .container-fluid.nopadding {
+  background: url(/Metodista/stricto-sensu/comunicacao-social/imagens/comunicacao-social.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+body.section-stricto-sensu.site-Metodista.subsection-educacao .container-fluid.nopadding {
+  background: url(/Metodista/stricto-sensu/educacao/imagens/educacao.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+body.section-stricto-sensu.site-Metodista.subsection-psicologia-da-saude .container-fluid.nopadding {
+  background: url(/Metodista/stricto-sensu/psicologia-da-saude/imagens/psicologia-da-saude.jpg) no-repeat
     center;
   background-size: cover;
 }
@@ -2528,9 +2559,9 @@ body.section-nucleo-de-arte-e-cultura.site-Metodista
 }
 
 /* ASSESSORIA PEDAGÓGICA */
-body.section-assessoria-pedagogica-para-inclusao.site-Metodista
+body.section-nucleo-de-acessibilidade.site-Metodista
   .container-fluid.nopadding {
-  background: url(/Metodista/assessoria-pedagogica-para-inclusao/imagens/assessoria-pedagogica-para-inclusao.jpg)
+  background: url(/Metodista/nucleo-de-acessibilidade/imagens/assessoria-pedagogica-para-inclusao.jpg)
     no-repeat center;
   background-size: cover;
 }
@@ -2655,7 +2686,7 @@ body.userrole-authenticated .container-fluid.nopadding
     body.section-centro-de-linguas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
     body.section-formaturas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
     body.section-pastoral-universitaria .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-assessoria-pedagogica-para-inclusao */
+     */
 .container-fluid.nopadding
   .banner-fluido-novo
   .tit-grad
@@ -2996,7 +3027,6 @@ body:not(.userrole-authenticated).section-lato-sensu
   .mosaic-tile-content {
 }
 /*.mosaic-grid-row.curoslato.mosaic-grid-row-fluid {
-
         background: #e4e4e4 !important;
     }*/
 body.template-layout.no-portlet-columns
