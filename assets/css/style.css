@@ -15,7 +15,8 @@
     */
 
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600");
-@import url("https://fonts.googleapis.com/css?family=Parisienne");
+/*@import url("https://fonts.googleapis.com/css?family=Parisienne");*/
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Zeyada&display=swap");
 
 p.facebookModal {
@@ -59,7 +60,6 @@ button.envia-form:hover {
   width: 600px;
   height: 400px;
   background-color: #f0f1f2;
-  z-index: 1;
   position: absolute;
   z-index: 9999;
   display: block;
@@ -167,9 +167,7 @@ button.envia-form {
 
 .barra-institucional,
 #portal-searchbox .searchSection,
-body:not(.userrole-authenticated).section-enade
-  aside#portal-column-one
-  #portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f4d65746f64697374612f656e6164650a636f6e7461646f72 {
+body:not(.userrole-authenticated).section-enade aside#portal-column-one #portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f4d65746f64697374612f656e6164650a636f6e7461646f72 {
   display: none;
 }
 
@@ -321,14 +319,10 @@ section.portletContent .pfg-form.formid-leads-captacao {
 fieldset#pfg-fieldsetname-formulario-leads .fieldErrorBox {
   height: 1px;
 }
-.portlet.portletStaticText.portlet-static-receba-informaes
-  header.portletHeader {
+.portlet.portletStaticText.portlet-static-receba-informaes header.portletHeader {
   background: #01396d;
 }
-section.portletContent
-  .pfg-form.formid-leads-captacao
-  .formControls
-  input[type="submit"] {
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"] {
   /*background: #ffd421;*/
   background: rgb(255, 212, 33);
   background: linear-gradient(
@@ -348,10 +342,7 @@ section.portletContent
   text-align: center;
   transition: 0.3s;
 }
-section.portletContent
-  .pfg-form.formid-leads-captacao
-  .formControls
-  input[type="submit"]:hover {
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"]:hover{
   /*background: rgb(255,212,33);
     background: linear-gradient(90deg, rgba(255,230,124,1) 0%, rgba(255,212,33,1) 50%, rgba(255,230,124,1) 100%);*/
   opacity: 0.9;
@@ -361,31 +352,11 @@ section.portletContent
   border: none;
 }
 
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-footer,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-header,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-title,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-body,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-content {
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-header,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-title,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
   padding-left: 0px;
   text-align: center;
   color: #fff;
@@ -393,29 +364,16 @@ body:not(.userrole-authenticated)
   border-top: 0px !important;
 }
 
-body:not(.userrole-authenticated).portaltype-folder.section-lato-sensu
-  .container
+body:not(.userrole-authenticated).portaltype-folder.section-lato-sensu .container
   #main-container
   footer
   nav#category {
   display: none;
 }
 
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-footer,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-body,
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-content {
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
   padding-left: 22px;
   display: contents;
 }
@@ -424,11 +382,7 @@ body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in {
   background: rgba(0, 0, 0, 0.2);
 }
 
-body:not(.userrole-authenticated)
-  .plone-modal-wrapper
-  .plone-modal.fade.in
-  .plone-modal-dialog
-  .plone-modal-content {
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
   background: rgba(2, 104, 199, 1);
   background: -moz-radial-gradient(
     center,
@@ -509,10 +463,7 @@ body.section-home nav.plone-navbar {
   margin-bottom: 0;
 }
 
-body:not(.userrole-authenticated).section-rh-rapido.template-layout.no-portlet-columns
-  .outer-wrapper
-  > .container
-  .mosaic-grid-row.fundobranco {
+body:not(.userrole-authenticated).section-rh-rapido.template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.fundobranco {
   width: 1140px;
   background: #fff;
   padding: 15px 0;
@@ -529,8 +480,7 @@ body:not(.userrole-authenticated).section-pastoral-universitaria #content,
 body:not(.userrole-authenticated).section-eventos #content,
 body:not(.userrole-authenticated).section-institucional #content,
 body:not(.userrole-authenticated).section-extensao #content,
-body:not(.userrole-authenticated).section-nucleo-de-acessibilidade
-  #content,
+body:not(.userrole-authenticated).section-nucleo-de-acessibilidade #content,
 body:not(.userrole-authenticated).section-policlinica #content,
 body:not(.userrole-authenticated).section-biblioteca #content,
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
@@ -538,41 +488,29 @@ body:not(.userrole-authenticated).section-gestao-de-cidades #content,
 body:not(.userrole-authenticated).section-unesco #content,
 body:not(.userrole-authenticated).section-academia-escola #content,
 body:not(.userrole-authenticated).section-enade #content,
-body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria
-  #content,
+body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria #content,
 body:not(.userrole-authenticated).section-conselho-universitario #content,
 body:not(.userrole-authenticated).section-rh-rapido #content,
 body:not(.userrole-authenticated).section-area-do-aluno #content,
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre
-  #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques
-  #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publicacoes
-  #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio
-  #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos
-  #content,
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  .mosaic-grid-row.apresentacao-teologia
-  .mosaic-grid-cell.mosaic-width-full
-  .mosaic-tile-content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publicacoes #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.apresentacao-teologia .mosaic-grid-cell.mosaic-width-full .mosaic-tile-content,
 body:not(.userrole-authenticated).section-centro-otilia-chaves #content,
-body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos
-  #content {
+body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content {
   background: #fff;
   padding: 15px;
   border-radius: 4px;
 }
 
-body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre-fale-conosco
-  #content {
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre-fale-conosco #content {
   background: transparent;
   padding: 0;
 }
-body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencial
-  #content {
+body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencial #content {
   background: transparent;
 }
 
@@ -638,11 +576,7 @@ section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
   text-align: center;
 }
 
-.mosaic-grid-row.personal-toogle
-  .mosaic-grid-cell
-  .mosaic-tile
-  .mosaic-tile-content
-  a.botao-toogle {
+.mosaic-grid-row.personal-toogle .mosaic-grid-cell .mosaic-tile .mosaic-tile-content a.botao-toogle {
   background: #153f67;
   border: none;
   display: block;
@@ -652,11 +586,7 @@ section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
   text-align: center;
   padding: 8px 5px;
 }
-.mosaic-grid-row.personal-toogle
-  .mosaic-grid-cell
-  .mosaic-tile
-  .mosaic-tile-content
-  a.botao-toogle:hover {
+.mosaic-grid-row.personal-toogle .mosaic-grid-cell .mosaic-tile .mosaic-tile-content a.botao-toogle:hover {
   background: #0f2f4e;
   text-decoration: none;
 }
@@ -693,27 +623,13 @@ body:not(.userrole-authenticated).section-financeiro #content,
 body:not(.userrole-authenticated).section-institucional #content,
 body:not(.userrole-authenticated).section-area-do-aluno #content,
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
-body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais
-  #content,
+body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content,
 body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content,
-body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa
-  #content
-  .mosaic-grid-row.fundo-branco
-  .mosaic-grid-cell
-  .mosaic-tile
-  .mosaic-tile-content,
-body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa
-  #content
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-grid-cell
-  .mosaic-tile
-  .mosaic-tile-content
-  dl,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.fundo-branco .mosaic-grid-cell .mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl,
 body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row,
-body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document
-  #content,
-body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu
-  #content {
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document #content,
+body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu #content {
   background: #fff;
   padding: 15px;
   border-radius: 4px;
@@ -722,8 +638,7 @@ body.userrole-authenticated .label {
   color: #4d4d4d;
 }
 
-body:not(.userrole-authenticated).no-portlet-columns.section-pos-graduacao-e-pesquisa
-  #content
+body:not(.userrole-authenticated).no-portlet-columns.section-pos-graduacao-e-pesquisa #content
   .mosaic-grid-row
   .mosaic-grid-cell {
   padding: 0;
@@ -743,18 +658,15 @@ body.userrole-authenticated.section-eventos .plone-breadcrumb,
 body.userrole-authenticated.section-rh-rapido .plone-breadcrumb,
 body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb,
 body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
-body.userrole-authenticated.section-nucleo-de-acessibilidade
-  .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-acessibilidade .plone-breadcrumb,
 body.userrole-authenticated.section-policlinica .plone-breadcrumb,
 body.userrole-authenticated.section-biblioteca .plone-breadcrumb,
 body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
 body.userrole-authenticated.section-academia-escola .plone-breadcrumb,
 body.userrole-authenticated.section-enade .plone-breadcrumb,
-body.userrole-authenticated.section-agencia-metodista-de-consultoria
-  .plone-breadcrumb,
+body.userrole-authenticated.section-agencia-metodista-de-consultoria .plone-breadcrumb,
 body.userrole-authenticated.section-centro-otilia-chaves .plone-breadcrumb,
-body.userrole-authenticated.section-centro-de-estudos-wesleyanos
-  .plone-breadcrumb {
+body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
   margin-bottom: 20px;
 }
 body.section-graduacao-presencial .container-fluid.nopadding,
@@ -807,233 +719,53 @@ body.section-graduacao-presencial .mosaic-tile-content iframe {
 
 /*Graduação Presencial/Notícias */
 
-body.section-graduacao-presencial
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt,
-body.section-pos-graduacao-e-pesquisa
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt {
   border-bottom: solid 1px #e3ecf5;
   padding: 10px 0;
 }
-
 .section-noticias main#main-container footer.row {
   display: none;
 }
-
-body.section-graduacao-presencial
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-graduacao-presencial
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-graduacao-presencial
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-pos-graduacao-e-pesquisa
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-pos-graduacao-e-pesquisa
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-pos-graduacao-e-pesquisa
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-graduacao-a-distancia
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-graduacao-a-distancia
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-graduacao-a-distancia
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dd,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .summary
-  img,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dl
-  dt
-  .documentByLine {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine {
   display: none;
 }
-body.section-graduacao-presencial
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dt
-  .summary:before,
-body.section-graduacao-a-distancia
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dt
-  .summary:before,
-body.section-pos-graduacao-e-pesquisa
-  .mosaic-grid-row.colecao-noticias-graduacao
-  .mosaic-tile-content
-  dt
-  .summary:before,
-body.section-noticias
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dt
-  .summary:before,
-body.section-gestao-de-cidades
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dt
-  .summary:before,
-body.section-unesco
-  .mosaic-grid-row.colecao-noticias
-  .mosaic-tile-content
-  dt
-  .summary:before {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before {
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1051,23 +783,12 @@ body.section-unesco
 
 /* REFLEXÕES DA PASTORAL */
 
-body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes
-  .mosaic-grid-row.notocias-pastoral
-  .mosaic-tile-content
-  dl
-  dt
-  span.documentByLine,
-body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes
-  .mosaic-grid-row.notocias-pastoral
-  .mosaic-tile-content
-  dl
-  dd {
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dt span.documentByLine,
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dd {
   display: none;
 }
 
-body:not(.userrole-authenticated).section-pastoral-universitaria
-  .portlet.portletStaticText.portlet-static-pastoral-universitria
-  header.portletHeader:before {
+body:not(.userrole-authenticated).section-pastoral-universitaria .portlet.portletStaticText.portlet-static-pastoral-universitria header.portletHeader:before {
   content: " ";
   background-image: url("/Metodista/pastoral-universitaria//imagens/logo_pastoral-pb.png");
   background-repeat: no-repeat;
@@ -1078,27 +799,15 @@ body:not(.userrole-authenticated).section-pastoral-universitaria
   margin-right: 5px;
 }
 
-body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes
-  .mosaic-grid-row.notocias-pastoral
-  .mosaic-tile-content
-  dl
-  dt {
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dt {
   margin: 8px 0;
   padding-bottom: 8px;
   border-bottom: solid 1px #dfe6ec;
 }
-body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes
-  .mosaic-grid-row.notocias-pastoral
-  .mosaic-tile-content
-  dl
-  dt:first-of-type {
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dt:first-of-type {
   margin-top: 0;
 }
-body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes
-  .mosaic-grid-row.notocias-pastoral
-  .mosaic-tile-content
-  dl
-  dt:last-of-type {
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dt:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
@@ -1106,56 +815,32 @@ body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-refl
 
 /* FACULDADE DE TEOLOGIA */
 
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  #main-container
-  h2,
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  #main-container
-  h3,
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  #main-container
-  h4,
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  #main-container
-  h5,
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  #main-container
-  h6 {
+body:not(.userrole-authenticated).section-faculdade-de-teologia #main-container h2,
+body:not(.userrole-authenticated).section-faculdade-de-teologia #main-container h3,
+body:not(.userrole-authenticated).section-faculdade-de-teologia #main-container h4,
+body:not(.userrole-authenticated).section-faculdade-de-teologia #main-container h5,
+body:not(.userrole-authenticated).section-faculdade-de-teologia #main-container h6 {
   color: #afa16d;
 }
 body:not(.userrole-authenticated).section-faculdade-de-teologia article a {
   color: #a09772;
 }
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  article
-  a:hover {
+body:not(.userrole-authenticated).section-faculdade-de-teologia article a:hover {
   color: #404040;
   text-decoration: none;
 }
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  ul {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  ul
-  li {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content ul li {
   margin: 0;
   padding: 0;
 }
 
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  ul
-  li
-  a {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content ul li a {
   display: block;
   font-family: "Oswald", sans-serif;
   margin: 10px 0 5px;
@@ -1166,65 +851,40 @@ body:not(.userrole-authenticated).section-faculdade-de-teologia
   text-transform: uppercase;
   text-align: center;
 }
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  ul
-  li
-  a:hover {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content ul li a:hover {
   background: #9e9266;
   text-decoration: none;
   border: none;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.projetos-fateo-home
-  .mosaic-grid-cell.mosaic-position-leftmost.mosaic-width-third
-  .mosaic-tile-content {
+body.section-faculdade-de-teologia .mosaic-grid-row.projetos-fateo-home .mosaic-grid-cell.mosaic-position-leftmost.mosaic-width-third .mosaic-tile-content {
   background: #fff;
   padding: 15px;
   border-radius: 4px;
 }
 
-body.section-faculdade-de-teologia
-  .destaques-fateo
-  .tileItem.visualIEFloatFix
-  h2.tileHeadline
-  a {
+body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h2.tileHeadline a {
   color: #827958;
 }
-body.section-faculdade-de-teologia
-  .destaques-fateo
-  .tileItem.visualIEFloatFix
-  h2.tileHeadline
-  a:hover {
+body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h2.tileHeadline a:hover {
   color: #404040;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half {
   padding: 0;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile:nth-child(0n + 1) {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile:nth-child(0n + 1) {
   background: #fff;
   border-radius: 4px;
   padding: 15px;
   margin: 0 15px;
 }
 
-body:not(.userrole-authenticated).section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia {
+body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia {
   margin-top: 30px;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia
-  .mosaic-tile-content
-  a {
+body.section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia .mosaic-tile-content a {
   display: block;
   background: rgb(205, 205, 205);
   background: linear-gradient(
@@ -1246,38 +906,17 @@ body.section-faculdade-de-teologia
   -moz-box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.33);
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia
-  .mosaic-tile-content
-  a
-  ins,
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia
-  .mosaic-tile-content
-  a:hover,
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia
-  .mosaic-tile-content
-  a:active {
+body.section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia .mosaic-tile-content a ins,
+body.section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia .mosaic-tile-content a:hover,
+body.section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia .mosaic-tile-content a:active {
   text-decoration: none !important;
   border: none;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.bt-home-teologia
-  .mosaic-tile-content
-  a:hover,
-.mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  a.link-publica-teologia:hover,
-.mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  a.link-publica-teologia2:hover,
-.mosaic-grid-row.projetos-fateo-home
-  .publica-teologia
-  a.link-publica-teologia:hover,
-.mosaic-grid-row.projetos-fateo-home
-  .publica-teologia
-  a.link-publica-teologia2:hover {
+body.section-faculdade-de-teologia .mosaic-grid-row.bt-home-teologia .mosaic-tile-content a:hover,
+.mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia:hover,
+.mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia2:hover,
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia:hover,
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2:hover {
   background: rgb(196, 196, 196);
   background: linear-gradient(
     90deg,
@@ -1306,11 +945,7 @@ body.section-faculdade-de-teologia
   );
 }
 
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  h3 {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia h3 {
   font-size: 30px;
   color: #afa16d;
   text-align: center;
@@ -1320,16 +955,8 @@ body:not(.userrole-authenticated)
   text-transform: uppercase;
 }
 
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  h3:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  h3:after {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia h3:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia h3:after {
   border-top: 2px solid;
   content: "";
   display: table-cell;
@@ -1338,29 +965,15 @@ body:not(.userrole-authenticated)
   top: 0.5em;
   width: 47%;
 }
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  h3:after {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia h3:after {
   left: 1%;
 }
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  h3:before {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia h3:before {
   right: 1%;
 }
 
-.mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  a.link-curso-teologia,
-.mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  a.link-curso-teologia2 {
+.mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia a.link-curso-teologia,
+.mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia a.link-curso-teologia2 {
   display: inline-block;
   width: 49%;
   float: left;
@@ -1377,10 +990,7 @@ body:not(.userrole-authenticated)
   box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.33);
 }
 
-.mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .cursos-teologia
-  a.link-curso-teologia2 {
+.mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia a.link-curso-teologia2 {
   margin-left: 2%;
 }
 .mosaic-grid-row.blocos-teologia .mosaic-tile-content .cursos-teologia:after {
@@ -1399,10 +1009,7 @@ body:not(.userrole-authenticated)
   text-transform: uppercase;
 }
 .mosaic-grid-row.blocos-teologia h2.tileHeader,
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3 {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3 {
   font-size: 30px;
   margin-top: 15px;
   color: #afa16d;
@@ -1412,66 +1019,34 @@ body:not(.userrole-authenticated)
   text-transform: uppercase;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  .tileItem.visualIEFloatFix
-  h2.tileHeadline {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile .tileItem.visualIEFloatFix h2.tileHeadline {
   padding: 0 0 10px 0;
   margin: 10px 0 0;
   line-height: 1.3;
   font-size: 18px;
   border-bottom: solid 1px #ded7bf;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  div:last-child
-  .tileItem.visualIEFloatFix
-  h2.tileHeadline {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile .mosaic-tile-content div:last-child .tileItem.visualIEFloatFix h2.tileHeadline {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  .tileItem.visualIEFloatFix
-  h2
-  a.summary.url {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile .tileItem.visualIEFloatFix h2 a.summary.url {
   color: #827958;
   font-size: 18px;
   font-weight: 300;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  .tileItem.visualIEFloatFix
-  h2
-  a.summary.url:hover {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile .tileItem.visualIEFloatFix h2 a.summary.url:hover {
   text-decoration: none;
   color: #404040;
 }
 
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  h2.tileHeader {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile h2.tileHeader {
   margin-top: 0;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  a.mais-noticias-teologia {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile a.mais-noticias-teologia {
   display: inline-block;
   font-family: "Oswald", sans-serif;
   float: right;
@@ -1482,39 +1057,17 @@ body.section-faculdade-de-teologia
   border-radius: 4px;
   text-transform: uppercase;
 }
-body.section-faculdade-de-teologia
-  .mosaic-grid-row.blocos-teologia
-  .mosaic-grid-cell.mosaic-width-half.mosaic-position-half
-  .movable.removable.mosaic-tile
-  a.mais-noticias-teologia:hover {
+body.section-faculdade-de-teologia .mosaic-grid-row.blocos-teologia .mosaic-grid-cell.mosaic-width-half.mosaic-position-half .movable.removable.mosaic-tile a.mais-noticias-teologia:hover {
   background: #9e9266;
   text-decoration: none;
 }
 
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  h3:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  h3:after,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  h2.tileHeader:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  h2.tileHeader:after,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3:after {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .publica-teologia h3:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .publica-teologia h3:after,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia h2.tileHeader:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia h2.tileHeader:after,
+body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3:after {
   border-top: 2px solid;
   content: "";
   display: table-cell;
@@ -1522,48 +1075,25 @@ body:not(.userrole-authenticated)
   top: 0.5em;
   width: 47%;
 }
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  h3:after,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  h2.tileHeader:after,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3:after {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .publica-teologia h3:after,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia h2.tileHeader:after,
+body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3:after {
   left: 1%;
 }
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  .publica-teologia
-  h3:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.blocos-teologia
-  h2.tileHeader:before,
-body:not(.userrole-authenticated)
-  .mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3:before {
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .publica-teologia h3:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia h2.tileHeader:before,
+body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3:before {
   right: 1%;
 }
 
-.mosaic-grid-row.projetos-fateo-home
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3 {
+.mosaic-grid-row.projetos-fateo-home .movable.removable.mosaic-tile .mosaic-tile-content h3 {
   margin: 0 0 10px;
 }
 
 .mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia,
 .mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia2,
 .mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia,
-.mosaic-grid-row.projetos-fateo-home
-  .publica-teologia
-  a.link-publica-teologia2 {
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2 {
   display: block;
   float: left;
   width: 32%;
@@ -1588,21 +1118,14 @@ body:not(.userrole-authenticated)
   box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.33);
 }
 .mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia2,
-.mosaic-grid-row.projetos-fateo-home
-  .publica-teologia
-  a.link-publica-teologia2 {
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2 {
   margin-left: 2%;
 }
 .mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia,
-.mosaic-grid-row.projetos-fateo-home
-  .publica-teologia
-  a.link-publica-teologia2 {
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2 {
   margin-bottom: 25px;
 }
-.mosaic-grid-row.blocos-teologia
-  .mosaic-tile-content
-  .tileItem.visualIEFloatFix
-  a.summary-image {
+.mosaic-grid-row.blocos-teologia .mosaic-tile-content .tileItem.visualIEFloatFix a.summary-image {
   display: none;
 }
 
@@ -1615,10 +1138,7 @@ body:not(.userrole-authenticated)
   display: none;
 }
 
-.mosaic-grid-row.artigos-religiao
-  .mosaic-tile-content
-  .tileItem
-  h2.tileHeadline {
+.mosaic-grid-row.artigos-religiao .mosaic-tile-content .tileItem h2.tileHeadline {
   min-height: auto;
   margin: 0 0;
   /*border-bottom: solid 1px #e2e2e2;*/
@@ -1626,9 +1146,7 @@ body:not(.userrole-authenticated)
   font-size: 16px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.mosaic-grid-row.artigos-religiao
-  .mosaic-tile-content
-  div:nth-child(even)
+.mosaic-grid-row.artigos-religiao .mosaic-tile-content div:nth-child(even)
   .tileItem {
   background: #f1f1f1;
   border-radius: 4px;
@@ -1672,182 +1190,152 @@ body.section-graduacao-presencial .container-fluid.nopadding {
     no-repeat;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-gastronomia
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-gastronomia .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/gastronomia/imagens/topo-titulos.jpg)
     no-repeat;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-biomedicina
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-biomedicina .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/biomedicina/imagens/topo-biomedicina.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-ciencias-biologicas
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-ciencias-biologicas .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/ciencias-biologicas/imagens/topo-ciencias-bio.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-design-de-interiores
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-design-de-interiores .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/design-de-interiores/imagens/topo-design-de-interiores.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-direito
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-direito .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/direito/imagens/direito.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-administracao
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-administracao .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/administracao/imagens/topo-administracao.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-administracao-comercio-exterior
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-administracao-comercio-exterior .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/administracao-comercio-exterior/imagens/topo-comex.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-analise-e-desenvolvimento-de-sistemas
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-analise-e-desenvolvimento-de-sistemas .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/analise-e-desenvolvimento-de-sistemas/imagens/analise-desenvolvimento-sistemas.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-automacao-industrial
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-automacao-industrial .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/automacao-industrial/imagens/automacao-industrial.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-educacao-fisica
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-educacao-fisica .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/educacao-fisica/imagens/topo-educacao-fisica.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-ambiental-e-sanitaria
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-ambiental-e-sanitaria .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-ambiental-e-sanitaria/imagens/topo-engenharia-ambiental.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-civil
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-civil .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-civil/imagens/topo-engenharia-civil.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-da-computacao
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-da-computacao .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-da-computacao/imagens/topo-engenharia-da-computacao.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-de-producao
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-de-producao .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-de-producao/imagens/topo-engenharia-producao.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-eletronica
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-eletronica .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-eletronica/imagens/topo-engenharia-eletronica.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-engenharia-eletronica
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-engenharia-eletronica .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/engenharia-eletronica/imagens/topo-engenharia-eletronica.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-estetica-e-cosmetica
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-estetica-e-cosmetica .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/estetica-e-cosmetica/imagens/topo-estetica-cosmetica.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-farmacia
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-farmacia .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/farmacia/imagens/topo-farmacia.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-fisioterapia
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-fisioterapia .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/fisioterapia/imagens/topo-fisioterapia.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-filosofia
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-filosofia .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/filosofia/imagens/topo-filosofia.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-gestao-da-qualidade
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-gestao-da-qualidade .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/gestao-da-qualidade/imagens/topo-gestao-da-qualidade.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-gestao-de-recursos-humanos
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-gestao-de-recursos-humanos .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/gestao-de-recursos-humanos/imagens/topo-gestao-de-recursos-humanos.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-gestao-da-tecnologia-da-informacao
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-gestao-da-tecnologia-da-informacao .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/gestao-da-tecnologia-da-informacao/imagens/topo-gestao-tecnologia-info.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-jornalismo
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-jornalismo .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/jornalismo/imagens/topo-jornalismo.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-letras-lingua-estrangeira-ingles
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-letras-lingua-estrangeira-ingles .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/letras-lingua-estrangeira-ingles/imagens/topo-letras-ingles.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-publicidade-e-propaganda
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-publicidade-e-propaganda .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/publicidade-e-propaganda/imagens/topo-publicidade.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-comunicacao-mercadologica
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-comunicacao-mercadologica .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/comunicacao-mercadologica/imagens/topo-comunicacao-mercadologica.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-ciencias-contabeis
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-ciencias-contabeis .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/ciencias-contabeis/imagens/topo-ciencias-contabeis.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-ciencias-economicas
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-ciencias-economicas .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/ciencias-economicas/imagens/topo-ciencias-economicas.jpg)
     no-repeat center;
   background-size: cover;
 }
-body.section-graduacao-presencial.subsection-ciencias-sociais
-  .container-fluid.nopadding {
+body.section-graduacao-presencial.subsection-ciencias-sociais .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/ciencias-sociais/imagens/topo-ciencias-sociais.jpg)
     no-repeat center;
   background-size: cover;
@@ -2712,7 +2200,8 @@ body.userrole-authenticated .container-fluid.nopadding
     body.section-rh-rapido .container-fluid.nopadding .subtit-grad,
     body.section-assessoria-pedagogica-para-inclusao */
 .container-fluid.nopadding .subtit-grad {
-  font-family: "Parisienne", cursive;
+  /*font-family: "Parisienne", cursive;*/
+  font-family: 'Cookie', cursive;
   font-size: 44px;
   text-align: center;
   color: #f7eb94;
@@ -4766,7 +4255,8 @@ div.inscricoes-abertas p a:last-of-type:hover {
     body.section-formaturas .container-fluid.nopadding .subtit-grad,
     body.section-pastoral-universitaria */
   .container-fluid.nopadding .subtit-grad {
-    font-family: "Parisienne", cursive;
+    /*font-family: "Parisienne", cursive;*/
+	font-family: 'Cookie', cursive;
     font-size: 50px;
     text-align: right;
     color: #f7eb94;
@@ -5211,15 +4701,8 @@ div.inscricoes-abertas p a:last-of-type:hover {
   a.col-md-5ths.boxes-lato {
     min-height: 100px;
   }
-
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
     width: 100%;
   }
 
@@ -5282,10 +4765,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
   body.section-area-do-aluno .tileItem.visualIEFloatFix h2.tileHeadline,
   body.section-stricto-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
   body.section-home .tileItem.visualIEFloatFix h2.tileHeadline,
-  body.section-faculdade-de-teologia
-    .destaques-fateo
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline {
+  body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h2.tileHeadline {
     font-size: 17px;
     font-weight: 400;
     line-height: 1.2;
@@ -5303,17 +4783,12 @@ div.inscricoes-abertas p a:last-of-type:hover {
     float: left;
   }
 
-  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline
-    a.summary {
+  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
     height: 150px;
     font-size: 17px;
     margin-bottom: 10px;
   }
-  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid
-    div:nth-child(6n + 7)
-    > .tileItem.visualIEFloatFix {
+  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid div:nth-child(6n + 7) > .tileItem.visualIEFloatFix {
     margin-right: 0;
   }
 }
@@ -5331,19 +4806,13 @@ div.inscricoes-abertas p a:last-of-type:hover {
     min-height: 75px;
   }
 
-  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline
-    a.summary {
+  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
     height: 110px;
     font-size: 18px;
   }
-  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid
-    div:nth-child(6n + 7)
-    > .tileItem.visualIEFloatFix {
+  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid div:nth-child(6n + 7) > .tileItem.visualIEFloatFix {
     margin-right: 0;
   }
-
   body.section-home .tileItem.visualIEFloatFix a.summary-image {
     height: 180px;
   }
@@ -5354,77 +4823,29 @@ div.inscricoes-abertas p a:last-of-type:hover {
         padding:5px 15px;
         border-radius:4px;
     }*/
-
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-graduacao-presencial
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu
-    #content,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-stricto-sensu
-    #content {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-graduacao-presencial .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu #content,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-stricto-sensu #content {
     background: transparent;
     padding: 0;
   }
 
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa .outer-wrapper > .container .mosaic-grid-row {
     background: transparent;
   }
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-agencia-de-divulgacao-cientifica
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-videos
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-grupos-de-pesquisa
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-gestao-de-cidades
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-escritorio-de-apoio-a-pesquisa
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-servicos-do-escritorio-de-apoio-a-pesquisa
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-unesco
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-parfor
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibid
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibic
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibiti
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-funttel
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-agencia-de-divulgacao-cientifica .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-videos .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-grupos-de-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-gestao-de-cidades .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-servicos-do-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-unesco .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-parfor .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibid .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibic .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibiti .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-funttel .outer-wrapper > .container .mosaic-grid-row {
     background: #fff;
   }
 
@@ -5434,10 +4855,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
   body.section-stricto-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
   body.section-home .tileItem.visualIEFloatFix h2.tileHeadline,
   body.section-area-do-aluno .tileItem.visualIEFloatFix h2.tileHeadline,
-  body.section-faculdade-de-teologia
-    .destaques-fateo
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline {
+  body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h2.tileHeadline {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
@@ -5457,24 +4875,12 @@ body.userrole-authenticated .barra-institucional {
 }
 
 @media (min-width: 1600px) {
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row,
-  body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row,
+  body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row {
     width: 1540px;
   }
-  body:not(.userrole-authenticated).template-layout.no-portlet-columns
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row-fluid,
-  body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns
-    .outer-wrapper
-    > .container
-    .mosaic-grid-row-fluid {
+  body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid,
+  body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid {
     width: auto;
   }
   body.section-enade .container-fluid.nopadding .contagem {
