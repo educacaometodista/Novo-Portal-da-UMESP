@@ -3462,7 +3462,7 @@ h2.noticias-home::before {
 }
 
 /* template notícia simples */
-article#content {
+body.section-noticias article#content {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -4346,25 +4346,26 @@ div.inscricoes-abertas p a:last-of-type:hover {
     margin-top: 50px;
     padding-top: 120px;
     padding-bottom: 50px;
+		box-shadow: inset 0px 13px 8px -10px rgba(97, 97, 97, 0.3), inset 0px -13px 8px -10px rgba(97, 97, 97,0.3)
     /* Create the parallax scrolling effect */
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    box-shadow: 0px 6px 20px 0px #00000038;
+    box-shadow: 0px 6px 20px 0px #00000038;*/
   }
 
   .mosaic-grid-row.destaqueshome.mosaic-grid-row-fluid .box-home {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255,255,255, 0.4);
     padding: 15px;
     border-radius: 4px;
     margin: 10px 0;
     height: auto;
-    color: #fff;
+    color: #3c3c3c;
     min-height: 355px;
   }
 
-  .gradient-bg,
+  /*.gradient-bg,
   .bg-overlay:after,
   .bg-hover-gradient:after {
     background: -webkit-gradient(
@@ -4379,13 +4380,15 @@ div.inscricoes-abertas p a:last-of-type:hover {
     background: linear-gradient(45deg, #057dd2 0%, #052d44 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057dd2', endColorstr='#052d44',GradientType=1);
   }
-
+*/
   .bg-overlay {
-    position: relative;
-    z-index: 1;
+    background: #d0d0d0 url(https://portalpreprd.metodista.br/Metodista/++theme++portal-umesp/assets/img/bg-logo-metodista.png);
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 
-  .bg-overlay:after {
+  /* .bg-overlay:after {
     position: absolute;
     content: "";
     left: 0;
@@ -4394,7 +4397,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     height: 100%;
     opacity: 0.8;
     z-index: -1;
-  }
+  }*/
 
   /* INSCRIÇÕES HOME */
 
