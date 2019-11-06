@@ -19,6 +19,16 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Zeyada&display=swap");
 
+
+::-webkit-scrollbar              {background: linear-gradient( 90deg, rgb(40, 66, 90) 0%, rgb(216, 216, 216) 50%, rgb(40, 66, 90) 100% );}
+::-webkit-scrollbar-button       {background: #FFF;}
+::-webkit-scrollbar-track        { /* 3 */ }
+::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb        {border-radius: 6px;background: #FFF;}
+::-webkit-scrollbar-corner       { /* 6 */ }
+::-webkit-resizer                { /* 7 */ }
+
+
 p.facebookModal {
   font-size: 2em;
   padding: 10px 0;
@@ -2209,8 +2219,11 @@ body.userrole-authenticated .container-fluid.nopadding
 }
 
 .mosaic-tile-content img {
+  width: 100%;
   max-width: 100%;
+  max-height: 400px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 .mosaic-tile-content .hoverzoom img {
   max-width: 100%;
@@ -3391,29 +3404,10 @@ h2.inscricoes-abertas::before {
 h2.destaques-home {
   text-align: center;
   background: transparent;
-  color: #fff;
   width: 98%;
   padding-top: 50px !important;
   display: table;
   white-space: nowrap;
-}
-
-h2.destaques-home:before {
-  border-top: 2px solid;
-  content: "";
-  display: table-cell;
-  position: relative;
-  top: 0.5em;
-  width: 40%;
-}
-
-h2.destaques-home:after {
-  border-top: 2px solid;
-  content: "";
-  display: table-cell;
-  position: relative;
-  top: 0.5em;
-  width: 40%;
 }
 
 .box-home.destaques h3 {
@@ -3442,7 +3436,49 @@ h2.destaques-home:after {
         background:#2b5d92;
     }*/
 
+/* PAGINAÇÕES */
+
+.pagination li.active > span {
+    font-weight: 500;
+    background-color: #3776b0;
+    border: 1px solid #2984d8 !important;
+}
+.pagination li > a, .pagination li > span {
+    color: #3776b0;
+    font-weight: 400;
+}
+
+.pagination li.next .label,
+.pagination li.previous .label {
+    color: #3776b0;
+}
+
 /* NOTÍCIAS */
+
+body.section-noticias.subsection-aggregator div#plone-document-byline span.documentModified{
+	display: none;
+}
+body.section-noticias.subsection-aggregator h2.tileHeadline {
+    font-size: 20px;
+    margin: 5px 0;
+}
+body.section-noticias.subsection-aggregator h2.tileHeadline:first-of-type{
+	margin-top: 0;
+}
+body.section-noticias.subsection-aggregator article.tileItem {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: dotted 1px #d2d2d2;
+}
+body.section-noticias.subsection-aggregator article.tileItem:first-of-type{
+	margin-top: 0;
+}
+body.section-noticias.subsection-aggregator article.tileItem .tileFooter{
+	display: none;
+}
+body.section-noticias.subsection-aggregator article.tileItem .tileBody {
+    font-weight: 400;
+}
 
 h2.noticias-home {
   color: #3776b0;
@@ -3461,15 +3497,16 @@ h2.noticias-home::before {
   line-height: 45px;
 }
 
-/* template notícia simples */
+/* template notícia simples 
 body.section-noticias article#content {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
+}*/
 
 body.section-noticias article#content #content-core {
   background: #fff;
   padding: 15px;
   border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 /*body.section-home .mosaic-grid-row.mosaic-grid-row-fluid .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .movable.removable .tileItem.visualIEFloatFix h2.tileHeadline a{
@@ -4015,9 +4052,26 @@ div.inscricoes-abertas p a:last-of-type:hover {
     font-size: 17px;
     margin-bottom: 10px;
   }
+	
+  h2.destaques-home:before {
+  border-top: 2px solid;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 44%;
+  }
 
+  h2.destaques-home:after {
+  border-top: 2px solid;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 44%;
+  }
+	
   /*imagens hoverzoom*/
-
   .hoverzoom {
     position: relative;
     width: 100%;
@@ -4179,6 +4233,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     .movable.removable.mosaic-tile {
     min-height: 145px;
   }
+
   .menu-stricto-sensu
     .movable.removable.mosaic-tile
     .mosaic-tile-content
