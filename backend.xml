@@ -34,14 +34,14 @@
   <!-- Cut down barceloneta without just for backend UI -->
   <rules css:if-not-content="body.viewpermission-view, body.viewpermission-none">
 
-    <theme href="../++theme++testes-do-lu-no-tema-do-fernando/index.html" />
+    <theme href="../++theme++portal-umesp/index.html" />
     <notheme css:if-not-content="#visual-portal-wrapper" />
 
     <!-- We can't control the bundle from here due to include. Just hard code -->
     <after css:theme-children="head">
-      <link rel="stylesheet" href="/++theme++testes-do-lu-no-tema-do-fernando/less/barceloneta-compiled.css" />
+      <link rel="stylesheet" href="/++theme++portal-umesp/less/barceloneta-compiled.css" />
     </after>
-   
+
     <rules css:if-content="#portal-top">
       <!-- Attributes -->
       <copy attributes="*" css:theme="html" css:content="html" />
