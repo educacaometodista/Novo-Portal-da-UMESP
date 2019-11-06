@@ -3497,7 +3497,7 @@ h2.noticias-home::before {
   line-height: 45px;
 }
 
-/* template notícia simples 
+/* template notícia simples
 body.section-noticias article#content {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }*/
@@ -3693,9 +3693,6 @@ div#lista-integracao-sucessmsg {
 }
 
 @media only screen and (max-width: 767px) {
-  body:not(.section-noticias) div#at-share-dock {
-    display: none;
-  }
   #portal-logo {
     float: left;
     width: 100%;
@@ -3825,10 +3822,6 @@ div.inscricoes-abertas p a:last-of-type:hover {
     div:nth-child(4n + 5)
     > .tileItem.visualIEFloatFix {
     margin-right: 0;
-  }
-
-  body:not(.section-noticias) .addthis-smartlayers.at4-visually-hidden.addthis-smartlayers-desktop{
-    display: none;
   }
 }
 
@@ -4052,7 +4045,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     font-size: 17px;
     margin-bottom: 10px;
   }
-	
+
   h2.destaques-home:before {
   border-top: 2px solid;
   content: "";
@@ -4070,7 +4063,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
   top: 0.5em;
   width: 44%;
   }
-	
+
   /*imagens hoverzoom*/
   .hoverzoom {
     position: relative;
@@ -4367,7 +4360,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
 
   /* Botão AddThis */
 
-  body:not(.section-noticias) div#at4-share {
+  /* body:not(.section-noticias) div#at4-share {
     display: none;
   }
 
@@ -4389,7 +4382,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
 
   div#at-share-dock {
     z-index: 0 !important;
-  }
+  } */
 
   /* Home Page */
 
