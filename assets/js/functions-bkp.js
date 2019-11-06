@@ -20,17 +20,16 @@ $(function() {
 
               var url = jq(this).attr('href');
 
-              var seletor = "#parent-fieldname-text"; 
-              $(".hiddenStructure").load(url + " " + seletor) 
-              
+              var seletor = "#parent-fieldname-text";
+              $(".hiddenStructure").load(url + " " + seletor)
+
            });
-        }) 
+        })
         /* End of insert news to event */
 
-        /* Start of insert AddThis to news */
         $(document).ready(function() {
         //   if (window.location.href.indexOf("noticias")){
-            
+
             // URL
             document.getElementById("url").setAttribute('value',window.location.href);
 
@@ -59,9 +58,7 @@ $(function() {
 
 
         //   }
-        }) 
-        
-        /* End of insert AddThis to news */
+        })
 
         $(function() {
             if (!window.location.href.indexOf("noticias-anteriores")) {
@@ -80,19 +77,19 @@ $(function() {
                         document.getElementById('dia').innerHTML = dias;
 
 
-                    }, 1000); 
+                    }, 1000);
         }
     });
-    
+
     $(document).ready(function() {
             if (window.location.href.indexOf("graduacao-presencial" || "graduacao-a-distancia") )  {
             var divcurso = document.getElementsByTagName("h1")[0].textContent;
             document.getElementById("obter-curso").value = divcurso;
-                
+
             var divmodalidade = document.getElementsByClassName("subtit-grad")[0].textContent;
             document.getElementById("obter-modalidade").value = divmodalidade;
-				
-				
+
+
 			var urla = window.location.href;
 			var param = urla.split('/');
 			var local = param[3];
@@ -104,7 +101,7 @@ $(function() {
             }
           });
 
-jQuery(document).ready(function(){ 
+jQuery(document).ready(function(){
 
 jQuery(".mosaic-tile-content a.summary-image img").each(function(){
 
