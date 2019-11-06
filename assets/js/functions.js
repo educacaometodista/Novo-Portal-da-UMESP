@@ -27,8 +27,6 @@ $(document).ready(function(jq) {
 
 /* Start of insert AddThis to news */
 $(document).ready(function() {
-  //   if (window.location.href.indexOf("noticias")){
-
   // URL
   document.getElementById("url").setAttribute("value", window.location.href);
 
@@ -43,8 +41,6 @@ $(document).ready(function() {
   document.getElementById("data-e-hora").setAttribute("value", dateTime);
 
 });
-
-/* End of insert AddThis to news */
 
 $(function() {
   if (!window.location.href.indexOf("noticias-anteriores")) {
