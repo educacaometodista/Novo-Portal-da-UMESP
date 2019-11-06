@@ -20,14 +20,16 @@
 @import url("https://fonts.googleapis.com/css?family=Zeyada&display=swap");
 
 
-::-webkit-scrollbar              {background: linear-gradient( 90deg, rgb(40, 66, 90) 0%, rgb(216, 216, 216) 50%, rgb(40, 66, 90) 100% );}
-::-webkit-scrollbar-button       {background: #FFF;}
-::-webkit-scrollbar-track        { /* 3 */ }
-::-webkit-scrollbar-track-piece  { /* 4 */ }
-::-webkit-scrollbar-thumb        {border-radius: 6px;background: #FFF;}
-::-webkit-scrollbar-corner       { /* 6 */ }
-::-webkit-resizer                { /* 7 */ }
+::-webkit-scrollbar{width: 15px;background: rgb(40,66,90);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5); scrollbar-arrow-color:#FFF;}
+::-webkit-scrollbar-button       {background: #5f7a94; color: #FFFFFF !important; border: #FFF;}
+::-webkit-scrollbar-track        {background-color: rgb(40,66,90);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.7);}
+::-webkit-scrollbar-thumb        { border-radius: 4px;background: rgb(57,80,101);
+background: linear-gradient(90deg, rgba(57,80,101,1) 0%, rgba(75,107,135,1) 50%, rgba(57,80,101,1) 100%); box-shadow: 2px 3px 6px #1a2b3b;}
 
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+  display: none;
+}
 
 p.facebookModal {
   font-size: 2em;
@@ -4360,7 +4362,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
 
   /* Botão AddThis */
 
-  /* body:not(.section-noticias) div#at4-share {
+   body:not(.section-noticias) div#at4-share {
     display: none;
   }
 
@@ -4382,7 +4384,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
 
   div#at-share-dock {
     z-index: 0 !important;
-  } */
+  } 
 
   /* Home Page */
 
