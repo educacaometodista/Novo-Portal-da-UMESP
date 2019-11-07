@@ -1492,9 +1492,21 @@ body.section-graduacao-a-distancia.subsection-ciencias-contabeis
     no-repeat center;
   background-size: cover;
 }
+body.section-graduacao-a-distancia.subsection-comercio-exterior
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/comercio-exterior/imagens/comercio-exterior.jpg)
+    no-repeat center;
+  background-size: cover;
+}
 body.section-graduacao-a-distancia.subsection-comunicacao-digital-e-redes-sociais
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/comunicacao-digital-e-redes-sociais/imagens/comunicacao-digital-e-redes-sociais.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-a-distancia.subsection-engenharia-da-computacao
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/engenharia-da-computacao/imagens/engenharia-da-computacao.jpg)
     no-repeat center;
   background-size: cover;
 }
@@ -1522,6 +1534,18 @@ body.section-graduacao-a-distancia.subsection-gestao-de-recursos-humanos
     no-repeat center;
   background-size: cover;
 }
+body.section-graduacao-a-distancia.subsection-gestao-e-tecnologia-da-informacao
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/gestao-e-tecnologia-da-informacao/imagens/gestao-ti.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-a-distancia.subsection-gestao-hospitalar
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/gestao-hospitalar/imagens/gestao-hospitalar.jpg)
+    no-repeat center;
+  background-size: cover;
+}
 body.section-graduacao-a-distancia.subsection-gestao-financeira
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/gestao-financeira/imagens/gestao-financeira.jpg)
@@ -1531,6 +1555,12 @@ body.section-graduacao-a-distancia.subsection-gestao-financeira
 body.section-graduacao-a-distancia.subsection-gestao-publica
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/gestao-publica/imagens/gestao-publica.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-a-distancia.subsection-gestao-portuaria
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/gestao-portuaria/imagens/gestao-portuaria.jpg)
     no-repeat center;
   background-size: cover;
 }
