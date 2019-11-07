@@ -3396,7 +3396,7 @@ h2.destaques-home {
   text-align: center;
   background: transparent;
   width: 98%;
-  padding-top: 50px !important;
+  padding-top: 75px !important;
   display: table;
   white-space: nowrap;
 }
@@ -4320,7 +4320,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
 
   div#at-share-dock {
     z-index: 0 !important;
-  } 
+  }
 
   /* Home Page */
 
