@@ -12,10 +12,9 @@
     * Azul Logo: #014A94
     * Amarelo Logo: #FFD50F
     *
-    */
+*/
 
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600");
-/*@import url("https://fonts.googleapis.com/css?family=Parisienne");*/
 @import url("https://fonts.googleapis.com/css?family=Cookie&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Zeyada&display=swap");
 
@@ -220,10 +219,6 @@ i.material-icons.icone-atendimento {
   margin-bottom: 15px;
 }
 
-/*i.material-icons.icone-atendimento:hover {
-  color: #ffffffc4;
-}*/
-
 .plone-btn-atendimento {
   color: #2c5e8d;
   background-color: var(--white-color);
@@ -392,8 +387,6 @@ section.portletContent
   .pfg-form.formid-leads-captacao
   .formControls
   input[type="submit"]:hover {
-  /*background: rgb(255,212,33);
-    background: linear-gradient(90deg, rgba(255,230,124,1) 0%, rgba(255,212,33,1) 50%, rgba(255,230,124,1) 100%);*/
   opacity: 0.9;
 }
 .portlet.portletStaticText.portlet-static-receba-informaes .portletContent {
@@ -2740,16 +2733,7 @@ body.userrole-authenticated .container-fluid.nopadding
 }
 
 /* BANNERS TOPOS DE SESSÃO */
-/*body.section-graduacao-presencial .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-graduacao-a-distancia .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-financeiro .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-stricto-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-lato-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-centro-de-linguas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-formaturas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-    body.section-pastoral-universitaria .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
-     */
+
 .container-fluid.nopadding
   .banner-fluido-novo
   .tit-grad
@@ -2763,17 +2747,7 @@ body.userrole-authenticated .container-fluid.nopadding
   color: var(--white-color);
   text-shadow: 3px 3px 5px #000;
 }
-/*body.section-graduacao-presencial .container-fluid.nopadding .subtit-grad,
-    body.section-graduacao-a-distancia .container-fluid.nopadding .subtit-grad,
-    body.section-financeiro .container-fluid.nopadding .subtit-grad,
-    body.section-stricto-sensu .container-fluid.nopadding .subtit-grad,
-    body.section-lato-sensu .container-fluid.nopadding .subtit-grad,
-    body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .subtit-grad,
-    body.section-centro-de-linguas .container-fluid.nopadding .subtit-grad,
-    body.section-formaturas .container-fluid.nopadding .subtit-grad,
-    body.section-pastoral-universitaria .container-fluid.nopadding .subtit-grad,
-    body.section-rh-rapido .container-fluid.nopadding .subtit-grad,
-    body.section-assessoria-pedagogica-para-inclusao */
+
 .container-fluid.nopadding .subtit-grad {
   /*font-family: "Parisienne", cursive;*/
   font-family: "Cookie", cursive;
@@ -4082,28 +4056,6 @@ h2.destaques-home {
   color: #74a7d6;
 }
 
-/* h2.destaques-home::before {
-  font-family: "Font Awesome 5 Free";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-size: 40px;
-  margin: 0 10px 0 0;
-  line-height: 45px;
-  content: "\f02e";
-} */
-
-/*.box-home.destaques a.saiba-mais{
-        background:#3b86d6;
-    }
-    .box-home.destaques a.saiba-mais:hover{
-        background:#2b5d92;
-    }*/
-
 /* PAGINAÇÕES */
 
 .pagination li.active > span {
@@ -4176,21 +4128,12 @@ h2.noticias-home::before {
   line-height: 45px;
 }
 
-/* template notícia simples
-body.section-noticias article#content {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}*/
-
 body.section-noticias article#content #content-core {
   background: var(--white-color);
   padding: 15px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
-
-/*body.section-home .mosaic-grid-row.mosaic-grid-row-fluid .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .movable.removable .tileItem.visualIEFloatFix h2.tileHeadline a{
-        color: #a09971;
-    }*/
 
 div.reportarErrosDiv {
   font-size: 15px;
