@@ -3614,7 +3614,9 @@ body.section-stricto-sensu
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
   padding: 15px;
-  min-height: 148px;
+  min-height: 170px;
+  margin-top: 15px;
+  margin-bottom: 45px;
 }
 .mosaic-grid-row.bolsas-intercambio h4,
 .mosaic-grid-row.bolsas-intercambio h4 a {
@@ -3645,6 +3647,26 @@ div.titulo-bolsas-intercambio h2.bolsas:before {
   color: var(--red-color);
 }
 
+div.titulo-bolsas-intercambio h2.blog:before {
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 40px;
+  margin: 0 10px 0 0;
+  line-height: 45px;
+  content: "\f143";
+  float: left;
+  font-size: 40px;
+  margin: 0 10px 0 0;
+  line-height: 45px;
+  color: var(--red-color);
+}
+
 /* ESPAÇO UNIVERSITÁRIO */
 
 dt.header.rss-title {
@@ -3652,6 +3674,23 @@ dt.header.rss-title {
 }
 a.tile {
   color: #4d4d4d;
+}
+a.tile:before {
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 24px;
+  margin: 0 10px 0 0;
+  content: "\f105";
+  font-size: 16px;
+  margin: 0 5px 0 0;
+  line-height: 26px;
+  color: #222;
 }
 span.itemDetails {
   display: none;
@@ -3663,7 +3702,7 @@ dd.footer.rss-more a[href$="http://www.metodista.br/blog"] {
   visibility: hidden;
 }
 dd.footer.rss-more a[href$="http://www.metodista.br/blog"]:after {
-  content: "Ler mais";
+  content: "Outros artigos";
   margin-left: -40px;
   visibility: visible;
   color: var(--red-color);
@@ -3713,7 +3752,8 @@ body.section-unesco
 }
 i.material-icons.home.bolsas,
 em.material-icons.home.bolsas,
-h2.bolsas {
+h2.bolsas,
+h2.blog {
   color: var(--red-color);
 }
 
@@ -4120,6 +4160,7 @@ body.section-stricto-sensu.subsection-noticias article.tileItem .tileBody {
 
 h2.noticias-home {
   color: var(--primary-color);
+  padding: 15px 0;
 }
 h2.noticias-home::before {
   font-family: "Font Awesome 5 Free";
