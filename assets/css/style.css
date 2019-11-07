@@ -503,7 +503,7 @@ body:not(.userrole-authenticated).section-enade #content,
 body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria #content,
 body:not(.userrole-authenticated).section-conselho-universitario #content,
 body:not(.userrole-authenticated).section-rh-rapido #content,
-body:not(.userrole-authenticated).section-area-do-aluno #content,
+body:not(.userrole-authenticated).section-secretaria-academica #content,
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
 body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre #content,
 body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques #content,
@@ -633,7 +633,7 @@ body.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
 body:not(.userrole-authenticated).section-financeiro #content,
 body:not(.userrole-authenticated).section-institucional #content,
-body:not(.userrole-authenticated).section-area-do-aluno #content,
+/*body:not(.userrole-authenticated).section-area-do-aluno #content,*/
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
 body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content,
 body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content,
@@ -1166,6 +1166,7 @@ body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.
 
 /* EVENTOS */
 
+body.section-eventos ul.hiddenStructure li,
 .template-event_listing .documentFirstHeading nav ul li a {
   display: none;
 }
@@ -2793,7 +2794,6 @@ a.saiba-mais {
   color: #fff;
   border-radius: 4px;
   padding: 5px 15px;
-  margin-top: 10px;
   display: inline-block;
 }
 a.saiba-mais::after {
@@ -2972,35 +2972,35 @@ a#personaltools-login {
   height: auto;
 }
 
-body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao
-  .mosaic-grid-row.fundo-polos-lato
-  .mosaic-grid-cell
-  .movable.removable.mosaic-tile {
+body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao .mosaic-grid-row.fundo-polos-lato .mosaic-grid-cell .movable.removable.mosaic-tile {
   padding: 15px;
   background: #fff;
   border-radius: 4px;
   border-left: solid 6px #3776b0;
   margin-bottom: 20px;
 }
-body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao
-  .mosaic-grid-row.fundo-polos-lato
-  .mosaic-grid-cell
-  .movable.removable.mosaic-tile
+body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao .mosaic-grid-row.fundo-polos-lato .mosaic-grid-cell .movable.removable.mosaic-tile
   p:last-of-type {
   margin-bottom: 0;
 }
 
-body.section-stricto-sensu
-  .destaque-home-stricto
-  .mosaic-grid-cell
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content,
 .box-home {
   background: #fff;
   padding: 15px;
   border-radius: 4px;
   margin: 10px 0;
   min-height: 224px;
+}
+
+body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content{
+	background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    min-height: 340px;
+}
+body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-type .movable.removable.mosaic-tile .mosaic-tile-content{
+	min-height: 691px;
 }
 
 /*body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h1:first-of-type,
@@ -3012,22 +3012,11 @@ body.section-stricto-sensu
     .box-home h3:first-of-type,
     .box-home h4:first-of-type{*/
 
-body.section-stricto-sensu
-  .destaque-home-stricto
-  .mosaic-grid-cell
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  h3
-  img {
+body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h3 img {
   margin-bottom: 15px;
 }
 
-body.section-stricto-sensu
-  .destaque-home-stricto
-  .mosaic-grid-cell
-  .movable.removable.mosaic-tile
-  .mosaic-tile-content
-  p:last-of-type,
+body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content p:last-of-type,
 .box-home p:last-of-type {
   margin-bottom: 0;
 }
@@ -3457,28 +3446,33 @@ h2.destaques-home {
 
 /* NOTÍCIAS */
 
-body.section-noticias.subsection-aggregator div#plone-document-byline span.documentModified{
+body.section-noticias.subsection-aggregator article.tileItem .tileFooter,
+body.section-stricto-sensu.subsection-noticias article.tileItem .tileFooter,
+body.section-noticias.subsection-aggregator div#plone-document-byline span.documentModified,
+body.section-stricto-sensu.subsection-noticias div#plone-document-byline span.documentModified{
 	display: none;
 }
-body.section-noticias.subsection-aggregator h2.tileHeadline {
+body.section-noticias.subsection-aggregator h2.tileHeadline,
+body.section-stricto-sensu.subsection-noticias h2.tileHeadline{
     font-size: 20px;
     margin: 5px 0;
 }
-body.section-noticias.subsection-aggregator h2.tileHeadline:first-of-type{
-	margin-top: 0;
-}
-body.section-noticias.subsection-aggregator article.tileItem {
+
+body.section-noticias.subsection-aggregator article.tileItem,
+body.section-stricto-sensu.subsection-noticias article.tileItem {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: dotted 1px #d2d2d2;
 }
-body.section-noticias.subsection-aggregator article.tileItem:first-of-type{
+body.section-noticias.subsection-aggregator h2.tileHeadline:first-of-type,
+body.section-stricto-sensu.subsection-noticias h2.tileHeadline:first-of-type,
+body.section-noticias.subsection-aggregator article.tileItem:first-of-type,
+body.section-stricto-sensu.subsection-noticias article.tileItem:first-of-type{
 	margin-top: 0;
 }
-body.section-noticias.subsection-aggregator article.tileItem .tileFooter{
-	display: none;
-}
-body.section-noticias.subsection-aggregator article.tileItem .tileBody {
+
+body.section-noticias.subsection-aggregator article.tileItem .tileBody,
+body.section-stricto-sensu.subsection-noticias article.tileItem .tileBody {
     font-weight: 400;
 }
 
@@ -3957,27 +3951,15 @@ div.inscricoes-abertas p a:last-of-type:hover {
     display: block;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix {
     width: 23%;
     float: left;
     margin: 0 1%;
     transition: all 0.3s ease;
   }
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:before,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:before {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before {
     pointer-events: none;
     position: absolute;
     z-index: -1;
@@ -4004,25 +3986,13 @@ div.inscricoes-abertas p a:last-of-type:hover {
     transition-property: transform, opacity;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover {
     transform: translateY(-10px);
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover:before,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover:before {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before {
     opacity: 1;
   }
 
@@ -4039,10 +4009,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     float: left;
   }
 
-  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline
-    a.summary {
+  .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
     height: 150px;
     font-size: 17px;
     margin-bottom: 10px;
@@ -4223,20 +4190,12 @@ div.inscricoes-abertas p a:last-of-type:hover {
     box-shadow: 2px 2px 3px #d0d0d0;
   }
 
-  body.section-area-do-aluno
-    .menu-area-do-aluno
-    .movable.removable.mosaic-tile {
+  body.section-area-do-aluno .menu-area-do-aluno .movable.removable.mosaic-tile {
     min-height: 145px;
   }
 
-  .menu-stricto-sensu
-    .movable.removable.mosaic-tile
-    .mosaic-tile-content
-    a::before,
-  .menu-area-do-aluno
-    .movable.removable.mosaic-tile
-    .mosaic-tile-content
-    a::before {
+  .menu-stricto-sensu .movable.removable.mosaic-tile .mosaic-tile-content a::before,
+  .menu-area-do-aluno .movable.removable.mosaic-tile .mosaic-tile-content a::before {
     font-family: "Font Awesome 5 Free";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -4251,14 +4210,8 @@ div.inscricoes-abertas p a:last-of-type:hover {
     line-height: 1;
     color: #ffd400;
   }
-  .menu-stricto-sensu
-    .movable.removable.mosaic-tile
-    .mosaic-tile-content
-    p:last-of-type,
-  .menu-area-do-aluno
-    .movable.removable.mosaic-tile
-    .mosaic-tile-content
-    p:last-of-type {
+  .menu-stricto-sensu .movable.removable.mosaic-tile .mosaic-tile-content p:last-of-type,
+  .menu-area-do-aluno .movable.removable.mosaic-tile .mosaic-tile-content p:last-of-type {
     margin-bottom: 0;
   }
 
@@ -4271,10 +4224,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     body.section-centro-de-linguas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
     body.section-formaturas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
     body.section-pastoral-universitaria */
-  .container-fluid.nopadding
-    .banner-fluido-novo
-    .tit-grad
-    h1.documentFirstHeading {
+  .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading {
     text-align: right;
     padding: 120px 0 0;
     font-size: 60px;
@@ -4285,11 +4235,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     text-shadow: 3px 3px 5px #000;
   }
 
-  body.section-pos-graduacao-e-pesquisa.subsection-projetos-de-pesquisa
-    .container-fluid.nopadding
-    .banner-fluido-novo
-    .tit-grad
-    h1.documentFirstHeading {
+  body.section-pos-graduacao-e-pesquisa.subsection-projetos-de-pesquisa .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading {
     font-size: 30px;
     line-height: 1.3;
   }
@@ -4313,14 +4259,8 @@ div.inscricoes-abertas p a:last-of-type:hover {
     text-shadow: 2px 2px 8px #000;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline,
-  body.section-graduacao-a-distancia
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline {
+  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
+  body.section-graduacao-a-distancia .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline {
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
@@ -4330,11 +4270,7 @@ div.inscricoes-abertas p a:last-of-type:hover {
     min-height: 112px;
     border-radius: 0 0 4px 4px;
   }
-  body.section-graduacao-presencial
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline
-    a {
+  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline a {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -4536,32 +4472,12 @@ div.inscricoes-abertas p a:last-of-type:hover {
 }
 
   /* NOTÍCIAS HOME E STRICTO*/
-  body.section-stricto-sensu
-    .mosaic-grid-row.noticias-home-stricto
-    .mosaic-tile-content
-    div
-    .tileItem.visualIEFloatFix,
-  body.section-area-do-aluno
-    .mosaic-grid-row.noticias-area-do-aluno
-    .mosaic-tile-content
-    div
-    .tileItem.visualIEFloatFix,
-  body.section-pesquisa
-    .mosaic-grid-row.noticias-pesquisa
-    .mosaic-tile-content
-    div
-    .tileItem.visualIEFloatFix,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-home-stricto .mosaic-tile-content div .tileItem.visualIEFloatFix,
+  body.section-area-do-aluno .mosaic-grid-row.noticias-area-do-aluno .mosaic-tile-content div .tileItem.visualIEFloatFix,
+  body.section-pesquisa .mosaic-grid-row.noticias-pesquisa .mosaic-tile-content div .tileItem.visualIEFloatFix,
   body.section-home .mosaic-tile-content div .tileItem.visualIEFloatFix,
-  body.section-unesco
-    div.mosaic-grid-row.noticias-unesco
-    .mosaic-tile-content
-    div
-    .tileItem.visualIEFloatFix,
-  body.section-faculdade-de-teologia
-    div.mosaic-grid-row.destaques-fateo
-    .mosaic-tile-content
-    div
-    .tileItem.visualIEFloatFix {
+  body.section-unesco div.mosaic-grid-row.noticias-unesco .mosaic-tile-content div .tileItem.visualIEFloatFix,
+  body.section-faculdade-de-teologia div.mosaic-grid-row.destaques-fateo .mosaic-tile-content div .tileItem.visualIEFloatFix {
     background: #fff;
     border-radius: 4px;
     width: 23.5%;
@@ -4576,35 +4492,12 @@ div.inscricoes-abertas p a:last-of-type:hover {
         width:100% !important;
         padding:0 !important;
     }*/
-  body.section-stricto-sensu
-    .mosaic-grid-row.noticias-home-stricto
-    .mosaic-tile-content
-    div:nth-child(5n)
-    .tileItem.visualIEFloatFix,
-  body.section-pesquisa
-    .mosaic-grid-row.noticias-pesquisa
-    .mosaic-tile-content
-    div:nth-child(5n)
-    .tileItem.visualIEFloatFix,
-  body.section-home
-    .mosaic-tile-content
-    div:nth-child(4n)
-    .tileItem.visualIEFloatFix,
-  body.section-unesco
-    div.mosaic-grid-row.noticias-unesco
-    .mosaic-tile-content
-    div:nth-child(4n)
-    .tileItem.visualIEFloatFix,
-  body.section-area-do-aluno
-    div.mosaic-grid-row.noticias-area-do-aluno
-    .mosaic-tile-content
-    div:nth-child(4n)
-    .tileItem.visualIEFloatFix,
-  body.section-faculdade-de-teologia
-    .mosaic-grid-row.destaques-fateo
-    .mosaic-tile-content
-    div:nth-child(5n)
-    .tileItem.visualIEFloatFix {
+  body.section-stricto-sensu .mosaic-grid-row.noticias-home-stricto .mosaic-tile-content div:nth-child(5n) .tileItem.visualIEFloatFix,
+  body.section-pesquisa .mosaic-grid-row.noticias-pesquisa .mosaic-tile-content div:nth-child(5n) .tileItem.visualIEFloatFix,
+  body.section-home .mosaic-tile-content div:nth-child(4n) .tileItem.visualIEFloatFix,
+  body.section-unesco div.mosaic-grid-row.noticias-unesco .mosaic-tile-content div:nth-child(4n) .tileItem.visualIEFloatFix,
+  body.section-area-do-aluno div.mosaic-grid-row.noticias-area-do-aluno .mosaic-tile-content div:nth-child(4n+1) .tileItem.visualIEFloatFix,
+  body.section-faculdade-de-teologia .mosaic-grid-row.destaques-fateo .mosaic-tile-content div:nth-child(5n) .tileItem.visualIEFloatFix {
     margin-right: 0;
   }
 
@@ -4623,34 +4516,14 @@ div.inscricoes-abertas p a:last-of-type:hover {
     margin-top: 35px;
     min-height: 100px;
   }
-  body.section-stricto-sensu
-    .mosaic-tile-content
-    section.eventos-home
-    article:first-of-type,
-  body.section-stricto-sensu
-    .mosaic-tile-content
-    section.eventos-home
-    article:nth-child(3n + 4),
-  body.section-home
-    .mosaic-tile-content
-    section.eventos-home
-    article:first-of-type,
-  body.section-home
-    .mosaic-tile-content
-    section.eventos-home
-    article:nth-child(3n + 4) {
+  body.section-stricto-sensu .mosaic-tile-content section.eventos-home article:first-of-type,
+  body.section-stricto-sensu .mosaic-tile-content section.eventos-home article:nth-child(3n + 4),
+  body.section-home .mosaic-tile-content section.eventos-home article:first-of-type,
+  body.section-home .mosaic-tile-content section.eventos-home article:nth-child(3n + 4) {
     margin-left: 0;
   }
-  body.section-stricto-sensu
-    .mosaic-tile-content
-    section.eventos-home
-    .vevent
-    div.cal_date,
-  body.section-home
-    .mosaic-tile-content
-    section.eventos-home
-    .vevent
-    div.cal_date {
+  body.section-stricto-sensu .mosaic-tile-content section.eventos-home .vevent div.cal_date,
+  body.section-home .mosaic-tile-content section.eventos-home .vevent div.cal_date {
     position: absolute;
     overflow: inherit;
     z-index: 10;
