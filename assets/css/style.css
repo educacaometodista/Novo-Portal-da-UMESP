@@ -3648,6 +3648,10 @@ div.titulo-bolsas-intercambio h2.blog:before {
 
 /* ESPAÇO UNIVERSITÁRIO */
 
+p.espaco-universitario-paragraph {
+  width: 350px;
+  padding-top: 20px;
+}
 dt.header.rss-title {
   display: none;
 }
@@ -4115,11 +4119,39 @@ body.section-stricto-sensu.subsection-noticias article.tileItem .tileBody {
   font-weight: 400;
 }
 
-h2.noticias-home {
+h2.noticias-home,
+h2.box-vestibular,
+h2.box-inscricoes-abertas {
   color: var(--primary-color);
   padding: 15px 0;
 }
 h2.noticias-home::before {
+  font-family: "Font Awesome 5 Free";
+  moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  content: "\f1ea";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 40px;
+  margin: 0 10px 0 0;
+  line-height: 45px;
+}
+h2.box-vestibular::before {
+  font-family: "Font Awesome 5 Free";
+  moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  content: "\f1ea";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-size: 40px;
+  margin: 0 10px 0 0;
+  line-height: 45px;
+}
+h2.box-inscricoes-abertas::before {
   font-family: "Font Awesome 5 Free";
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -5364,7 +5396,7 @@ div#lista-integracao-sucessmsg {
     color: var(--white-color);
     border-radius: 4px;
     min-width: 4.4em;
-    height: 140px;
+    height: 135px;
   }
 
   section.eventos-home .vevent span.cal_month {
