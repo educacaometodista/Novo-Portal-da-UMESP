@@ -4172,6 +4172,13 @@ body.section-noticias article#content #content-core {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+div.mosaic-tile-content div.tileItem h2.tileHeadline a {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
 div.reportarErrosDiv {
   font-size: 15px;
 }
