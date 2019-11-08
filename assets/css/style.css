@@ -3536,7 +3536,7 @@ body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao
   padding: 15px;
   border-radius: 4px;
   margin: 10px 0;
-  min-height: 224px;
+  min-height: 160px;
 }
 
 body.section-stricto-sensu
@@ -4143,7 +4143,7 @@ h2.box-vestibular::before {
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  content: "\f1ea";
+  content: "\f0a3";
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -4156,7 +4156,7 @@ h2.box-inscricoes-abertas::before {
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  content: "\f1ea";
+  content: "\f0a1";
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
