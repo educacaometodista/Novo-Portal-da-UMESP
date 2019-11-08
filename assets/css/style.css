@@ -4234,14 +4234,35 @@ section.existing-content-tile.eventos-home .documentDescription.description {
 }
 ul.event.summary {
   font-weight: 400;
-  max-width: 300px;
   list-style: none;
   float: right;
-  background: #fafafa;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
   padding: 15px;
   margin-left: 5px;
 }
+
+body.section-eventos ul.event.summary{
+	width: 430px;
+	max-width: 430px;
+	color:#FFF;
+	border-radius: 4px;
+background: rgb(55,118,176);
+background: linear-gradient(90deg, rgba(55,118,176,1) 0%, rgba(1,49,93,1) 100%);
+}
+
+body.section-eventos ul.event.summary a{
+	color:rgba(255,255,255,0.8);
+	text-decoration: none;
+	border: none;
+}
+body.section-eventos ul.event.summary.details li.event-attendee strong,
+body.section-eventos ul.event.summary.details li.event-date strong,
+body.section-eventos ul.event.summary.details li.event-calendar strong{
+text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
 ul.event.summary.details li {
   margin-bottom: 10px;
   padding-bottom: 10px;
