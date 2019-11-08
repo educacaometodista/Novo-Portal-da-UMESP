@@ -4232,6 +4232,13 @@ body.section-home div.reportarErrosDiv {
 section.existing-content-tile.eventos-home .documentDescription.description {
   display: none;
 }
+section.existing-content-tile.eventos-home div section:last-child:after {
+  content: "Ver todos os eventos.";
+  display: block;
+  font-size: 14px;
+  float: right;
+  color: var(--primary-color);
+}
 ul.event.summary {
   font-weight: 400;
   max-width: 300px;
