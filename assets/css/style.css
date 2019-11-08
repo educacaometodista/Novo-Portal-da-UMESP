@@ -3650,7 +3650,7 @@ div.titulo-bolsas-intercambio h2.blog:before {
 
 p.espaco-universitario-paragraph {
   width: 350px;
-  padding-top: 20px;
+  padding-top: 27px;
 }
 dt.header.rss-title {
   display: none;
@@ -4127,6 +4127,7 @@ h2.box-inscricoes-abertas {
 }
 h2.noticias-home::before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -4140,6 +4141,7 @@ h2.noticias-home::before {
 }
 h2.box-vestibular::before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -4153,6 +4155,7 @@ h2.box-vestibular::before {
 }
 h2.box-inscricoes-abertas::before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
