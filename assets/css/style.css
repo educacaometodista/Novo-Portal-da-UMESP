@@ -4065,6 +4065,13 @@ h2.destaques-home {
   color: #74a7d6;
 }
 
+div.box-home.inscricoes p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
 /* PAGINAÇÕES */
 
 .pagination li.active > span {
@@ -5432,6 +5439,10 @@ div#lista-integracao-sucessmsg {
     margin-left: 115px;
     margin-top: 10px;
     font-size: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 
   section.eventos-home p.description,
