@@ -4234,6 +4234,7 @@ section.existing-content-tile.eventos-home .documentDescription.description {
 }
 section.existing-content-tile.eventos-home div section:last-child:after {
   content: "Ver todos os eventos.";
+  visibility: hidden;
   display: block;
   font-size: 14px;
   float: right;
@@ -4268,6 +4269,10 @@ body.section-eventos ul.event.summary.details li.event-calendar strong{
 text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+}
+
+div.todosEventos {
+  text-align: right;
 }
 
 ul.event.summary.details li {
