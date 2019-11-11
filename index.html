@@ -272,14 +272,6 @@
         </div>
       </main>
       <!--/row-->
-      <div class="todosEventos">
-          <div class="container">
-            <p>
-              <a class="pat-plone-modal" href="#comunicarErro" data-pat-plone-modal="width: 50%">Ver todos os eventos <i class="fas fa-angle-right"></i></a>
-            </p>
-          </div>
-        </div>
-    </div>
     <!--/container-->
   </div>
   <!--/outer-wrapper -->
@@ -701,20 +693,6 @@
   </div>
 
   <script>
-    $(document).ready(function(){
-      const hasEvent = $('section.existing-content-tile.eventos-home div section').find('article');
-      const countEvent = hasEvent.length;
-
-
-      if (countEvent > 6) {
-        hasEvent.slice(6).remove();
-
-        let eventSection = document.querySelector('section.existing-content-tile.eventos-home div section');
-
-        e
-      }
-    });
-
     ouibounce(document.getElementById('ouibounce-modal'), { aggressive: false });
     $('body').on('click', function () {
       $('#ouibounce-modal').hide();
