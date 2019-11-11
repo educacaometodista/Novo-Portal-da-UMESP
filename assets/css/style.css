@@ -3726,6 +3726,11 @@ h2.blog {
   color: var(--red-color);
 }
 
+@media only screen and (max-width: 767px) {
+  h2.bolsas {
+    font-size: 32px
+  }
+}
 /* ÍCONES */
 i.material-icons.home,
 i.far.noticia {
