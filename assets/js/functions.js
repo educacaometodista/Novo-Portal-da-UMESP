@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 $(function() {
-  var header = $("#mainnavigation-wrapper");
+  // var header = $("#mainnavigation-wrapper");
   var bodie = $("body");
   if ($(window).width() > 767) {
     $(window).scroll(function() {
