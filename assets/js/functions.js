@@ -1,3 +1,14 @@
+$(document).ready(function(){
+  const hasEvent = $('section.existing-content-tile.eventos-home div section').find('article');
+  const countEvent = hasEvent.length;
+
+  if (countEvent > 6) {
+    hasEvent.slice(6).remove();
+
+    $("section.existing-content-tile.eventos-home div section").append("<div class='todosEventos'><div class='container'><p><a href='https://portalpreprd.metodista.br/Metodista/eventos/'>Ver todos os eventos</a></p></div></div>");
+  }
+});
+
 $(function() {
   var header = $("#mainnavigation-wrapper");
   var bodie = $("body");
