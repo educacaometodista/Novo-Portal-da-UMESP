@@ -2766,7 +2766,6 @@ body.userrole-authenticated .container-fluid.nopadding
   width: 100%;
   max-width: 100%;
   max-height: 400px;
-  margin-bottom: 10px;
   object-fit: cover;
 }
 .mosaic-tile-content .hoverzoom img {
@@ -3374,7 +3373,8 @@ div.mosaic-tile-content dl dt span.documentByLine {
   display: none;
 }
 
-a.mais-noticias:after {
+a.mais-noticias:after,
+div.todosEventos p a:after {
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3588,12 +3588,12 @@ body.section-stricto-sensu
 }
 
 /* BOLSAS E INTERCAMBIO */
-.mosaic-grid-row.bolsas-intercambio .mosaic-grid-cell .mosaic-tile-content {
+.mosaic-grid-row.bolsas-intercambio .mosaic-grid-cell .movable.removable.mosaic-tile:nth-child(even) .mosaic-tile-content {
   background: var(--white-color);
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
   padding: 15px;
-  min-height: 170px;
+  min-height: 180px;
   margin-top: 15px;
   margin-bottom: 45px;
 }
@@ -3606,7 +3606,7 @@ body.section-stricto-sensu
   margin-bottom: 0;
 }
 
-div.titulo-bolsas-intercambio h2.bolsas:before {
+h2.bolsas:before {
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3619,26 +3619,6 @@ div.titulo-bolsas-intercambio h2.bolsas:before {
   margin: 0 10px 0 0;
   line-height: 45px;
   content: "\f19d";
-  float: left;
-  font-size: 40px;
-  margin: 0 10px 0 0;
-  line-height: 45px;
-  color: var(--red-color);
-}
-
-div.titulo-bolsas-intercambio h2.blog:before {
-  font-family: "Font Awesome 5 Free";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-size: 40px;
-  margin: 0 10px 0 0;
-  line-height: 45px;
-  content: "\f143";
   float: left;
   font-size: 40px;
   margin: 0 10px 0 0;
@@ -3692,6 +3672,12 @@ dd.footer.rss-more a[href$="http://www.metodista.br/blog"]:after {
 }
 dl.rsstile {
   margin-bottom: 0px !important;
+}
+
+@media only screen and (max-width:767px) {
+  p.espaco-universitario-paragraph img.espaco-universitario {
+    width: 320px;
+  }
 }
 
 /* HOME STRICTO SENSU */
@@ -4190,7 +4176,7 @@ div.mosaic-tile-content div.tileItem h2.tileHeadline a {
 }
 
 div.reportarErrosDiv {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 div.reportarErrosDiv p {
@@ -4275,6 +4261,15 @@ div.todosEventos {
   text-align: right;
 }
 
+div.todosEventos p a {
+  font-size: 18px;
+}
+
+div.todosEventos div.container {
+  border-top: 0px;
+  margin-top: 0px;
+}
+
 ul.event.summary.details li {
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -4289,6 +4284,72 @@ ul.event.summary.details li:last-of-type {
 ul.event.summary.details li.event-category,
 ul.event.summary.details li.event-date span.timezone {
   display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  div.todosEventos p a {
+    position: absolute;
+    top: 98%;
+    right: 20px;
+    font-size: 22px;
+}
+
+  div.todosEventos div.container {
+    border-top: 2px solid #007bb3;
+    margin-top: 20px;
+  }
+
+  section.existing-content-tile.eventos-home p.description {
+    display: none;
+  }
+
+  section.existing-content-tile.eventos-home h2.tileHeadline {
+    font-size: 26px;
+  }
+
+  section.existing-content-tile.eventos-home span.summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+  section.existing-content-tile.eventos-home section article div.cal_date span.cal_month {
+    background: transparent !important;
+    padding: 20px 0px 0px;
+  }
+
+  section.existing-content-tile.eventos-home section article.vevent.tileItem {
+      margin: 30px 0px;
+      width: 100%;
+  }
+
+  body.section-stricto-sensu .mosaic-tile-content section.eventos-home .vevent div.cal_date, body.section-home .mosaic-tile-content section.eventos-home .vevent div.cal_date {
+    position: absolute;
+    overflow: inherit;
+    z-index: 10;
+    margin-top: -20px;
+    margin-right: 15px;
+    text-align: center;
+    background: rgb(25, 113, 109);
+    background: linear-gradient( 90deg, rgb(40, 66, 90) 0%, rgb(55, 118, 176) 50%, rgb(40, 66, 90) 100% );
+    color: var(--white-color);
+    border-radius: 4px;
+    min-width: 4.4em;
+    height: 140px;
+}
+
+  body.section-home .mosaic-tile-content section.eventos-home article {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 2%;
+    background: var(--white-color);
+    border-radius: 4px;
+    margin-top: 35px;
+    min-height: 100px;
+}
+
 }
 
 /* FOOTER */
@@ -5471,7 +5532,7 @@ div#lista-integracao-sucessmsg {
   section.eventos-home .vevent div.cal_info h2 {
     margin-left: 115px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
