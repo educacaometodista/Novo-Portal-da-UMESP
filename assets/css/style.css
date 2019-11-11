@@ -3643,10 +3643,10 @@ p.espaco-universitario-paragraph {
 dt.header.rss-title {
   display: none;
 }
-a.tile {
+dl.rsstile dd a.tile {
   color: #4d4d4d;
 }
-a.tile:before {
+dl.rsstile dd a.tile:before {
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
