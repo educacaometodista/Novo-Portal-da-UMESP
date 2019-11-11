@@ -3035,6 +3035,14 @@ body:not(.userrole-authenticated).section-lato-sensu
   text-transform: uppercase;
 }
 
+@media only screen and (max-width:767px) {
+  body:not(.userrole-authenticated).section-lato-sensu #content .mosaic-tile-content h4 {
+    margin-top: 0px;
+    display: block;
+    white-space: normal;
+  }
+}
+
 body:not(.userrole-authenticated).section-lato-sensu
   #content
   .mosaic-tile-content
