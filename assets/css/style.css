@@ -4796,27 +4796,17 @@ div#lista-integracao-sucessmsg {
     display: block;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix{
     width: 23%;
     float: left;
     margin: 0 1%;
     transition: all 0.3s ease;
   }
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:before,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:before {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before{
     pointer-events: none;
     position: absolute;
     z-index: -1;
@@ -4843,25 +4833,15 @@ div#lista-integracao-sucessmsg {
     transition-property: transform, opacity;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover{
     transform: translateY(-10px);
   }
 
-  body.section-graduacao-presencial
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover:before,
-  body.section-graduacao-a-distancia
-    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
-    .mosaic-tile-content
-    div.tileItem.visualIEFloatFix:hover:before {
+  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before,
+  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before{
     opacity: 1;
   }
 
@@ -5152,14 +5132,9 @@ div#lista-integracao-sucessmsg {
     text-shadow: 2px 2px 8px #000;
   }
 
-  body.section-graduacao-presencial
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline,
-  body.section-graduacao-a-distancia
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline {
+  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
+  body.section-graduacao-a-distancia .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline{
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
@@ -5169,11 +5144,7 @@ div#lista-integracao-sucessmsg {
     min-height: 112px;
     border-radius: 0 0 4px 4px;
   }
-  body.section-graduacao-presencial
-    .mosaic-tile-content
-    .tileItem.visualIEFloatFix
-    h2.tileHeadline
-    a {
+  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline a {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -5187,9 +5158,8 @@ div#lista-integracao-sucessmsg {
     overflow: hidden;
   }
   body.section-graduacao-presencial .tileItem.visualIEFloatFix a.summary-image,
-  body.section-graduacao-a-distancia
-    .tileItem.visualIEFloatFix
-    a.summary-image {
+  body.section-graduacao-a-distancia .tileItem.visualIEFloatFix a.summary-image,
+  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-tile-content .tileItem.visualIEFloatFix a.summary-image{
     border-radius: 4px 4px 0 0;
   }
   .tileItem.visualIEFloatFix a.summary-image img {
