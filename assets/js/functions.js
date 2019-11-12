@@ -9,16 +9,17 @@ $(document).ready(function(){
   }
 });
 
+ /* Vídeo Institucional */
 $(document).ready(function() {
   if (window.location.href.indexOf("/institucional/") > -1) {
-    const videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://leunardo.dev/metodista/umesp-institucional.mp4' type='video/mp4' /></video>"
+
+    let videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://leunardo.dev/metodista/umesp-institucional.mp4' type='video/mp4' /></video>"
 
     $("div.outer-wrapper div.container-fluid.nopadding").append(videoInstitucional);
   }
 });
 
 $(function() {
-  // var header = $("#mainnavigation-wrapper");
   var bodie = $("body");
   if ($(window).width() > 767) {
     $(window).scroll(function() {
