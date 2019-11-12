@@ -2572,7 +2572,7 @@ body.section-lato-sensu.site-Metodista.subsection-a-distancia-saude-administraca
 
 video#videoInstitucional {
   position: absolute;
-  top: 223px;
+  top: 220px;
   right: 0;
   width: 100%;
   bottom: 100%;
@@ -2580,7 +2580,7 @@ video#videoInstitucional {
   overflow: hidden;
   z-index: -1;
   object-fit: cover;
-  height: 300px;
+  height: 250px;
   max-height: 300px;
 }
 
