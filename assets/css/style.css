@@ -2004,16 +2004,31 @@ body.section-graduacao-a-distancia.subsection-producao-publicitaria
 }
 body.section-graduacao-a-distancia.subsection-letras-portugues-ingles
   .container-fluid.nopadding {
-  background: url(/Metodista/graduacao-a-distancia//imagens/letras-portugues-ingles/imagens/topo-letras-portugues-ingles.jpg)
+  background: url(/Metodista/graduacao-a-distancia/imagens/letras-portugues-ingles/imagens/topo-letras-portugues-ingles.jpg)
     no-repeat center;
   background-size: cover;
 }
+
+body.section-graduacao-a-distancia .subsection.nutricao .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/imagens/nutricao/imagens/topo-nutricao.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
 body.section-graduacao-a-distancia.subsection-educacao-fisica
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/educacao-fisica/imagens/topo-educacao-fisica.jpg)
     no-repeat center;
   background-size: cover;
 }
+
+body.section-graduacao-a-distancia.subsection-educacao-fisica-licenciatura
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/educacao-fisicalicenciatura/imagens/topo-educacao-fisicalicenciatura.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
 body.section-graduacao-a-distancia.subsection-analise-e-desenvolvimento-de-sistemas
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/analise-e-desenvolvimento-de-sistemas/imagens/analise-desenvolvimento-sistemas.jpg)
