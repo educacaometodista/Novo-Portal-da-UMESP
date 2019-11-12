@@ -804,7 +804,6 @@ body.section-faculdade-de-teologia .container-fluid.nopadding,
 body.section-centro-otilia-chaves .container-fluid.nopadding,
 body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding {
   height: 300px;
-  background-color: #f5faff;
   margin-bottom: 20px;
 }
 
@@ -2558,10 +2557,24 @@ body.section-lato-sensu.site-Metodista.subsection-a-distancia-saude-administraca
 }
 
 /* INSTITUCIONAL */
-body.section-institucional.site-Metodista .container-fluid.nopadding {
+/* body.section-institucional.site-Metodista .container-fluid.nopadding {
   background: url(/Metodista/institucional/imagens/institucional.jpg) no-repeat
     center;
   background-size: cover;
+} */
+
+video#videoInstitucional {
+  position: absolute;
+  top: 223px;
+  right: 0;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  height: 300px;
+  max-height: 300px;
 }
 
 /* CURSOS SEMIPRESENCIAIS - HUMANIDADES */
