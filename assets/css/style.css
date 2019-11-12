@@ -613,6 +613,13 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
   background: transparent;
 }
 
+/* TABELAS */
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    vertical-align: middle;
+}
+
 /* PORTLET */
 
 .portlet .portletHeader {
