@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   if (window.location.href.indexOf("/institucional/") > -1) {
-    const videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://gcs-vimeo.akamaized.net/exp=1573572381~acl=%2A%2F1067090710.mp4%2A~hmac=bb2be8c6d3f9a8b58b1056f8dde73f81002d530cf54fad68455889f04198411b/vimeo-prod-skyfire-std-us/01/2419/10/262099642/1067090710.mp4' type='video/mp4' /></video>"
+    const videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://leunardo.dev/metodista/umesp-institucional.mp4' type='video/mp4' /></video>"
 
     $("div.outer-wrapper div.container-fluid.nopadding").append(videoInstitucional);
   }
