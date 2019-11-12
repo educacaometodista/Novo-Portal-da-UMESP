@@ -11,7 +11,7 @@ $(document).ready(function(){
 
  /* Vídeo Institucional */
 $(document).ready(function() {
-  if (window.location.href.indexOf("/institucional/") > -1) {
+  if (window.location.href.indexOf("/institucional") > -1) {
 
     let videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://leunardo.dev/metodista/umesp-institucional.mp4' type='video/mp4' /></video>"
 
