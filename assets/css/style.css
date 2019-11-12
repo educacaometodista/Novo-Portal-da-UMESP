@@ -2567,11 +2567,6 @@ body.section-lato-sensu.site-Metodista.subsection-a-distancia-saude-administraca
 }
 
 /* INSTITUCIONAL */
-/* body.section-institucional.site-Metodista .container-fluid.nopadding {
-  background: url(/Metodista/institucional/imagens/institucional.jpg) no-repeat
-    center;
-  background-size: cover;
-} */
 
 video#videoInstitucional {
   position: absolute;
@@ -2583,7 +2578,7 @@ video#videoInstitucional {
   overflow: hidden;
   z-index: -1;
   object-fit: cover;
-  height: 250px;
+  height: 300px;
   max-height: 300px;
 }
 
@@ -4842,7 +4837,7 @@ div#lista-integracao-sucessmsg {
 	body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div:first-child div.tileItem.visualIEFloatFix{
 		    margin-left: 0 !important;
 	}
-	    
+
   body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
   body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
   body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before{
