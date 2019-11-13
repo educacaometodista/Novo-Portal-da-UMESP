@@ -3416,22 +3416,47 @@ a.polos-apoio:hover {
 
 a.bt-mod-presencial{
 	display: block;
-    font-family: "Oswald", sans-serif;
     background: #6b6b6b;
     text-align: center;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 400;
-    padding: 15px 0;
+    padding: 5px 0;
     border-radius: 4px;
     color: var(--white-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 a.bt-mod-presencial ins{
+	font-family: "Oswald", sans-serif;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-size:18px;
 }
 a.bt-mod-presencial:hover{
 	background:#555555;
+	text-decoration: none
+}
+a.bt-mod-distancia{
+	display: block;
+    background: #882c2c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0;
+    border-radius: 4px;
+    color: var(--white-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+a.bt-mod-distancia ins{
+	font-family: "Oswald", sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:18px;
+}
+a.bt-mod-distancia:hover{
+	text-decoration: none;
+	background: #652525;
 }
 
 a.url:hover {
