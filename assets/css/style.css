@@ -5362,6 +5362,10 @@ div#lista-integracao-sucessmsg {
     border: none;
     color: var(--white-color);
     text-shadow: 3px 3px 5px #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
 
   body.section-pos-graduacao-e-pesquisa.subsection-projetos-de-pesquisa
