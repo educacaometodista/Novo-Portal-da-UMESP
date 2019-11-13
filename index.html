@@ -708,6 +708,16 @@
 
       if (!leadsContact == '') { leadsContact.remove() }
 	  }
+
+    // Suporte para navegadores antigos
+    var $buoop = {required:{e:0,f:61,o:55,s:9,c:69},insecure:true,style:"bottom",api:2019.11 };
+    function $buo_f(){
+    var e = document.createElement("script");
+    e.src = "//browser-update.org/update.min.js";
+    document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
   </script>
 
   <!-- ======= AddThis JS ======= -->
