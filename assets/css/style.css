@@ -2598,6 +2598,12 @@ video#videoInstitucional {
   max-height: 300px;
 }
 
+/* body.section-institucional.site-Metodista .container-fluid.nopadding {
+  background: url(/Metodista/institucional/imagens/institucional.jpg) no-repeat
+    center;
+  background-size: cover;
+} */
+
 /* CURSOS SEMIPRESENCIAIS - HUMANIDADES */
 body.section-lato-sensu.site-Metodista.subsection-semipresenciais-humanidades-aconselhamento-pastoral
   .container-fluid.nopadding {
