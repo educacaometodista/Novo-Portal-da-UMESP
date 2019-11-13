@@ -13,7 +13,7 @@ $(document).ready(function(){
 $(document).ready(function() {
   if (window.location.href.indexOf("/institucional") > -1) {
 
-    let videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://player.vimeo.com/external/340983121.hd.mp4?s=890e869d5bb5a1cfaf7660c0064bf8c56115e766&profile_id=174' type='video/mp4' /></video>"
+    let videoInstitucional = "<video id='videoInstitucional' autoplay loop muted><source src='https://player.vimeo.com/external/372893009.hd.mp4?s=2a4b369dde2b34ae2b19d2e4368cc0c44d23b964&profile_id=175' type='video/mp4' /></video>"
 
     $("div.outer-wrapper div.container-fluid.nopadding").append(videoInstitucional);
   }

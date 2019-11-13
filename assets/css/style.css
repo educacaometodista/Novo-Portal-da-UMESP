@@ -540,7 +540,7 @@ body {
   background: #f1f1f1;
 }
 body.fixedmenu {
-    padding-top: 55px;
+  padding-top: 55px;
 }
 body.section-home nav#portal-breadcrumbs {
   display: none;
@@ -617,10 +617,15 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
 }
 
 /* TABELAS */
-table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
-    border: 1px solid #e5e5e5;
-    padding: 5px;
-    vertical-align: middle;
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 /* PORTLET */
@@ -706,6 +711,17 @@ section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
   a.botao-toogle:hover {
   background: #0f2f4e;
   text-decoration: none;
+}
+
+/* Bloquote */
+blockquote {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin: 0 0 20px;
+  box-shadow: 2px 4px 4px #ececec;
+  font-size: 14px;
+  border-left: 5px solid #3776b085;
 }
 
 /* SEÇÕES GRADUAÇÃO PRESENCIAL */
@@ -3007,7 +3023,7 @@ a.transparent-btns_nav.transparent-btns1_nav.prev:hover {
   transition: 0.3s;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .transparent-btns_nav {
     height: 81.3%;
   }
@@ -3081,8 +3097,11 @@ body:not(.userrole-authenticated).section-lato-sensu
   text-transform: uppercase;
 }
 
-@media only screen and (max-width:767px) {
-  body:not(.userrole-authenticated).section-lato-sensu #content .mosaic-tile-content h4 {
+@media only screen and (max-width: 767px) {
+  body:not(.userrole-authenticated).section-lato-sensu
+    #content
+    .mosaic-tile-content
+    h4 {
     margin-top: 0px;
     display: block;
     white-space: normal;
@@ -3132,7 +3151,8 @@ body.template-layout.no-portlet-columns
   .outer-wrapper
   > .container
   .mosaic-grid-row.curoslato.mosaic-grid-row-fluid {
-  background: var(--white-color) url("/Metodista/lato-sensu/imagens/fund-lato-metodista.jpg") !important;
+  background: var(--white-color)
+    url("/Metodista/lato-sensu/imagens/fund-lato-metodista.jpg") !important;
   height: 100% !important;
 
   /* Create the parallax scrolling effect */
@@ -3159,7 +3179,8 @@ body.template-layout.no-portlet-columns
   .outer-wrapper
   > .container
   .mosaic-grid-row.curoslato3.mosaic-grid-row-fluid {
-  background: var(--white-color) url("/Metodista/lato-sensu/imagens/arquitetura-campus-3.png") !important;
+  background: var(--white-color)
+    url("/Metodista/lato-sensu/imagens/arquitetura-campus-3.png") !important;
   height: 100% !important;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
@@ -3316,9 +3337,19 @@ body.section-faculdade-de-teologia
   font-weight: 500;
   line-height: 1.2;
 }
-body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
-body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
-body.section-graduacao-a-distancia .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline {
+body.section-graduacao-presencial
+  .mosaic-tile-content
+  .tileItem.visualIEFloatFix
+  h2.tileHeadline,
+body.section-stricto-sensu
+  .mosaic-grid-row.noticias-curso-stricto
+  .mosaic-tile-content
+  .tileItem.visualIEFloatFix
+  h2.tileHeadline,
+body.section-graduacao-a-distancia
+  .mosaic-tile-content
+  .tileItem.visualIEFloatFix
+  h2.tileHeadline {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin-top: 10px;
@@ -3443,7 +3474,7 @@ div.todosEventos p a:after {
 }
 
 .mosaic-grid-row.maisdestaques {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 a.mais-noticias-graduacao {
   display: inline-block;
@@ -3644,7 +3675,10 @@ body.section-stricto-sensu
 }
 
 /* BOLSAS E INTERCAMBIO */
-.mosaic-grid-row.bolsas-intercambio .mosaic-grid-cell .movable.removable.mosaic-tile:nth-child(even) .mosaic-tile-content {
+.mosaic-grid-row.bolsas-intercambio
+  .mosaic-grid-cell
+  .movable.removable.mosaic-tile:nth-child(even)
+  .mosaic-tile-content {
   background: var(--white-color);
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
@@ -3730,7 +3764,7 @@ dl.rsstile {
   margin-bottom: 0px !important;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   p.espaco-universitario-paragraph img.espaco-universitario {
     width: 300px;
   }
@@ -3784,7 +3818,7 @@ h2.blog {
 
 @media only screen and (max-width: 767px) {
   h2.bolsas {
-    font-size: 32px
+    font-size: 32px;
   }
 }
 /* ÍCONES */
@@ -4141,27 +4175,54 @@ div.box-home.inscricoes p {
 
 body.section-noticias.subsection-aggregator article.tileItem .tileFooter,
 body.section-stricto-sensu.subsection-noticias article.tileItem .tileFooter,
-body.section-stricto-sensu.subsection-administracao-noticias article.tileItem .tileFooter,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias article.tileItem .tileFooter,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias article.tileItem .tileFooter,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias article.tileItem .tileFooter,
-body.section-stricto-sensu.subsection-educacao-noticias article.tileItem .tileFooter,
-body.section-noticias.subsection-aggregator div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-noticias div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-administracao-noticias div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias div#plone-document-byline span.documentModified,
-body.section-stricto-sensu.subsection-educacao-noticias div#plone-document-byline span.documentModified{
+body.section-stricto-sensu.subsection-administracao-noticias
+  article.tileItem
+  .tileFooter,
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  article.tileItem
+  .tileFooter,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  article.tileItem
+  .tileFooter,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  article.tileItem
+  .tileFooter,
+body.section-stricto-sensu.subsection-educacao-noticias
+  article.tileItem
+  .tileFooter,
+body.section-noticias.subsection-aggregator
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-noticias
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-administracao-noticias
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  div#plone-document-byline
+  span.documentModified,
+body.section-stricto-sensu.subsection-educacao-noticias
+  div#plone-document-byline
+  span.documentModified {
   display: none;
 }
 body.section-noticias.subsection-aggregator h2.tileHeadline,
 body.section-stricto-sensu.subsection-noticias h2.tileHeadline,
 body.section-stricto-sensu.subsection-administracao-noticias h2.tileHeadline,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias h2.tileHeadline,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias h2.tileHeadline,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias h2.tileHeadline,
-body.section-stricto-sensu.subsection-educacao-noticias h2.tileHeadline{
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  h2.tileHeadline,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  h2.tileHeadline,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  h2.tileHeadline,
+body.section-stricto-sensu.subsection-educacao-noticias h2.tileHeadline {
   font-size: 20px;
   margin: 5px 0;
 }
@@ -4169,10 +4230,13 @@ body.section-stricto-sensu.subsection-educacao-noticias h2.tileHeadline{
 body.section-noticias.subsection-aggregator article.tileItem,
 body.section-stricto-sensu.subsection-noticias article.tileItem,
 body.section-stricto-sensu.subsection-administracao-noticias article.tileItem,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias article.tileItem,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias article.tileItem,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias article.tileItem,
-body.section-stricto-sensu.subsection-educacao-noticias article.tileItem{
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  article.tileItem,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  article.tileItem,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  article.tileItem,
+body.section-stricto-sensu.subsection-educacao-noticias article.tileItem {
   margin-top: 15px;
   padding-bottom: 15px;
   border-bottom: dotted 1px #d2d2d2;
@@ -4181,21 +4245,36 @@ body.section-noticias.subsection-aggregator h2.tileHeadline:first-of-type,
 body.section-stricto-sensu.subsection-noticias h2.tileHeadline:first-of-type,
 body.section-noticias.subsection-aggregator article.tileItem:first-of-type,
 body.section-stricto-sensu.subsection-noticias article.tileItem:first-of-type,
-body.section-stricto-sensu.subsection-administracao-noticias article.tileItem:first-of-type,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias article.tileItem:first-of-type,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias article.tileItem:first-of-type,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias article.tileItem:first-of-type,
-body.section-stricto-sensu.subsection-educacao-noticias article.tileItem:first-of-type{
+body.section-stricto-sensu.subsection-administracao-noticias
+  article.tileItem:first-of-type,
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  article.tileItem:first-of-type,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  article.tileItem:first-of-type,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  article.tileItem:first-of-type,
+body.section-stricto-sensu.subsection-educacao-noticias
+  article.tileItem:first-of-type {
   margin-top: 0;
 }
 
 body.section-noticias.subsection-aggregator article.tileItem .tileBody,
 body.section-stricto-sensu.subsection-noticias article.tileItem .tileBody,
-body.section-stricto-sensu.subsection-administracao-noticias article.tileItem .tileBody,
-body.section-stricto-sensu.subsection-psicologia-da-saude-noticias article.tileItem .tileBody,
-body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias article.tileItem .tileBody,
-body.section-stricto-sensu.subsection-comunicacao-social-noticias article.tileItem .tileBody,
-body.section-stricto-sensu.subsection-educacao-noticias article.tileItem .tileBody{
+body.section-stricto-sensu.subsection-administracao-noticias
+  article.tileItem
+  .tileBody,
+body.section-stricto-sensu.subsection-psicologia-da-saude-noticias
+  article.tileItem
+  .tileBody,
+body.section-stricto-sensu.subsection-ciencias-da-religiao-noticias
+  article.tileItem
+  .tileBody,
+body.section-stricto-sensu.subsection-comunicacao-social-noticias
+  article.tileItem
+  .tileBody,
+body.section-stricto-sensu.subsection-educacao-noticias
+  article.tileItem
+  .tileBody {
   font-weight: 400;
 }
 
@@ -4322,26 +4401,30 @@ ul.event.summary {
   margin-left: 5px;
 }
 
-body.section-eventos ul.event.summary{
-	width: 430px;
-	max-width: 430px;
-	color:#FFF;
-	border-radius: 4px;
-background: rgb(55,118,176);
-background: linear-gradient(90deg, rgba(55,118,176,1) 0%, rgba(1,49,93,1) 100%);
+body.section-eventos ul.event.summary {
+  width: 430px;
+  max-width: 430px;
+  color: #fff;
+  border-radius: 4px;
+  background: rgb(55, 118, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 118, 176, 1) 0%,
+    rgba(1, 49, 93, 1) 100%
+  );
 }
 
-body.section-eventos ul.event.summary a{
-	color:rgba(255,255,255,0.8);
-	text-decoration: none;
-	border: none;
+body.section-eventos ul.event.summary a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border: none;
 }
 body.section-eventos ul.event.summary.details li.event-attendee strong,
 body.section-eventos ul.event.summary.details li.event-date strong,
-body.section-eventos ul.event.summary.details li.event-calendar strong{
-text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+body.section-eventos ul.event.summary.details li.event-calendar strong {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 div.todosEventos {
@@ -4379,7 +4462,7 @@ ul.event.summary.details li.event-date span.timezone {
     top: 98%;
     right: 20px;
     font-size: 22px;
-}
+  }
 
   div.todosEventos div.container {
     border-top: 2px solid #007bb3;
@@ -4399,19 +4482,32 @@ ul.event.summary.details li.event-date span.timezone {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-}
+  }
 
-  section.existing-content-tile.eventos-home section article div.cal_date span.cal_month {
+  section.existing-content-tile.eventos-home
+    section
+    article
+    div.cal_date
+    span.cal_month {
     background: transparent !important;
     padding: 20px 0px 0px;
   }
 
   section.existing-content-tile.eventos-home section article.vevent.tileItem {
-      margin: 30px 0px;
-      width: 100%;
+    margin: 30px 0px;
+    width: 100%;
   }
 
-  body.section-stricto-sensu .mosaic-tile-content section.eventos-home .vevent div.cal_date, body.section-home .mosaic-tile-content section.eventos-home .vevent div.cal_date {
+  body.section-stricto-sensu
+    .mosaic-tile-content
+    section.eventos-home
+    .vevent
+    div.cal_date,
+  body.section-home
+    .mosaic-tile-content
+    section.eventos-home
+    .vevent
+    div.cal_date {
     position: absolute;
     overflow: inherit;
     z-index: 10;
@@ -4419,12 +4515,17 @@ ul.event.summary.details li.event-date span.timezone {
     margin-right: 15px;
     text-align: center;
     background: rgb(25, 113, 109);
-    background: linear-gradient( 90deg, rgb(40, 66, 90) 0%, rgb(55, 118, 176) 50%, rgb(40, 66, 90) 100% );
+    background: linear-gradient(
+      90deg,
+      rgb(40, 66, 90) 0%,
+      rgb(55, 118, 176) 50%,
+      rgb(40, 66, 90) 100%
+    );
     color: var(--white-color);
     border-radius: 4px;
     min-width: 4.4em;
     height: 140px;
-}
+  }
 
   body.section-home .mosaic-tile-content section.eventos-home article {
     float: left;
@@ -4435,8 +4536,7 @@ ul.event.summary.details li.event-date span.timezone {
     border-radius: 4px;
     margin-top: 35px;
     min-height: 100px;
-}
-
+  }
 }
 
 /* FOOTER */
@@ -4844,25 +4944,58 @@ div#lista-integracao-sucessmsg {
     display: block;
   }
 
-  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
-  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix{
+  body.section-graduacao-presencial
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix,
+  body.section-graduacao-a-distancia
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix {
     width: 24%;
-	margin-top: 15px;
-	  margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     float: left;
     margin-left: 1.33%;
     transition: all 0.3s ease;
   }
-	body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div:first-child div.tileItem.visualIEFloatFix,
-	body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div:first-child div.tileItem.visualIEFloatFix,
-	body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div:first-child div.tileItem.visualIEFloatFix{
-		    margin-left: 0 !important;
-	}
+  body.section-graduacao-presencial
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div:first-child
+    div.tileItem.visualIEFloatFix,
+  body.section-graduacao-a-distancia
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div:first-child
+    div.tileItem.visualIEFloatFix,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div:first-child
+    div.tileItem.visualIEFloatFix {
+    margin-left: 0 !important;
+  }
 
-  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
-  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:before{
+  body.section-graduacao-presencial
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:before,
+  body.section-graduacao-a-distancia
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:before,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:before {
     pointer-events: none;
     position: absolute;
     z-index: -1;
@@ -4889,15 +5022,35 @@ div#lista-integracao-sucessmsg {
     transition-property: transform, opacity;
   }
 
-  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover,
-  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover{
+  body.section-graduacao-presencial
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover,
+  body.section-graduacao-a-distancia
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover {
     transform: translateY(-10px);
   }
 
-  body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before,
-  body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix:hover:before{
+  body.section-graduacao-presencial
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover:before,
+  body.section-graduacao-a-distancia
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover:before,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost
+    .mosaic-tile-content
+    div.tileItem.visualIEFloatFix:hover:before {
     opacity: 1;
   }
 
@@ -5188,9 +5341,19 @@ div#lista-integracao-sucessmsg {
     text-shadow: 2px 2px 8px #000;
   }
 
-  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
-  body.section-graduacao-a-distancia .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline{
+  body.section-graduacao-presencial
+    .mosaic-tile-content
+    .tileItem.visualIEFloatFix
+    h2.tileHeadline,
+  body.section-graduacao-a-distancia
+    .mosaic-tile-content
+    .tileItem.visualIEFloatFix
+    h2.tileHeadline,
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-tile-content
+    .tileItem.visualIEFloatFix
+    h2.tileHeadline {
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
@@ -5200,7 +5363,11 @@ div#lista-integracao-sucessmsg {
     min-height: 112px;
     border-radius: 0 0 4px 4px;
   }
-  body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFix h2.tileHeadline a {
+  body.section-graduacao-presencial
+    .mosaic-tile-content
+    .tileItem.visualIEFloatFix
+    h2.tileHeadline
+    a {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -5215,7 +5382,11 @@ div#lista-integracao-sucessmsg {
   }
   body.section-graduacao-presencial .tileItem.visualIEFloatFix a.summary-image,
   body.section-graduacao-a-distancia .tileItem.visualIEFloatFix a.summary-image,
-  body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-tile-content .tileItem.visualIEFloatFix a.summary-image{
+  body.section-stricto-sensu
+    .mosaic-grid-row.noticias-curso-stricto
+    .mosaic-tile-content
+    .tileItem.visualIEFloatFix
+    a.summary-image {
     border-radius: 4px 4px 0 0;
   }
   .tileItem.visualIEFloatFix a.summary-image img {
