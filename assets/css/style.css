@@ -713,7 +713,7 @@ section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
   text-decoration: none;
 }
 
-/* Bloquote */
+/* Novo Less */
 blockquote {
   padding: 20px !important;
   background: #f9f9f9 !important;
@@ -5319,12 +5319,17 @@ div#lista-integracao-sucessmsg {
   /* TILES */
 
   .menu-stricto-sensu .movable.removable.mosaic-tile,
-  .menu-area-do-aluno .movable.removable.mosaic-tile {
+  .menu-area-do-aluno .movable.removable.mosaic-tile,
+  .menu-estagios-exatas .movable.removable.mosaic-tile{
     background: var(--white-color);
     padding: 15px;
     border-radius: 0 0 4px 4px;
     border-top: solid 3px #ffd400;
     box-shadow: 2px 2px 3px #d0d0d0;
+  }
+
+  .menu-estagios-exatas .movable.removable.mosaic-tile {
+    min-height: 240px;
   }
 
   body.section-area-do-aluno
@@ -5380,7 +5385,7 @@ div#lista-integracao-sucessmsg {
     .tit-grad
     h1.documentFirstHeading {
     text-align: right;
-    padding: 120px 0 0;
+    padding: 120px 5px 15px;
     font-size: 60px;
     line-height: 1;
     margin: 0;
@@ -5389,8 +5394,8 @@ div#lista-integracao-sucessmsg {
     text-shadow: 3px 3px 5px #000;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
+    -webkit-line-clamp: 2;
+    overflow:hidden;
   }
 
   body.section-pos-graduacao-e-pesquisa.subsection-projetos-de-pesquisa
@@ -5898,6 +5903,14 @@ div#lista-integracao-sucessmsg {
   .col-md-5ths {
     width: 20%;
     float: left;
+  }
+
+  body.section-estagios-exatas a.col-md-2.boxes-lato {
+    width: 15.4%;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    float: left;
+    height: 180px;
   }
 
   a.col-md-2.boxes-lato {
