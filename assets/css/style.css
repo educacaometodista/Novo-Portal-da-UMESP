@@ -1861,6 +1861,18 @@ body.section-graduacao-presencial.subsection-gestao-da-tecnologia-da-informacao
     no-repeat center;
   background-size: cover;
 }
+body.section-graduacao-presencial.subsection-gestao-da-producao-industrial
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-presencial/gestao-da-producao-industrial/imagens/topo-gestao-da-producao-industrial.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-presencial.subsection-gestao-financeira
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-presencial/gestao-financeira/imagens/topo-gestao-financeira.jpg)
+    no-repeat center;
+  background-size: cover;
+}
 body.section-graduacao-presencial.subsection-jornalismo
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/jornalismo/imagens/topo-jornalismo.jpg)
@@ -1969,9 +1981,21 @@ body.section-graduacao-presencial.subsection-relacoes-publicas
     no-repeat center;
   background-size: cover;
 }
+body.section-graduacao-presencial.subsection-secretariado
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-presencial/secretariado/imagens/topo-secretariado.jpg)
+    no-repeat center;
+  background-size: cover;
+}
 body.section-graduacao-presencial.subsection-secretariado-executivo-bilingue
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/secretariado-executivo-bilingue/imagens/topo-secretariado-executivo-bilingue.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-presencial.subsection-sistemas-para-internet
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-presencial/sistemas-para-internet/imagens/topo-sistemas-para-internet.jpg)
     no-repeat center;
   background-size: cover;
 }
@@ -2009,6 +2033,12 @@ body.section-graduacao-a-distancia .container-fluid.nopadding {
 body.section-graduacao-a-distancia.subsection-administracao
   .container-fluid.nopadding {
   background: url(/Metodista/graduacao-a-distancia/administracao/imagens/topo-administracao.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+body.section-graduacao-a-distancia.subsection-ciencias-sociais
+  .container-fluid.nopadding {
+  background: url(/Metodista/graduacao-a-distancia/ciencias-sociais/imagens/topo-ciencias-sociais.jpg)
     no-repeat center;
   background-size: cover;
 }
