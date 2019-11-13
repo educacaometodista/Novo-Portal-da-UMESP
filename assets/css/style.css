@@ -3413,6 +3413,27 @@ a.polos-apoio:hover {
   background: #d29d25;
   text-decoration: none;
 }
+
+a.bt-mod-presencial{
+	display: block;
+    font-family: "Oswald", sans-serif;
+    background: #6b6b6b;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    border-radius: 4px;
+    color: var(--white-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+a.bt-mod-presencial ins{
+	text-transform: uppercase;
+	font-size:18px;
+}
+a.bt-mod-presencial:hover{
+	background:#555555;
+}
+
 a.url:hover {
   text-decoration: none !important;
   border-bottom: 0;
