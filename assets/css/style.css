@@ -1717,6 +1717,14 @@ body.section-financeiro .container-fluid.nopadding {
   background-size: cover;
 }
 
+/* IMAGEM DO TOPO DE ESTÁGIOS EXATAS */
+body.section-estagios-exatas .container-fluid.nopadding {
+  /* background: url(/Metodista/estagios-exatas/imagens/topo-estagios-exatas.jpg) no-repeat; */
+
+  /* Temporário: */ background: url(/Metodista/graduacao-presencial/imagens/topo-titulos.jpg);
+  background-size: cover;
+}
+
 /* IMAGENS DOS TOPOS DE GRADUAÇÃO */
 body.section-graduacao-presencial .container-fluid.nopadding {
   background: url(/Metodista/graduacao-presencial/imagens/topo-titulos.jpg)
