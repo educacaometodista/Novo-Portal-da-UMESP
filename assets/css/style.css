@@ -217,7 +217,7 @@ i.material-icons.icone-atendimento {
     font-size: 18px;
 }
 .mosaic-grid-row.avisos a:link {
-    color: #e48b1a;
+    color: #ffbf6d;
 }
 body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before {
     font-family: "Font Awesome 5 Free";
@@ -505,16 +505,51 @@ fieldset.autotoc-section {
     margin-top: 20px;
 }
 /* SEÇÕES GRADUAÇÃO PRESENCIAL */
-body.section-graduacao-presencial .plone-breadcrumb, body.section-graduacao-a-distancia .plone-breadcrumb, body.section-institucional .plone-breadcrumb, body.section-financeiro .plone-breadcrumb, body.section-estagios-exatas .plone-breadcrumb, body.section-stricto-sensu .plone-breadcrumb, body.section-lato-sensu .plone-breadcrumb, body.section-pos-graduacao-e-pesquisa .plone-breadcrumb, body.section-centro-de-linguas .plone-breadcrumb, body.section-formaturas .plone-breadcrumb, body.section-pastoral-universitaria .plone-breadcrumb, body.section-eventos .plone-breadcrumb, body.section-rh-rapido .plone-breadcrumb, body.section-area-do-aluno .plone-breadcrumb, body.section-nucleo-de-arte-e-cultura .plone-breadcrumb, body.section-nucleo-de-acessibilidade .plone-breadcrumb, body.section-policlinica .plone-breadcrumb, body.section-biblioteca .plone-breadcrumb, body.section-nucleo-de-arte-e-cultura .plone-breadcrumb, body.section-academia-escola .plone-breadcrumb, body.section-enade .plone-breadcrumb, body.section-agencia-metodista-de-consultoria .plone-breadcrumb, body.section-centro-otilia-chaves .plone-breadcrumb, body.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
+body.section-graduacao-presencial .plone-breadcrumb,
+body.section-graduacao-a-distancia .plone-breadcrumb,
+body.section-institucional .plone-breadcrumb,
+body.section-financeiro .plone-breadcrumb,
+body.section-estagios-exatas .plone-breadcrumb,
+body.section-stricto-sensu .plone-breadcrumb,
+body.section-lato-sensu .plone-breadcrumb,
+body.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
+body.section-centro-de-linguas .plone-breadcrumb,
+body.section-formaturas .plone-breadcrumb,
+body.section-pastoral-universitaria .plone-breadcrumb,
+body.section-eventos .plone-breadcrumb,
+body.section-rh-rapido .plone-breadcrumb,
+body.section-area-do-aluno .plone-breadcrumb,
+body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.section-nucleo-de-acessibilidade .plone-breadcrumb,
+body.section-policlinica .plone-breadcrumb,
+body.section-biblioteca .plone-breadcrumb, body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.section-academia-escola .plone-breadcrumb,
+body.section-enade .plone-breadcrumb,
+body.section-agencia-metodista-de-consultoria .plone-breadcrumb,
+body.section-centro-otilia-chaves .plone-breadcrumb,
+body.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
     margin-bottom: 0;
 }
-body:not(.userrole-authenticated).section-graduacao-a-distancia #content, body:not(.userrole-authenticated).section-financeiro #content, body:not(.userrole-authenticated).section-estagios-exatas #content, body:not(.userrole-authenticated).section-institucional #content,
+body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
+body:not(.userrole-authenticated).section-financeiro #content,
+body:not(.userrole-authenticated).portaltype-document.section-estagios-exatas #content,
+body:not(.userrole-authenticated).section-institucional #content,
 /*body:not(.userrole-authenticated).section-area-do-aluno #content,*/
-body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content, body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content, body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content, body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.fundo-branco .mosaic-grid-cell .mosaic-tile .mosaic-tile-content, body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl, body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row, body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document #content, body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu #content {
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content,
+body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.fundo-branco .mosaic-grid-cell .mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl,
+body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document #content,
+body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu #content {
     background: var(--white-color);
     padding: 15px;
     border-radius: 4px;
 }
+
+
+
 body.userrole-authenticated .label {
     color: #4d4d4d;
 }
@@ -538,9 +573,14 @@ body.section-enade .container-fluid.nopadding .contagem {
 body.section-enade .container-fluid.nopadding .contagem span#dia {
     color: rgba(177, 48, 48, 0.9);
 }
-body.section-graduacao-presencial h4, body.section-estagios-exatas h4, body.section-financeiro h4 {
+body.section-graduacao-presencial h4,
+body.section-financeiro h4 {
     margin-top: 20px;
 }
+body.section-estagios-exatas .menu-estagios-exatas h4:first-of-type{
+	margin-top: 0;
+}
+
 body.section-graduacao-presencial .mosaic-tile-content iframe {
     padding-bottom: 10px;
 }
@@ -2053,6 +2093,9 @@ body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFi
 /* LINKS */
 a {
     color: var(--primary-color);
+}
+a.reportar-erro {
+    font-size: small;
 }
 a.polos-apoio {
     display: block;
