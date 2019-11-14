@@ -730,6 +730,7 @@ body.section-graduacao-presencial .plone-breadcrumb,
 body.section-graduacao-a-distancia .plone-breadcrumb,
 body.section-institucional .plone-breadcrumb,
 body.section-financeiro .plone-breadcrumb,
+body.section-estagios-exatas .plone-breadcrumb,
 body.section-stricto-sensu .plone-breadcrumb,
 body.section-lato-sensu .plone-breadcrumb,
 body.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
@@ -753,6 +754,7 @@ body.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
 }
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
 body:not(.userrole-authenticated).section-financeiro #content,
+body:not(.userrole-authenticated).section-estagios-exatas #content,
 body:not(.userrole-authenticated).section-institucional #content,
 /*body:not(.userrole-authenticated).section-area-do-aluno #content,*/
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
@@ -782,6 +784,7 @@ body.userrole-authenticated.section-graduacao-presencial .plone-breadcrumb,
 body.userrole-authenticated.section-graduacao-a-distancia .plone-breadcrumb,
 body.userrole-authenticated.section-institucional .plone-breadcrumb,
 body.userrole-authenticated.section-financeiro .plone-breadcrumb,
+body.userrole-authenticated.section-estagios-exatas .plone-breadcrumb,
 body.userrole-authenticated.section-stricto-sensu .plone-breadcrumb,
 body.userrole-authenticated.section-lato-sensu .plone-breadcrumb,
 body.userrole-authenticated.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
@@ -809,6 +812,7 @@ body.section-graduacao-presencial .container-fluid.nopadding,
 body.section-graduacao-a-distancia .container-fluid.nopadding,
 body.section-institucional .container-fluid.nopadding,
 body.section-financeiro .container-fluid.nopadding,
+body.section-estagios-exatas .container-fluid.nopadding,
 body.section-stricto-sensu .container-fluid.nopadding,
 body.section-lato-sensu .container-fluid.nopadding,
 body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding,
@@ -845,6 +849,7 @@ body.section-enade .container-fluid.nopadding .contagem span#dia {
 }
 
 body.section-graduacao-presencial h4,
+body.section-estagios-exatas h4,
 body.section-financeiro h4 {
   margin-top: 20px;
 }
