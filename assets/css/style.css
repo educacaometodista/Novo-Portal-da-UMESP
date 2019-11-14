@@ -724,6 +724,10 @@ blockquote {
   border-left: 5px solid #3776b085 !important;
 }
 
+fieldset.autotoc-section {
+  margin-top: 20px;
+}
+
 /* SEÇÕES GRADUAÇÃO PRESENCIAL */
 
 body.section-graduacao-presencial .plone-breadcrumb,
@@ -1724,9 +1728,7 @@ body.section-financeiro .container-fluid.nopadding {
 
 /* IMAGEM DO TOPO DE ESTÁGIOS EXATAS */
 body.section-estagios-exatas .container-fluid.nopadding {
-  /* background: url(/Metodista/estagios-exatas/imagens/topo-estagios-exatas.jpg) no-repeat; */
-
-  /* Temporário: */ background: url(/Metodista/graduacao-presencial/imagens/topo-titulos.jpg);
+  background: url(/Metodista/estagios-exatas/imagens/topo-estagios-exatas.jpg) no-repeat;
   background-size: cover;
 }
 
