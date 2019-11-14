@@ -1516,8 +1516,8 @@ video#videoInstitucional {
 }
 @media only screen and (max-width:767px) {
     video#videoInstitucional {
-        height: 400px;
-        max-height: 400px;
+        height: 350px;
+        max-height: 350px;
    }
 }
 /* body.section-institucional.site-Metodista .container-fluid.nopadding {
