@@ -107,8 +107,7 @@
                     <a href="http://moodle.metodista.br/moodle-ead/" target="_blank" title="MOODLE">MOODLE</a>
                 </li>
                 <li class="topo-portal-do-aluno">
-                    <a href="https://www.metodista.br/portalims/web/index.html" target="_blank" title="PORTAL DO ALUNO">PORTAL DO
-            ALUNO</a>
+                    <a href="https://www.metodista.br/portalims/web/index.html" target="_blank" title="PORTAL DO ALUNO">PORTAL DO ALUNO</a>
                 </li>
             </ul>
         </div>
@@ -124,6 +123,7 @@
                 </div>
             </div>
         </header>
+	
         <div id="mainnavigation-wrapper">
             <div id="mainnavigation">
 
@@ -221,13 +221,11 @@
         </div>
         <div id="hero" class="principal">
             <div class="container">
-                <div class="gigantic">
-                </div>
+                <div class="gigantic"></div>
             </div>
         </div>
         <div id="above-content-wrapper">
-            <div id="above-content">
-            </div>
+            <div id="above-content"></div>
         </div>
 
         <div class="container-fluid nopadding">
@@ -252,6 +250,8 @@
             <!--/row-->
             <!--/container-->
         </div>
+		
+	</div>
         <!--/outer-wrapper -->
         <div class="reportarErrosDiv">
             <div class="container">
@@ -348,7 +348,7 @@
                                 <input id='lista-integracao-email' type='text' placeholder='Digite seu e-mail'>
                                 <button onclick='onSubmitClick(this)' class="btn plone-btn plone-btn-block">Enviar<i class="material-icons">send</i></button>
                             </div>
-                            <div id='lista-integracao-sucessmsg'></div>
+                            <div id="lista-integracao-sucessmsg"></div>
                         </form>
 
                     </div>
@@ -538,13 +538,7 @@
             $('#ouibounce-modal .modal').on('click', function(e) {
                 e.stopPropagation();
             });
-            window.onload = function() {
-                var leadsContact = document.querySelector('body.userrole-authenticated section.portlet.portletStaticText.portlet-static-receba-informaes');
-
-                if (!leadsContact == '') {
-                    leadsContact.remove()
-                }
-            }
+            
         </script>
 
         <!-- ======= AddThis JS ======= -->
