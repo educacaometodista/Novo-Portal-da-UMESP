@@ -2936,8 +2936,10 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         section.existing-content-tile.eventos-home span.summary {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             overflow: hidden;
+            line-height: 1.2em;
+            font-size: 18px;
        }
         section.existing-content-tile.eventos-home section article div.cal_date span.cal_month {
             background: transparent !important;
