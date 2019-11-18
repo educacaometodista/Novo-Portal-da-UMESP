@@ -3450,7 +3450,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             transition: 350ms;
             margin: 0;
             position: absolute !important;
-            display: block;
+            /* display: block; */
             padding: 5px 10px !important;
             margin-left: 0 !important;
             border-bottom: 3px solid #f5cb00;
