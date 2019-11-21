@@ -2824,6 +2824,11 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
     div.reportarErrosDiv {
         font-size: 18px;
    }
+
+   div.plone-modal-body h3 {
+     color: var(--white-color) !important;
+   }
+
     div.reportarErrosDiv p {
         text-align: right;
    }
