@@ -527,7 +527,8 @@ body.section-academia-escola .plone-breadcrumb,
 body.section-enade .plone-breadcrumb,
 body.section-agencia-metodista-de-consultoria .plone-breadcrumb,
 body.section-centro-otilia-chaves .plone-breadcrumb,
-body.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
+body.section-centro-de-estudos-wesleyanos .plone-breadcrumb,
+body.section-nucleo-de-sustentabilidade .plone-breadcrumb {
     margin-bottom: 0;
 }
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
@@ -538,6 +539,7 @@ body:not(.userrole-authenticated).section-institucional #content,
 body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
 body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content,
 body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content,
+body:not(.userrole-authenticated).section-nucleo-de-sustentabilidade #content,
 body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.fundo-branco .mosaic-grid-cell .mosaic-tile .mosaic-tile-content,
 body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl,
 body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row,
@@ -1648,6 +1650,11 @@ body.section-faculdade-de-teologia.site-Metodista .container-fluid.nopadding {
 /* CENTRO OTÍLIA CHAVES */
 body.section-centro-otilia-chaves.site-Metodista .container-fluid.nopadding {
     background: url(/Metodista/centro-otilia-chaves/imagens/centro-otilia-chaves.jpg) no-repeat center;
+    background-size: cover;
+}
+/* NÚCLEO DE SUSTENTABILIDADE */
+body.section-nucleo-de-sustentabilidade.site-Metodista .container-fluid.nopadding {
+    background: url(/Metodista/nucleo-de-sustentabilidade/imagens/nucleo-de-sustentabilidade.jpg) no-repeat center;
     background-size: cover;
 }
 /* CENTRO DE ESTUDOS WESLEYANOS */
