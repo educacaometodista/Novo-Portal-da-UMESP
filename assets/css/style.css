@@ -558,10 +558,59 @@ body.userrole-authenticated .label {
 body:not(.userrole-authenticated).no-portlet-columns.section-pos-graduacao-e-pesquisa #content .mosaic-grid-row .mosaic-grid-cell {
     padding: 0;
 }
-body.userrole-authenticated.section-graduacao-presencial .plone-breadcrumb, body.userrole-authenticated.section-graduacao-a-distancia .plone-breadcrumb, body.userrole-authenticated.section-institucional .plone-breadcrumb, body.userrole-authenticated.section-financeiro .plone-breadcrumb, body.userrole-authenticated.section-estagios-exatas .plone-breadcrumb, body.userrole-authenticated.section-stricto-sensu .plone-breadcrumb, body.userrole-authenticated.section-lato-sensu .plone-breadcrumb, body.userrole-authenticated.section-pos-graduacao-e-pesquisa .plone-breadcrumb, body.userrole-authenticated.section-centro-de-linguas .plone-breadcrumb, body.userrole-authenticated.section-formaturas .plone-breadcrumb, body.userrole-authenticated.section-pastoral-universitaria .plone-breadcrumb, body.userrole-authenticated.section-eventos .plone-breadcrumb, body.userrole-authenticated.section-rh-rapido .plone-breadcrumb, body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb, body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb, body.userrole-authenticated.section-nucleo-de-acessibilidade .plone-breadcrumb, body.userrole-authenticated.section-policlinica .plone-breadcrumb, body.userrole-authenticated.section-biblioteca .plone-breadcrumb, body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb, body.userrole-authenticated.section-academia-escola .plone-breadcrumb, body.userrole-authenticated.section-enade .plone-breadcrumb, body.userrole-authenticated.section-agencia-metodista-de-consultoria .plone-breadcrumb, body.userrole-authenticated.section-centro-otilia-chaves .plone-breadcrumb, body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcrumb {
+body.userrole-authenticated.section-graduacao-presencial .plone-breadcrumb,
+body.userrole-authenticated.section-graduacao-a-distancia .plone-breadcrumb,
+body.userrole-authenticated.section-institucional .plone-breadcrumb,
+body.userrole-authenticated.section-financeiro .plone-breadcrumb,
+body.userrole-authenticated.section-estagios-exatas .plone-breadcrumb,
+body.userrole-authenticated.section-stricto-sensu .plone-breadcrumb,
+body.userrole-authenticated.section-lato-sensu .plone-breadcrumb,
+body.userrole-authenticated.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
+body.userrole-authenticated.section-centro-de-linguas .plone-breadcrumb,
+body.userrole-authenticated.section-formaturas .plone-breadcrumb,
+body.userrole-authenticated.section-pastoral-universitaria .plone-breadcrumb,
+body.userrole-authenticated.section-eventos .plone-breadcrumb,
+body.userrole-authenticated.section-rh-rapido .plone-breadcrumb,
+body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-acessibilidade .plone-breadcrumb,
+body.userrole-authenticated.section-policlinica .plone-breadcrumb,
+body.userrole-authenticated.section-biblioteca .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.userrole-authenticated.section-academia-escola .plone-breadcrumb,
+body.userrole-authenticated.section-enade .plone-breadcrumb,
+body.userrole-authenticated.section-agencia-metodista-de-consultoria .plone-breadcrumb,
+body.userrole-authenticated.section-centro-otilia-chaves .plone-breadcrumb,
+body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcrumb,
+body.userrole-authenticated.nucleo-de-sustentabilidade .plone-breadcrumb{
     margin-bottom: 20px;
 }
-body.section-graduacao-presencial .container-fluid.nopadding, body.section-graduacao-a-distancia .container-fluid.nopadding, body.section-institucional .container-fluid.nopadding, body.section-financeiro .container-fluid.nopadding, body.section-estagios-exatas .container-fluid.nopadding, body.section-stricto-sensu .container-fluid.nopadding, body.section-lato-sensu .container-fluid.nopadding, body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding, body.section-centro-de-linguas .container-fluid.nopadding, body.section-formaturas .container-fluid.nopadding, body.section-pastoral-universitaria .container-fluid.nopadding, body.section-eventos .container-fluid.nopadding, body.section-rh-rapido .container-fluid.nopadding, body.section-area-do-aluno .container-fluid.nopadding, body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding, body.section-nucleo-de-acessibilidade .container-fluid.nopadding, body.section-policlinica .container-fluid.nopadding, body.section-biblioteca .container-fluid.nopadding, body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding, body.section-academia-escola .container-fluid.nopadding, body.section-enade .container-fluid.nopadding, body.section-agencia-metodista-de-consultoria .container-fluid.nopadding, body.section-faculdade-de-teologia .container-fluid.nopadding, body.section-centro-otilia-chaves .container-fluid.nopadding, body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding {
+body.section-graduacao-presencial .container-fluid.nopadding,
+body.section-graduacao-a-distancia .container-fluid.nopadding,
+body.section-institucional .container-fluid.nopadding,
+body.section-financeiro .container-fluid.nopadding,
+body.section-estagios-exatas .container-fluid.nopadding,
+body.section-stricto-sensu .container-fluid.nopadding,
+body.section-lato-sensu .container-fluid.nopadding,
+body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding,
+body.section-centro-de-linguas .container-fluid.nopadding,
+body.section-formaturas .container-fluid.nopadding,
+body.section-pastoral-universitaria .container-fluid.nopadding,
+body.section-eventos .container-fluid.nopadding,
+body.section-rh-rapido .container-fluid.nopadding,
+body.section-area-do-aluno .container-fluid.nopadding,
+body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
+body.section-nucleo-de-acessibilidade .container-fluid.nopadding,
+body.section-policlinica .container-fluid.nopadding,
+body.section-biblioteca .container-fluid.nopadding,
+body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
+body.section-academia-escola .container-fluid.nopadding,
+body.section-enade .container-fluid.nopadding,
+body.section-agencia-metodista-de-consultoria .container-fluid.nopadding,
+body.section-faculdade-de-teologia .container-fluid.nopadding,
+body.section-centro-otilia-chaves .container-fluid.nopadding,
+body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding,
+body.section-nucleo-de-sustentabilidade .container-fluid.nopadding{
     height: 300px;
     margin-bottom: 20px;
 }
