@@ -3645,10 +3645,10 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
        }
        /* Home Page */
         body.section-home .outer-wrapper > .container .destaqueshome.mosaic-grid-row-fluid {
-            min-height: 960px;
+            /*min-height: 960px;*/
             margin-top: 50px;
             padding-top: 120px;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             box-shadow: inset 0px 13px 8px -10px rgba(97, 97, 97, 0.3), inset 0px -13px 8px -10px rgba(97, 97, 97, 0.3);
            /* Create the parallax scrolling effect */
            /*background-attachment: fixed !important;
