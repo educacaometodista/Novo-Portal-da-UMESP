@@ -2071,7 +2071,7 @@ body.template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid{
     background: transparent;
     position: absolute;
     z-index: 9999;
@@ -3344,6 +3344,12 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         .dropdown:hover .dropdown-menu {
             display: block;
        }
+	body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+    background: transparent;
+    position: absolute;
+    z-index: 9999;
+    width: 97%;
+	}
         body.section-graduacao-presencial .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix, body.section-graduacao-a-distancia .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix, body.section-stricto-sensu .mosaic-grid-row.noticias-curso-stricto .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .mosaic-tile-content div.tileItem.visualIEFloatFix {
             width: 24%;
             margin-top: 15px;
