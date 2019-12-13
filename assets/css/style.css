@@ -1610,6 +1610,12 @@ video#videoInstitucional {
         height: 350px;
         max-height: 350px;
    }
+.mosaic-grid-row.home-news .mosaic-tile-content div:nth-child(5) .tileItem.visualIEFloatFix:first-of-type,
+.mosaic-grid-row.home-news .mosaic-tile-content div:nth-child(6) .tileItem.visualIEFloatFix:first-of-type,
+.mosaic-grid-row.home-news .mosaic-tile-content div:nth-child(7) .tileItem.visualIEFloatFix:first-of-type,
+.mosaic-grid-row.home-news .mosaic-tile-content div:nth-child(8) .tileItem.visualIEFloatFix:first-of-type{
+display:none;
+}
 }
 /* body.section-institucional.site-Metodista .container-fluid.nopadding {
     background: url(/Metodista/institucional/imagens/institucional.jpg) no-repeat center;
