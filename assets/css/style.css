@@ -1512,9 +1512,21 @@ body.section-lato-sensu.site-Metodista.subsection-a-distancia-comunicacao-market
     background: url(/Metodista/lato-sensu/a-distancia/comunicacao/marketing/imagens/marketing.jpg) no-repeat center;
     background-size: cover;
 }
+body.section-lato-sensu.site-Metodista.subsection-a-distancia-comunicacao-marketing-e-inteligencia-de-mercado .container-fluid.nopadding {
+    background: url(/Metodista/lato-sensu/a-distancia/comunicacao/marketing-e-inteligencia-de-mercado/imagens/marketing-e-inteligencia-de-mercado.jpg) no-repeat center;
+    background-size: cover;
+}
 /* CURSOS A DISTÂNCIA - GESTÃO E NEGÓCIOS */
 body.section-lato-sensu.site-Metodista.subsection-a-distancia-gestao-e-negocios-administracao-da-producao-e-operacoes .container-fluid.nopadding {
     background: url(/Metodista/lato-sensu/a-distancia/gestao-e-negocios/administracao-da-producao-e-operacoes/imagens/administracao-da-producao-e-operacoes.jpg) no-repeat center;
+    background-size: cover;
+}
+body.section-lato-sensu.site-Metodista.subsection-a-distancia-gestao-e-negocios-gestao-de-agronegocio .container-fluid.nopadding {
+    background: url(/Metodista/lato-sensu/a-distancia/gestao-e-negocios/gestao-de-agronegocio/imagens/gestao-agronegocios.jpg) no-repeat center;
+    background-size: cover;
+}
+body.section-lato-sensu.site-Metodista.subsection-a-distancia-gestao-e-negocios-gestao-ambiental-empresarial-e-educacao-para-sustentabilidade .container-fluid.nopadding {
+    background: url(/Metodista/lato-sensu/a-distancia/gestao-e-negocios/gestao-ambiental-empresarial-e-educacao-para-sustentabilidade/imagens/gestao-ambiental-empresarial.jpg) no-repeat center;
     background-size: cover;
 }
 body.section-lato-sensu.site-Metodista.subsection-a-distancia-gestao-e-negocios-controladoria-e-financas .container-fluid.nopadding {
