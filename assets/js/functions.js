@@ -11,7 +11,7 @@ $(document).ready(function(){
   const eventDescription = $('section.existing-content-tile.eventos-home .documentDescription.description');
 
   if (countEvent === 0) {
-    eventDescription.text("Não há eventos no momento.").css("display","block");;
+    eventDescription.text("Não há eventos nos próximos dias.").css("display","block");;
   }
 
 
