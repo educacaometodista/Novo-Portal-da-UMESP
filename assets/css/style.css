@@ -309,48 +309,6 @@ label .required::after {
     color: #c4183c;
     font-size: 12px;
 }
-/*MODAL DE ENTRADA*/
-#mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9000;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-}
-
-#boxes .window {
-    position: absolute;
-    width: 90%;
-    height: auto;
-    display: none;
-    z-index: 9999;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translateY(-50%) translateX(-50%);
-}
-
-.window .pop {
-    width: 90%;
-    height: auto;
-    margin-top: 30px;
-    background: url(../img/umesp-2020.jpg) no-repeat;
-}
-
-#boxes #dialog2 {
-    background: transparent;
-}
-
-.close {
-    display: block;
-    text-align: center;
-    float: right;
-    padding: 5px 10px;
-    border: solid 1px #fff;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    cursor: pointer;
-}
 
 
 /* FORMULÁRIO DE REPORTE DE ERROS */
