@@ -7,6 +7,14 @@ $(document).ready(function(){
 
     $("section.existing-content-tile.eventos-home div section").append("<div class='todosEventos'><div class='container'><p><a href='https://portalpreprd.metodista.br/Metodista/eventos/'>Ver todos os eventos</a></p></div></div>");
   }
+
+  const eventDescription = $('section.existing-content-tile.eventos-home .documentDescription.description');
+
+  if (countEvent === 0) {
+    eventDescription.text("Não há eventos no momento.").css("display","block");;
+  }
+
+
 });
 
  /* Vídeo Institucional */
