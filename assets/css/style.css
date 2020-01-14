@@ -264,20 +264,27 @@ a.plone-modal-close {
     opacity: 0.6 !important;
 }
 /* FORMULÁRIOS */
-fieldset#pfg-fieldsetname-formulario-campos .field.ArchetypesTextAreaWidget, fieldset#pfg-fieldsetname-formulario-campos select {
+fieldset#pfg-fieldsetname-formulario-campos .field.ArchetypesTextAreaWidget,
+fieldset#pfg-fieldsetname-formulario-campos select {
     width: 100%;
 }
-fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion, .pfg-form.formid-fale-conosco form .field label.formQuestion, .pfg-form.formid-reportar-erro form .field label.formQuestion {
+fieldset#pfg-fieldsetname-formulario-campos .field label.formQuestion,
+.pfg-form.formid-fale-conosco form .field label.formQuestion,
+.pfg-form.formid-reportar-erro form .field label.formQuestion {
     font-weight: 400;
 }
-fieldset#pfg-fieldsetname-formulario-padrao .formControls, .pfg-form.formid-fale-conosco form .formControls, .pfg-form.formid-reportar-erro form .formControls {
+fieldset#pfg-fieldsetname-formulario-padrao .formControls,
+.pfg-form.formid-fale-conosco form .formControls,
+.pfg-form.formid-reportar-erro form .formControls {
     clear: both;
     padding: 12px 0;
     box-shadow: none;
     background: transparent;
     border: none;
 }
-fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"], .pfg-form.formid-fale-conosco form .formControls input[type="submit"], .pfg-form.formid-reportar-erro form .formControls input[type="submit"] {
+fieldset#pfg-fieldsetname-formulario-padrao .formControls input[type="submit"],
+.pfg-form.formid-fale-conosco form .formControls input[type="submit"],
+.pfg-form.formid-reportar-erro form .formControls input[type="submit"] {
     background: var(--primary-color);
     color: var(--white-color);
     border: none;
@@ -302,6 +309,50 @@ label .required::after {
     color: #c4183c;
     font-size: 12px;
 }
+/*MODAL DE ENTRADA*/
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#boxes .window {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    display: none;
+    z-index: 9999;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.window .pop {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    background: url(../img/umesp-2020.jpg) no-repeat;
+}
+
+#boxes #dialog2 {
+    background: transparent;
+}
+
+.close {
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 5px 10px;
+    border: solid 1px #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+}
+
+
 /* FORMULÁRIO DE REPORTE DE ERROS */
 button.context.btn.plone-btn-block.plone-btn-warning, input.context.btn.plone-btn-block.plone-btn-warning {
     background: #f2ca10;
@@ -319,8 +370,6 @@ fieldset#pfg-fieldsetname-formulario-leads .fieldErrorBox {
     background: var(--secondary-color);
 }
 section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"] {
-   /*background: #ffd421;
-   */
     background: rgb(255, 212, 33);
     background: linear-gradient( 90deg, rgba(255, 212, 33, 1) 0%, rgba(255, 230, 124, 1) 50%, rgba(255, 212, 33, 1) 100% );
     color: var(--secondary-color);
@@ -341,7 +390,11 @@ section.portletContent .pfg-form.formid-leads-captacao .formControls input[type=
     background: var(--secondary-color);
     border: none;
 }
-body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-header, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-title, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-header,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-title,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
     padding-left: 0px;
     text-align: center;
     color: var(--white-color);
@@ -407,7 +460,36 @@ body:not(.userrole-authenticated).section-rh-rapido.template-layout.no-portlet-c
     padding: 15px 0;
     border-radius: 4px;
 }
-body:not(.userrole-authenticated).section-graduacao-presencial #content, body:not(.userrole-authenticated).section-graduacao-a-distancia #content, body:not(.userrole-authenticated).section-lato-sensu #content, body:not(.userrole-authenticated).section-centro-de-linguas #content, body:not(.userrole-authenticated).section-central-de-estagios #content, body:not(.userrole-authenticated).section-formaturas #content, body:not(.userrole-authenticated).section-pastoral-universitaria #content, body:not(.userrole-authenticated).section-eventos #content, body:not(.userrole-authenticated).section-institucional #content, body:not(.userrole-authenticated).section-extensao #content, body:not(.userrole-authenticated).section-nucleo-de-acessibilidade #content, body:not(.userrole-authenticated).section-policlinica #content, body:not(.userrole-authenticated).section-biblioteca #content, body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content, body:not(.userrole-authenticated).section-gestao-de-cidades #content, body:not(.userrole-authenticated).section-unesco #content, body:not(.userrole-authenticated).section-academia-escola #content, body:not(.userrole-authenticated).section-enade #content, body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria #content, body:not(.userrole-authenticated).section-conselho-universitario #content, body:not(.userrole-authenticated).section-rh-rapido #content, body:not(.userrole-authenticated).section-secretaria-academica #content, body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content, body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre #content, body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques #content, body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publicacoes #content, body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio #content, body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos #content, body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.apresentacao-teologia .mosaic-grid-cell.mosaic-width-full .mosaic-tile-content, body:not(.userrole-authenticated).section-centro-otilia-chaves #content, body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content {
+body:not(.userrole-authenticated).section-graduacao-presencial #content,
+body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
+body:not(.userrole-authenticated).section-lato-sensu #content,
+body:not(.userrole-authenticated).section-centro-de-linguas #content,
+body:not(.userrole-authenticated).section-central-de-estagios #content,
+body:not(.userrole-authenticated).section-formaturas #content,
+body:not(.userrole-authenticated).section-pastoral-universitaria #content,
+body:not(.userrole-authenticated).section-eventos #content,
+body:not(.userrole-authenticated).section-institucional #content,
+body:not(.userrole-authenticated).section-extensao #content,
+body:not(.userrole-authenticated).section-nucleo-de-acessibilidade #content,
+body:not(.userrole-authenticated).section-policlinica #content,
+body:not(.userrole-authenticated).section-biblioteca #content,
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-gestao-de-cidades #content,
+body:not(.userrole-authenticated).section-unesco #content,
+body:not(.userrole-authenticated).section-academia-escola #content,
+body:not(.userrole-authenticated).section-enade #content,
+body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria #content,
+body:not(.userrole-authenticated).section-conselho-universitario #content,
+body:not(.userrole-authenticated).section-rh-rapido #content,
+body:not(.userrole-authenticated).section-secretaria-academica #content,
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publicacoes #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.apresentacao-teologia .mosaic-grid-cell.mosaic-width-full .mosaic-tile-content, body:not(.userrole-authenticated).section-centro-otilia-chaves #content,
+body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content {
     background: var(--white-color);
     padding: 15px;
     border-radius: 4px;
@@ -945,10 +1027,6 @@ body:not(.userrole-authenticated) .mosaic-grid-row.blocos-teologia .publica-teol
 .mosaic-grid-row.artigos-religiao .mosaic-tile-content .tileItem h2.tileHeadline {
     min-height: auto;
     margin: 0 0;
-   /*border-bottom: solid 1px #e2e2e2;
-   */
-   /*padding-bottom: 20px;
-   */
     font-size: 16px;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1629,11 +1707,7 @@ video#videoInstitucional {
 display:none;
 }
 }
-/* body.section-institucional.site-Metodista .container-fluid.nopadding {
-    background: url(https://metodista.br/institucional/imagens/institucional.jpg) no-repeat center;
-    background-size: cover;
-}
-*/
+
 /* CURSOS SEMIPRESENCIAIS - HUMANIDADES */
 body.section-lato-sensu.site-Metodista.subsection-semipresenciais-humanidades-aconselhamento-pastoral .container-fluid.nopadding {
     background: url(https://metodista.br/lato-sensu/semipresenciais/humanidades/aconselhamento-pastoral/imagens/aconselhamento-pastoral.jpg) no-repeat center;
@@ -1750,9 +1824,7 @@ body.section-graduacao-presencial #main-container h5:before, body.section-gradua
     text-rendering: auto;
     line-height: 1;
 }
-body.userrole-authenticated .container-fluid.nopadding
-/* body.frontend.icons-off.no-portlet-columns.pat-markspeciallinks.portaltype-folder.section-graduacao-presencial.site-Metodista.template-layout.thumbs-off.userrole-anonymous.viewpermission-none.layout-default-basic.mosaic-grid.pat-plone.patterns-loaded .container-fluid.nopadding */
-{
+body.userrole-authenticated .container-fluid.nopadding{
     display: none;
 }
 .container-fluid.nopadding .banner-fluido-novo {
@@ -1772,8 +1844,6 @@ body.userrole-authenticated .container-fluid.nopadding
     text-shadow: 3px 3px 5px #000;
 }
 .container-fluid.nopadding .subtit-grad {
-   /*font-family: "Parisienne", cursive;
-   */
     font-family: "Cookie", cursive;
     font-size: 44px;
     text-align: center;
@@ -1890,11 +1960,6 @@ ul.dropdown-menu li a i.far {
 }
 button.plone-navbar-toggle {
     margin-top: 5px;
-   /* background: #ffd421;
-    background: rgb(255, 212, 33);
-    background: linear-gradient( 90deg, rgb(33, 142, 255) 0%, rgb(124, 170, 255) 50%, rgb(33, 142, 255) 100% );
-    color: var(--secondary-color);
-    */
     background: transparent;
     text-transform: uppercase;
     width: 40px;
@@ -2052,10 +2117,6 @@ body:not(.userrole-authenticated).section-lato-sensu #content .mosaic-tile-conte
 }
 .mosaic-grid-row.mosaic-grid-row-fluid.titulo-tachado .movable.removable.mosaic-tile .mosaic-tile-content {
 }
-/*.mosaic-grid-row.curoslato.mosaic-grid-row-fluid {
-    background: #e4e4e4 !important;
-}
-*/
 body.template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.curoslato.mosaic-grid-row-fluid {
     background: var(--white-color) url("https://metodista.br/lato-sensu/imagens/fund-lato-metodista.jpg") !important;
     height: 100% !important;
@@ -3132,10 +3193,6 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
    }
     div.theme-input-group button {
         font-size: 16px;
-       /* position: absolute;
-        bottom: 8px;
-        right: 30px;
-        */
         display: block;
    }
     div#lista-integracao-sucessmsg {
@@ -3589,7 +3646,6 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         .menu-stricto-sensu .movable.removable.mosaic-tile .mosaic-tile-content p:last-of-type, .menu-area-do-aluno .movable.removable.mosaic-tile .mosaic-tile-content p:last-of-type {
             margin-bottom: 0;
        }
-       /*body.section-graduacao-presencial .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-graduacao-a-distancia .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-financeiro .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-stricto-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-lato-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-centro-de-linguas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-formaturas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading, body.section-pastoral-universitaria */
         .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading {
             text-align: right;
             padding: 120px 0px 0px;
@@ -3599,21 +3655,13 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             border: none;
             color: var(--white-color);
             text-shadow: 3px 3px 5px #000;
-           /* As linhas abaixo servem para limitar a quantidade de caracteres a serem exibidos no título em destaque */
-           /* display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            overflow:hidden;
-            */
        }
         body.section-pos-graduacao-e-pesquisa.subsection-projetos-de-pesquisa .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading {
             font-size: 30px;
             line-height: 1.3;
        }
-       /*body.section-graduacao-presencial .container-fluid.nopadding .subtit-grad, body.section-graduacao-a-distancia .container-fluid.nopadding .subtit-grad, body.section-financeiro .container-fluid.nopadding .subtit-grad, body.section-stricto-sensu .container-fluid.nopadding .subtit-grad, body.section-lato-sensu .container-fluid.nopadding .subtit-grad, body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .subtit-grad, body.section-centro-de-linguas .container-fluid.nopadding .subtit-grad, body.section-rh-rapido .container-fluid.nopadding .subtit-grad, body.section-formaturas .container-fluid.nopadding .subtit-grad, body.section-pastoral-universitaria */
+
         .container-fluid.nopadding .subtit-grad {
-           /*font-family: "Parisienne", cursive;
-           */
             font-family: "Cookie", cursive;
             font-size: 50px;
             text-align: right;
@@ -3674,13 +3722,6 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             padding-top: 120px;
             padding-bottom: 100px;
             box-shadow: inset 0px 13px 8px -10px rgba(97, 97, 97, 0.3), inset 0px -13px 8px -10px rgba(97, 97, 97, 0.3);
-           /* Create the parallax scrolling effect */
-           /*background-attachment: fixed !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-size: cover !important;
-            box-shadow: 0px 6px 20px 0px #00000038;
-           */
        }
         .mosaic-grid-row.destaqueshome.mosaic-grid-row-fluid .box-home {
             background: rgba(255, 255, 255, 0.4);
@@ -3691,14 +3732,6 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             color: #3c3c3c;
             min-height: 355px;
        }
-       /*.gradient-bg, .bg-overlay:after, .bg-hover-gradient:after {
-            background: -webkit-gradient( linear, left bottom, right top, color-stop(0%, #057dd2), color-stop(100%, #052d44) );
-            background: -webkit-linear-gradient(45deg, #057dd2 0%, #052d44 100%);
-            background: -o-linear-gradient(45deg, #057dd2 0%, #052d44 100%);
-            background: linear-gradient(45deg, #057dd2 0%, #052d44 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057dd2', endColorstr='#052d44',GradientType=1);
-       }
-        */
         .bg-overlay {
             background: #d0d0d0 url(https://metodista.br/++theme++portal-umesp/assets/img/bg-logo-metodista.png);
             background-attachment: fixed;
@@ -3983,13 +4016,6 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         body.section-home .tileItem.visualIEFloatFix a.summary-image {
             height: 180px;
        }
-       /*body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row {
-            max-width: 1140px;
-            background:var(--white-color);
-            padding:5px 15px;
-            border-radius:4px;
-       }
-       */
         body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-graduacao-presencial .outer-wrapper > .container .mosaic-grid-row, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu #content, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-stricto-sensu #content {
             background: transparent;
             padding: 0;
@@ -4030,11 +4056,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         .container-fluid.nopadding .banner-fluido-novo {
             max-width: 1540px;
        }
-       /*body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.curoslato.mosaic-grid-row-fluid{
-            width:100%;
-            max-width:100%;
-       }
-       */
+
    }
 
 /* E S T I L O   P A R A   F I R E F O X */
