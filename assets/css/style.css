@@ -202,6 +202,23 @@ i.material-icons.icone-atendimento {
     background-color: var(--white-color);
     border-color: #2e6da4;
 }
+a.inscrevase-vestib {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: #49a561;
+    color: #FFF;
+    font-family: "Oswald", sans-serif;
+    border-radius: 4px;
+}
+a.inscrevase-vestib:hover{
+	text-decoration: none;
+	color: #FFF;
+	background: #38864d;
+}
 .mosaic-grid-row.avisos {
     background: #fff6d0;
     text-align: center;
