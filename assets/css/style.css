@@ -447,7 +447,10 @@ body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publi
 body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio #content,
 body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos #content,
 body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.apresentacao-teologia .mosaic-grid-cell.mosaic-width-full .mosaic-tile-content, body:not(.userrole-authenticated).section-centro-otilia-chaves #content,
-body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content {
+body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content,
+body:not(.userrole-authenticated).section-english #content,
+body:not(.userrole-authenticated).section-espanol #content,
+body:not(.userrole-authenticated).section-convenios-e-parcerias #content {
     background: var(--white-color);
     padding: 15px;
     border-radius: 4px;
@@ -568,7 +571,10 @@ body.section-enade .plone-breadcrumb,
 body.section-agencia-metodista-de-consultoria .plone-breadcrumb,
 body.section-centro-otilia-chaves .plone-breadcrumb,
 body.section-centro-de-estudos-wesleyanos .plone-breadcrumb,
-body.section-nucleo-de-sustentabilidade .plone-breadcrumb {
+body.section-nucleo-de-sustentabilidade .plone-breadcrumb,
+body.section-english .plone-breadcrumb,
+body.section-espanol .plone-breadcrumb,
+body.section-convenios-e-parcerias .plone-breadcrumb {
     margin-bottom: 0;
 }
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
@@ -622,7 +628,10 @@ body.userrole-authenticated.section-enade .plone-breadcrumb,
 body.userrole-authenticated.section-agencia-metodista-de-consultoria .plone-breadcrumb,
 body.userrole-authenticated.section-centro-otilia-chaves .plone-breadcrumb,
 body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcrumb,
-body.userrole-authenticated.nucleo-de-sustentabilidade .plone-breadcrumb{
+body.userrole-authenticated.nucleo-de-sustentabilidade .plone-breadcrumb,
+body.userrole-authenticated.english .plone-breadcrumb,
+body.userrole-authenticated.espanol .plone-breadcrumb,
+body.userrole-authenticated.convenios-e-parcerias .plone-breadcrumb{
     margin-bottom: 20px;
 }
 body.section-graduacao-presencial .container-fluid.nopadding,
@@ -650,20 +659,14 @@ body.section-agencia-metodista-de-consultoria .container-fluid.nopadding,
 body.section-faculdade-de-teologia .container-fluid.nopadding,
 body.section-centro-otilia-chaves .container-fluid.nopadding,
 body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding,
-body.section-nucleo-de-sustentabilidade .container-fluid.nopadding{
+body.section-nucleo-de-sustentabilidade .container-fluid.nopadding,
+body.section-english .container-fluid.nopadding,
+body.section-espanol .container-fluid.nopadding,
+body.section-convenios-e-parcerias .container-fluid.nopadding{
     height: 300px;
     margin-bottom: 20px;
 }
-body.section-enade .container-fluid.nopadding .contagem {
-    padding-top: 70px;
-    font-family: "Zeyada", cursive;
-    font-size: 74px;
-    color: #153888;
-    text-align: center;
-}
-body.section-enade .container-fluid.nopadding .contagem span#dia {
-    color: rgba(177, 48, 48, 0.9);
-}
+
 body.section-graduacao-presencial h4,
 body.section-financeiro h4 {
     margin-top: 20px;
@@ -1639,6 +1642,20 @@ body.section-lato-sensu.site-Metodista.subsection-a-distancia-saude-administraca
     background: url(https://metodista.br/lato-sensu/a-distancia/saude/administracao-hospitalar/imagens/administracao-hospitalar.jpg) no-repeat center;
     background-size: cover;
 }
+
+body.section-english.site-Metodista .container-fluid.nopadding {
+    background: url(https://metodista.br/english/imagens/topo-english.jpg) no-repeat center;
+    background-size: cover;
+}
+body.section-espanol.site-Metodista .container-fluid.nopadding {
+    background: url(https://metodista.br/espanol/imagens/topo-espanol.jpg) no-repeat center;
+    background-size: cover;
+}
+body.section-convenios-e-parcerias.site-Metodista .container-fluid.nopadding {
+    background: url(https://metodista.br/convenios-e-parcerias/imagens/topo-convenios.jpg) no-repeat center;
+    background-size: cover;
+}
+
 /* INSTITUCIONAL */
 video#videoInstitucional {
     position: absolute;

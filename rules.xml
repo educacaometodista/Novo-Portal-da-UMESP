@@ -75,6 +75,9 @@
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 	   <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+	   <replace css:theme-children=".tit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+	   <replace css:theme-children=".tit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+	   <replace css:theme-children=".tit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 
        <!--<replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade .mosaic-grid-row.contador-enade" />-->
        <replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
@@ -105,6 +108,9 @@
 	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
 	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
 	   <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+	   <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+	   <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+	   <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
 
      <drop css:content="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador"/>
 <!--       <drop css:content="body.section-enade .mosaic-grid-row.contador-enade"/>-->
@@ -136,6 +142,9 @@
 	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
        <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
@@ -162,6 +171,9 @@
 	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 	   <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+	   <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 
 <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".documentFirstHeading" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
