@@ -3461,9 +3461,13 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             float: left;
        }
         .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
-            height: 150px;
+            height: 170px;
             font-size: 17px;
             margin-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
        }
         h2.destaques-home:before {
             border-top: 2px solid;
@@ -4002,8 +4006,12 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             min-height: 75px;
        }
         .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
-            height: 110px;
-            font-size: 18px;
+            height: 130px;
+			font-size: 18px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
        }
         .mosaic-grid-row.curoslato.mosaic-grid-row-fluid div:nth-child(6n + 7) > .tileItem.visualIEFloatFix {
             margin-right: 0;
