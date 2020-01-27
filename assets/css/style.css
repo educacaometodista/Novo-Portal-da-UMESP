@@ -335,16 +335,25 @@ button.context.btn.plone-btn-block.plone-btn-warning, input.context.btn.plone-bt
     color: #2d2d2d;
 }
 /* FORMULÁRIO DE LEADS */
-section.portletContent .pfg-form.formid-leads-captacao {
+section.portletContent .pfg-form.formid-leads-captacao{
     padding: 0 15px 15px 15px;
 }
-fieldset#pfg-fieldsetname-formulario-leads .fieldErrorBox {
+section.portletContent .pfg-form.formid-fale-conosco{
+    padding: 0 15px;
+}
+fieldset#pfg-fieldsetname-formulario-leads .fieldErrorBox,
+.pfg-form.formid-fale-conosco .fieldErrorBox{
     height: 1px;
 }
-.portlet.portletStaticText.portlet-static-receba-informaes header.portletHeader {
+.pfg-form.formid-fale-conosco #archetypes-fieldname-comments textarea{
+	width: 100% !important;
+}
+.portlet.portletStaticText.portlet-static-receba-informaes header.portletHeader,
+.portlet.portletStaticText.portlet-static-fale-conosco header.portletHeader {
     background: var(--secondary-color);
 }
-section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"] {
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"],
+section.portletContent .pfg-form.formid-fale-conosco .formControls input[type="submit"] {
     background: rgb(255, 212, 33);
     background: linear-gradient( 90deg, rgba(255, 212, 33, 1) 0%, rgba(255, 230, 124, 1) 50%, rgba(255, 212, 33, 1) 100% );
     color: var(--secondary-color);
@@ -358,10 +367,12 @@ section.portletContent .pfg-form.formid-leads-captacao .formControls input[type=
     text-align: center;
     transition: 0.3s;
 }
-section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"]:hover {
+section.portletContent .pfg-form.formid-leads-captacao .formControls input[type="submit"]:hover,
+section.portletContent .pfg-form.formid-fale-conosco .formControls input[type="submit"]:hover {
     opacity: 0.9;
 }
-.portlet.portletStaticText.portlet-static-receba-informaes .portletContent {
+.portlet.portletStaticText.portlet-static-receba-informaes .portletContent,
+.portlet.portletStaticText.portlet-static-fale-conosco .portletContent {
     background: var(--secondary-color);
     border: none;
 }
@@ -379,7 +390,9 @@ body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plo
 body:not(.userrole-authenticated).portaltype-folder.section-lato-sensu .container #main-container footer nav#category {
     display: none;
 }
-body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body, body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-footer,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-body,
+body:not(.userrole-authenticated) .plone-modal-wrapper .plone-modal.fade.in .plone-modal-dialog .plone-modal-content {
     padding-left: 22px;
     display: contents;
 }
@@ -467,7 +480,8 @@ body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row
 body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content,
 body:not(.userrole-authenticated).section-english #content,
 body:not(.userrole-authenticated).section-espanol #content,
-body:not(.userrole-authenticated).section-convenios-e-parcerias #content {
+body:not(.userrole-authenticated).section-convenios-e-parcerias #content,
+body:not(.userrole-authenticated).section-setor-de-produtos-artesanais #content {
     background: var(--white-color);
     padding: 15px;
     border-radius: 4px;
@@ -533,7 +547,8 @@ section.portlet-static-coordenadora h6 {
     padding: 0 15px 10px !important;
     text-align: center;
 }
-section.portlet.portletStaticText.portlet-static-coordenadora .portletHeader, section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
+section.portlet.portletStaticText.portlet-static-coordenadora .portletHeader,
+section.portlet.portletStaticText.portlet-static-coordenador .portletHeader {
     color: var(--white-color);
     text-align: center;
 }
@@ -585,7 +600,8 @@ body.section-area-do-aluno .plone-breadcrumb,
 body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
 body.section-nucleo-de-acessibilidade .plone-breadcrumb,
 body.section-policlinica .plone-breadcrumb,
-body.section-biblioteca .plone-breadcrumb, body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.section-biblioteca .plone-breadcrumb,
+body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
 body.section-academia-escola .plone-breadcrumb,
 body.section-enade .plone-breadcrumb,
 body.section-agencia-metodista-de-consultoria .plone-breadcrumb,
@@ -594,7 +610,8 @@ body.section-centro-de-estudos-wesleyanos .plone-breadcrumb,
 body.section-nucleo-de-sustentabilidade .plone-breadcrumb,
 body.section-english .plone-breadcrumb,
 body.section-espanol .plone-breadcrumb,
-body.section-convenios-e-parcerias .plone-breadcrumb {
+body.section-convenios-e-parcerias .plone-breadcrumb,
+body.section-setor-de-produtos-artesanais .plone-breadcrumb {
     margin-bottom: 0;
 }
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
@@ -651,7 +668,8 @@ body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcru
 body.userrole-authenticated.nucleo-de-sustentabilidade .plone-breadcrumb,
 body.userrole-authenticated.english .plone-breadcrumb,
 body.userrole-authenticated.espanol .plone-breadcrumb,
-body.userrole-authenticated.convenios-e-parcerias .plone-breadcrumb{
+body.userrole-authenticated.convenios-e-parcerias .plone-breadcrumb,
+body.userrole-authenticated.setor-de-produtos-artesanais .plone-breadcrumb{
     margin-bottom: 20px;
 }
 body.section-graduacao-presencial .container-fluid.nopadding,
@@ -682,7 +700,8 @@ body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding,
 body.section-nucleo-de-sustentabilidade .container-fluid.nopadding,
 body.section-english .container-fluid.nopadding,
 body.section-espanol .container-fluid.nopadding,
-body.section-convenios-e-parcerias .container-fluid.nopadding{
+body.section-convenios-e-parcerias .container-fluid.nopadding,
+body.section-setor-de-produtos-artesanais .container-fluid.nopadding{
     height: 300px;
     margin-bottom: 20px;
 }
@@ -699,17 +718,53 @@ body.section-graduacao-presencial .mosaic-tile-content iframe {
     padding-bottom: 10px;
 }
 /*Graduação Presencial/Notícias */
-body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt, body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt, body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt {
     border-bottom: solid 1px #e3ecf5;
     padding: 10px 0;
 }
 .section-noticias main#main-container footer.row {
     display: none;
 }
-body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd, body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img, body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine, body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd, body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img, body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine, body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd, body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img, body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine {
     display: none;
 }
-body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before, body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before, body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before, body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before, body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before, body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before {
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dt .summary:before,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dt .summary:before {
     font-family: "Font Awesome 5 Free";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -1673,6 +1728,10 @@ body.section-espanol.site-Metodista .container-fluid.nopadding {
 }
 body.section-convenios-e-parcerias.site-Metodista .container-fluid.nopadding {
     background: url(https://metodista.br/convenios-e-parcerias/imagens/topo-convenios.jpg) no-repeat center;
+    background-size: cover;
+}
+body.section-setor-de-produtos-artesanais.site-Metodista .container-fluid.nopadding {
+    background: url(https://metodista.br/setor-de-produtos-artesanais/imagens/topo-produtos-artesanais.jpg) no-repeat center;
     background-size: cover;
 }
 
