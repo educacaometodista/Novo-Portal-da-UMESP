@@ -4025,6 +4025,29 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             margin-left: 0;
        }
        /*FORMULÁRIOS*/
+       body.section-fale-conosco div#archetypes-fieldname-email label.formQuestion {
+          margin-top: 0 !important;
+      }
+
+      body.section-fale-conosco div.field.ArchetypesTextAreaWidget {
+          display: flex;
+          flex-direction: column;
+      }
+
+      body.section-fale-conosco fieldset#pfg-fieldsetname-formulario-campos .field {
+          display: flex !important;
+          flex-direction: column !important;
+          width: 100% !important;
+      }
+      body.section-fale-conosco div.field {
+          margin: 0 !important;
+          display: flex !important;
+      }
+      body.section-fale-conosco fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
+      body.section-fale-conosco fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd) {
+          margin-left: 0 !important;
+      }
+
         div.pfg-form.formid-reportar-erro form#fg-base-edit {
             border-top: solid 4px #f2ca10;
             margin-top: 30px;
@@ -4037,7 +4060,11 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             float: left;
             margin-right: 2%;
        }
-        fieldset#pfg-fieldsetname-formulario-padrao .field, fieldset#pfg-fieldsetname-formulario-campos .field, .pfg-form.formid-fale-conosco form textarea#comentarios, .pfg-form.formid-fale-conosco form textarea#comments, .pfg-form.formid-reportar-erro form textarea#comentarios, .pfg-form.formid-reportar-erro form textarea#comments {
+        fieldset#pfg-fieldsetname-formulario-padrao .field,        fieldset#pfg-fieldsetname-formulario-campos .field,
+        .pfg-form.formid-fale-conosco form textarea#comentarios,
+        .pfg-form.formid-fale-conosco form textarea#comments,
+        .pfg-form.formid-reportar-erro form textarea#comentarios,
+        .pfg-form.formid-reportar-erro form textarea#comments {
             width: 49%;
             float: left;
        }
@@ -4047,6 +4074,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd), fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd) {
             margin-left: 2%;
        }
+
         body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline, body.section-pesquisa .tileItem.visualIEFloatFix h2.tileHeadline, body.section-area-do-aluno .tileItem.visualIEFloatFix h2.tileHeadline, body.section-stricto-sensu .tileItem.visualIEFloatFix h2.tileHeadline, body.section-home .tileItem.visualIEFloatFix h2.tileHeadline, body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h2.tileHeadline {
             font-size: 17px;
             font-weight: 400;
