@@ -191,6 +191,43 @@ p.facebookModal a:hover {
 .barra-institucional, #portal-searchbox .searchSection, body:not(.userrole-authenticated).section-enade aside#portal-column-one #portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f4d65746f64697374612f656e6164650a636f6e7461646f72 {
     display: none;
 }
+/*BARRA MOBILE*/
+.barra-institucional-mobile {
+    display: inline-block;
+    width: 100%;
+    background: var(--secondary-color);
+}
+.barra-institucional-mobile a{
+	color: var(--white-color);
+	font-size: 1.2rem;
+}
+
+.barra-institucional-mobile ul.super-mob {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+ul.super-mob li {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+    line-height: 1;
+    margin: 0.5rem 0;
+    border-left: 1px solid #ffffff85;
+}
+ul.super-mob li:first-of-type{
+	border-left: none;
+}
+
+
+
 i.material-icons.icone-atendimento {
     color: var(--white-color);
     font-size: 5em;
@@ -3379,6 +3416,9 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             width: 20%;
             float: left;
        }
+		.barra-institucional-mobile{
+			display: none;
+		}
         a.col-md-5ths.boxes-lato {
             min-height: 125px;
        }
