@@ -217,9 +217,10 @@ ul.super-mob li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.3rem;
+    padding:1.3rem 0.5rem;
     line-height: 1;
     margin: 0.5rem 0;
+	text-align:center;
     border-left: 1px solid #ffffff85;
 }
 ul.super-mob li:first-of-type{
@@ -4260,3 +4261,4 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             border-radius: 0 0 4px 4px;
        }
    }
+cc
