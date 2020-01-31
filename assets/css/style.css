@@ -2796,7 +2796,23 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         border-radius: 4px;
         text-align: center;
    }
-    a.col-md-5ths.boxes-lato {
+   a.col-md-5ths.boxes-lato {
+     width: 23.8%;
+     display: inline-block;
+     font-family: "Oswald", sans-serif;
+     float: left;
+     min-height: 75px;
+     background: var(--dark-blue);
+     color: var(--white-color);
+     text-transform: uppercase;
+     font-size: 16px;
+     padding: 15px;
+     margin-left: 1.5%;
+     margin-bottom: 20px;
+     border-radius: 4px;
+     text-align: center;
+   }
+   a.col-md-3.boxes-lato {
         width: 18.8%;
         display: inline-block;
         font-family: "Oswald", sans-serif;
@@ -2815,7 +2831,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
     a.boxes-lato:nth-child(2n + 3), a.boxes-lato:first-child {
         margin-left: 0;
    }
-    a.col-md-5ths.boxes-lato {
+   a.col-md-5ths.boxes-lato,
+   a.col-md-3.boxes-lato {
         margin-left: 1.5%;
    }
     body.section-stricto-sensu.template-layout.thumbs-off a.boxes-lato:nth-child(5n + 6) {
@@ -2827,7 +2844,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         text-decoration: none;
         box-shadow: 2px 2px 5px #8a8686;
    }
-    a.col-md-5ths.boxes {
+   a.col-md-5ths.boxes,
+   a.col-md-3.boxes {
         width: 18.2%;
         display: inline-block;
         font-family: "Oswald", sans-serif;
@@ -2843,10 +2861,12 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         border-radius: 4px;
         text-align: center;
    }
-    a.col-md-5ths.boxes:first-child {
+   a.col-md-5ths.boxes:first-child,
+   a.col-md-3.boxes:first-child {
         margin-left: 0;
    }
-    a.col-md-5ths.boxes:hover {
+   a.col-md-5ths.boxes:hover,
+   a.col-md-3.boxes:hover {
         background: #0f2f4e;
         text-decoration: none;
         box-shadow: 2px 2px 5px #8a8686;
@@ -3420,7 +3440,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
 		.barra-institucional-mobile{
 			display: none;
 		}
-        a.col-md-5ths.boxes-lato {
+      a.col-md-5ths.boxes-lato,
+      a.col-md-3.boxes-lato {
             min-height: 125px;
        }
         #portal-searchbox {
@@ -4021,7 +4042,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
        }
    }
     @media only screen and (min-width: 992px) {
-        .col-md-5ths {
+      .col-md-5ths {
             width: 20%;
             float: left;
        }
@@ -4042,7 +4063,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         body.section-home .tileItem.visualIEFloatFix a.summary-image {
             height: 150px;
        }
-        a.col-md-5ths.boxes-lato {
+        a.col-md-5ths.boxes-lato,
+        a.col-md-3.boxes-lato {
             min-height: 100px;
        }
         body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
@@ -4150,7 +4172,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             width: 20%;
             float: left;
        }
-        a.col-md-5ths.boxes-lato {
+       a.col-md-5ths.boxes-lato,
+       a.col-md-3.boxes-lato {
             min-height: 75px;
        }
         .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary {
