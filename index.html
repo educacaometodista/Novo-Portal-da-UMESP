@@ -1,607 +1,1548 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Plone Theme</title>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1611116-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-1611116-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-1611116-4');
-</script>
+      gtag("config", "UA-1611116-4");
+    </script>
     <!-- Metodista favicon and icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffd50f">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffd50f" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" class="customcss" type="text/css" href="/Metodista/++theme++teste-mascara/assets/css/style.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Metodista/++theme++teste-mascara/assets/js/jquery-3.4.1.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      class="customcss"
+      type="text/css"
+      href="/Metodista/++theme++teste-mascara/assets/css/style.css"
+    />
 
-    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/functions.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/jquery.mask.min.js"></script>
-    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/ouibounce.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/Metodista/++theme++teste-mascara/assets/js/functions.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Metodista/++theme++teste-mascara/assets/js/jquery.mask.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Metodista/++theme++teste-mascara/assets/js/ouibounce.min.js"
+    ></script>
 
     <!-- ATUALIZAÇÃO DE MENSALIDADES EM REACTJS -->
-    <link href="https://leunardo.dev/metodista/static/css/main.9b011277.chunk.css" rel="stylesheet" />
+    <link
+      href="https://leunardo.dev/metodista/static/css/main.9b011277.chunk.css"
+      rel="stylesheet"
+    />
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WCWGBB3');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WCWGBB3");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <style>
-        /* Z-index do AddThis em relação aos reportes de erros no mobile */
+      /* Z-index do AddThis em relação aos reportes de erros no mobile */
 
-        div#at-share-dock {
-            z-index: 0;
-        }
+      div#at-share-dock {
+        z-index: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCWGBB3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WCWGBB3"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <script>
-        // Suporte para navegadores antigos
-        var $buoop = {
-            required: {
-                e: 0,
-                f: -3,
-                o: -3,
-                s: -1,
-                c: -3
-            },
-            insecure: true,
-            style: "bottom",
-            api: 2019.11
-        };
+      // Suporte para navegadores antigos
+      var $buoop = {
+        required: {
+          e: 0,
+          f: -3,
+          o: -3,
+          s: -1,
+          c: -3
+        },
+        insecure: true,
+        style: "bottom",
+        api: 2019.11
+      };
 
-        function $buo_f() {
-            var e = document.createElement("script");
-            e.src = "//browser-update.org/update.min.js";
-            document.body.appendChild(e);
-        };
-        try {
-            document.addEventListener("DOMContentLoaded", $buo_f, false)
-        } catch (e) {
-            window.attachEvent("onload", $buo_f)
-        }
+      function $buo_f() {
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+      }
+      try {
+        document.addEventListener("DOMContentLoaded", $buo_f, false);
+      } catch (e) {
+        window.attachEvent("onload", $buo_f);
+      }
     </script>
 
-    <section id="portal-toolbar">
-    </section>
+    <section id="portal-toolbar"></section>
     <!-- BARRA INSTITUCIONAL -->
 
-	<div class="barra-institucional-mobile">
-        <div class="container">
-            <ul class="super-mob">
-                <li class="atend-online">
-                    <a href="https://metodista.br/atendimento-online"><i class="material-icons">chat</i></a>
-                </li>
-                <li class="portal-aluno-mob">
-                    <a href="https://www.metodista.br/portalims/web/index.html" target="_blank" title="PORTAL DO ALUNO">PORTAL DO ALUNO</a>
-                </li>
-				<li class="siga-mob">
-                    <a href="https://www.metodista.br/sigaims/login.faces" target="_blank" title="SIGA">SIGA</a>
-                </li>
-                <li class="moodle-mob">
-                    <a href="http://moodle.metodista.br/moodle-ead/" target="_blank" title="MOODLE">MOODLE</a>
-                </li>
-				<li class="rhrap">
-                    <a target="_self" href="https://metodista.br/rh-rapido" title="RH Rápido">RH</a>
-                </li>
-				<li class="webmail">
-                    <a href="http://webmail.metodista.br" target="_blank" title="Webmail"><i class="material-icons">mail_outline</i></a>
-                </li>
-            </ul>
-        </div>
+    <div class="barra-institucional-mobile">
+      <div class="container">
+        <ul class="super-mob">
+          <li class="atend-online">
+            <a href="https://metodista.br/atendimento-online"
+              ><i class="material-icons">chat</i></a
+            >
+          </li>
+          <li class="portal-aluno-mob">
+            <a
+              href="https://www.metodista.br/portalims/web/index.html"
+              target="_blank"
+              title="PORTAL DO ALUNO"
+              >PORTAL DO ALUNO</a
+            >
+          </li>
+          <li class="siga-mob">
+            <a
+              href="https://www.metodista.br/sigaims/login.faces"
+              target="_blank"
+              title="SIGA"
+              >SIGA</a
+            >
+          </li>
+          <li class="moodle-mob">
+            <a
+              href="http://moodle.metodista.br/moodle-ead/"
+              target="_blank"
+              title="MOODLE"
+              >MOODLE</a
+            >
+          </li>
+          <li class="rhrap">
+            <a
+              target="_self"
+              href="https://metodista.br/rh-rapido"
+              title="RH Rápido"
+              >RH</a
+            >
+          </li>
+          <li class="webmail">
+            <a
+              href="http://webmail.metodista.br"
+              target="_blank"
+              title="Webmail"
+              ><i class="material-icons">mail_outline</i></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
-
-
     <div class="barra-institucional">
-        <div class="container">
-            <ul class="barra-left">
-                <li class="atend-online">
-                    <i class="material-icons">chat</i>
-                    <a href="https://metodista.br/atendimento-online">Atendimento Online</a>
-                    <!-- <a href="#atendimentoUMESP" class="pat-plone-modal" data-pat-plone-modal="width: 65%">Atendimento Online</a> -->
-                </li>
-                <li class="">
-                    <a href="https://metodista.br/english" target="_blank" title="English">English</a>
-                </li>
-                <li class="">
-                    <a href="https://metodista.br/espanol" target="_blank" title="Español">Español</a>
-                </li>
-            </ul>
+      <div class="container">
+        <ul class="barra-left">
+          <li class="atend-online">
+            <i class="material-icons">chat</i>
+            <a href="https://metodista.br/atendimento-online"
+              >Atendimento Online</a
+            >
+            <!-- <a href="#atendimentoUMESP" class="pat-plone-modal" data-pat-plone-modal="width: 65%">Atendimento Online</a> -->
+          </li>
+          <li class="">
+            <a
+              href="https://metodista.br/english"
+              target="_blank"
+              title="English"
+              >English</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="https://metodista.br/espanol"
+              target="_blank"
+              title="Español"
+              >Español</a
+            >
+          </li>
+        </ul>
 
-            <ul class="barra-right">
-                <li class="">
-                    <i class="material-icons">person</i>
-                    <a target="_self" href="https://metodista.br/rh-rapido" title="RH Rápido">RH Rápido</a>
-                </li>
-                <li class="">
-                    <i class="material-icons">edit</i>
-                    <a href="http://portal.metodista.br/atualizo" target="_blank" title="Atualizo">Atualizo</a>
-                </li>
-                <li class="">
-                    <i class="material-icons">mail_outline</i>
-                    <a href="http://webmail.metodista.br" target="_blank" title="Webmail">Webmail</a>
-                </li>
-                <li class="topo-siga">
-                    <a href="https://www.metodista.br/sigaims/login.faces" target="_blank" title="SIGA">SIGA</a>
-                </li>
-                <li class="topo-moodle">
-                    <a href="http://moodle.metodista.br/moodle-ead/" target="_blank" title="MOODLE">MOODLE</a>
-                </li>
-                <li class="topo-portal-do-aluno">
-                    <a href="https://www.metodista.br/portalims/web/index.html" target="_blank" title="PORTAL DO ALUNO">PORTAL DO ALUNO</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="barra-right">
+          <li class="">
+            <i class="material-icons">person</i>
+            <a
+              target="_self"
+              href="https://metodista.br/rh-rapido"
+              title="RH Rápido"
+              >RH Rápido</a
+            >
+          </li>
+          <li class="">
+            <i class="material-icons">edit</i>
+            <a
+              href="http://portal.metodista.br/atualizo"
+              target="_blank"
+              title="Atualizo"
+              >Atualizo</a
+            >
+          </li>
+          <li class="">
+            <i class="material-icons">mail_outline</i>
+            <a
+              href="http://webmail.metodista.br"
+              target="_blank"
+              title="Webmail"
+              >Webmail</a
+            >
+          </li>
+          <li class="topo-siga">
+            <a
+              href="https://www.metodista.br/sigaims/login.faces"
+              target="_blank"
+              title="SIGA"
+              >SIGA</a
+            >
+          </li>
+          <li class="topo-moodle">
+            <a
+              href="http://moodle.metodista.br/moodle-ead/"
+              target="_blank"
+              title="MOODLE"
+              >MOODLE</a
+            >
+          </li>
+          <li class="topo-portal-do-aluno">
+            <a
+              href="https://www.metodista.br/portalims/web/index.html"
+              target="_blank"
+              title="PORTAL DO ALUNO"
+              >PORTAL DO ALUNO</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- FIM DA BARRA INSTITUCIONAL -->
 
     <div class="outer-wrapper">
-        <header id="content-header">
-            <div class="container">
-                <header id="portal-top">
-                </header>
-                <div id="anonymous-actions">
-                </div>
-            </div>
-        </header>
-
-        <div id="mainnavigation-wrapper">
-            <div id="mainnavigation">
-
-                <p class="hiddenStructure">Navegação</p>
-                <nav class="plone-navbar" id="portal-globalnav-wrapper">
-                    <div class="container">
-                        <div class="plone-navbar-header">
-                            <button type="button" class="plone-navbar-toggle collapsed" data-toggle="collapse" data-target="#portal-globalnav-collapse" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="plone-collapse plone-navbar-collapse collapse navbar-collapse" id="portal-globalnav-collapse" aria-expanded="false" style="height: 361px;">
-                            <ul class="plone-nav plone-navbar-nav nav navbar-nav" id="portal-globalnav">
-
-                                <li id="portaltab-index_html" class="dropdown">
-                                    <a title="Institucional" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">INSTITUCIONAL</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://metodista.br/institucional/agende-sua-visita" title="Agende sua visita">Agende sua visita</a></li>
-                                        <li><a href="https://metodista.br/institucional/avaliacao-institucional" title="Agende sua visita">Avaliação Institucional</a></li>
-                                        <li><a href="https://metodista.br/institucional/dirigentes" title="Dirigentes">Dirigentes</a></li>
-                                        <li><a href="http://editora.metodista.br/" target="_blank" title="Editora Metodista">Editora Metodista</a></li>
-                                        <li><a href="http://educacaometodista.org.br" target="_blank" title="Educação Metodista">Educação Metodista</a></li>
-										<li><a href="https://metodista.br/faculdade-de-teologia" target="_blank" title="Faculdade de Teologia">Faculdade de Teologia</a></li>
-                                        <li><a href="https://metodista.br/institucional/historia" title="História">História</a></li>
-                                        <li><a href="http://espacoeduca.uol.com.br" target="_blank" title="Loja Online">Loja Online</a></li>
-                                        <li><a href="https://metodista.br/institucional/missao-visao-e-valores" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
-                                        <li><a href="https://metodista.br/institucional/premios-e-reconhecimentos" title="Prêmios e Reconhecimento">Prêmios e Reconhecimento</a></li>
-                                    </ul>
-                                </li>
-
-                                <li id="portaltab-eventos" class="dropdown">
-                                    <a title="Vestibular" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">VESTIBULAR</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://vestibularmetodista.com.br/?utm_source=Portal&utm_medium=Links&utm_campaign=Portal_Presencial&utm_term=internos" target="_blank" title="Graduação Presencial">Graduação Presencial</a></li>
-                                        <li><a href="http://portal.metodista.br/ead/receba-informacoes" title="Graduação a Distância">Graduação a Distância</a></li>
-                                        <li><a href="https://metodista.br/processo-seletivo/edital-processo-seletivo-2s2019-presencial.pdf" title="Edital do Vestibular" target="_blank"><i class="far fa-file-pdf"></i> Edital do Vestibular</a></li>
-                                        <li><a href="http://portal.metodista.br/ead/processo-seletivo/edital/" target="_blank" title="Edital Vestibular EAD"><i class="far fa-file-pdf"></i> Edital Vestibular EAD</a></li>
-                                    </ul>
-                                </li>
-
-                                <li id="portaltab-Cursos" class="dropdown">
-                                    <a title="Cursos" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CURSOS</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://metodista.br/graduacao-presencial/" title="Graduação Presencial">Graduação Presencial</a></li>
-                                        <li><a href="https://metodista.br/graduacao-a-distancia" title="Graduação a Distância">Graduação a Distância (EAD)</a></li>
-                                        <li><a href="https://metodista.br/lato-sensu" title="Especialização e MBA">Pós-Graduação - Especialização</a></li>
-                                        <li><a href="https://metodista.br/stricto-sensu" title="Mestrado e Doutorado">Pós-Graduação - Mestrado e Doutorado</a></li>
-                                        <li><a href="http://portal.metodista.br/ead/processo-seletivo/segunda-licenciatura/" title="Segunda Licenciatura a Distância">Segunda Licenciatura</a></li>
-                                        <li><a href="http://portal.metodista.br/curta-duracao/" title="Curta Duração">Curta Duração</a></li>
-                                        <li><a href="https://metodista.br/centro-de-linguas" title="Centro de Línguas">Idiomas</a></li>
-                                        <li><a href="https://metodista.br/nucleo-de-arte-e-cultura/sobre-o-nac/programa-aquarela" title="Terceira Idade">Terceira Idade</a></li>
-                                    </ul>
-                                </li>
-
-                                <li id="portaltab-Pesquisa" class="dropdown">
-                                    <a title="Pesquisa" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PESQUISA</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://metodista.br/pos-graduacao-e-pesquisa" title="Pós-graduação e Pesquisa">Pós-graduação e Pesquisa</a></li>
-                                        <li><a href="https://metodista.br/gestao-de-cidades" title="Cátedra Gestão de Cidades">Cátedra Gestão de Cidades</a></li>
-                                        <li><a href="https://metodista.br/unesco" title="Cátedra Unesco/Metodista">Cátedra Unesco/Metodista</a></li>
-                                        <li><a target="_blank" href="https://www.metodista.br/periodicos/" title="Portal de Revistas Metodista">Portal de Revistas Metodista</a></li>
-                                        <li><a target="_blank" href="http://portal.metodista.br/congresso-metodista" title="Congresso Metodista">Congresso Metodista</a></li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-noticias">
-                                    <a title="Colégios" href="http://colegiometodista.g12.br" target="_blank" role="button">COLÉGIOS</a>
-                                </li>
-
-                                <li id="portaltab-Extensao">
-                                    <a href="https://metodista.br/extensao" title="Extensão">EXTENSÃO</a>
-                                </li>
-
-                                <li id="portaltab-Alunos" class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Alunos">ALUNOS</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://metodista.br/area-do-aluno" title="Área do aluno">Área do aluno</a></li>
-                                        <li><a href="https://metodista.br/institucional/avaliacao-institucional" title="Avaliação Institucional">Avaliação Institucional</a></li>
-                                        <li><a href="https://metodista.br/biblioteca" title="Biblioteca">Biblioteca</a></li>
-                                        <li><a href="https://metodista.br/central-de-estagios" title="Central de Estágios">Central de Estágios</a></li>
-                                        <li><a target="_blank" href="http://portal.metodista.br/enade" title="ENADE">ENADE</a></li>
-                                        <li><a href="https://metodista.br/financeiro" title="Financeiro">Financeiro</a></li>
-                                        <li><a href="https://metodista.br/formaturas" title="Formaturas">Formaturas</a></li>
-                                        <li><a href="http://espacoeduca.uol.com.br/loja/index.php" title="Loja Online">Loja Online</a></li>
-                                        <li><a href="https://metodista.br/pastoral-universitaria" title="Pastoral Universitária">Pastoral Universitária</a></li>
-                                        <li><a href="https://www.metodista.br/portalims/web/index.html" target="_blank" title="Portal do Aluno">Portal do Aluno</a></li>
-                                        <li><a href="https://metodista.br/assessoria-de-relacoes-internacionais" title="Relações Internacionais">Relações Internacionais</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-        </div>
-        <div id="hero" class="principal">
-            <div class="container">
-                <div class="gigantic"></div>
-            </div>
-        </div>
-        <div id="above-content-wrapper">
-            <div id="above-content"></div>
-        </div>
-
-        <div class="container-fluid nopadding">
-            <div class="banner-fluido-novo">
-                <div class="tit-grad"></div>
-                <div class="subtit-grad"></div>
-            </div>
-        </div>
-
+      <header id="content-header">
         <div class="container">
-            <div class="row">
-                <aside id="global_statusmessage"></aside>
-            </div>
-            <main id="main-container" class="row row-offcanvas row-offcanvas-right">
-                <div id="content-container">
-                </div>
-                <div id="column1-container">
-                </div>
-                <div id="column2-container">
-                </div>
-            </main>
-            <!--/row-->
-            <!--/container-->
+          <header id="portal-top"></header>
+          <div id="anonymous-actions"></div>
         </div>
+      </header>
 
-	</div>
-        <!--/outer-wrapper -->
-        <div class="reportarErrosDiv">
+      <div id="mainnavigation-wrapper">
+        <div id="mainnavigation">
+          <p class="hiddenStructure">Navegação</p>
+          <nav class="plone-navbar" id="portal-globalnav-wrapper">
             <div class="container">
-                <p>
-                    <a class="pat-plone-modal reportar-erro" href="#comunicarErro" data-pat-plone-modal="width: 50%">Reportar Erros <i class="fas fa-exclamation-triangle"></i></a>
-                </p>
+              <div class="plone-navbar-header">
+                <button
+                  type="button"
+                  class="plone-navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#portal-globalnav-collapse"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div
+                class="plone-collapse plone-navbar-collapse collapse navbar-collapse"
+                id="portal-globalnav-collapse"
+                aria-expanded="false"
+                style="height: 361px;"
+              >
+                <ul
+                  class="plone-nav plone-navbar-nav nav navbar-nav"
+                  id="portal-globalnav"
+                >
+                  <li id="portaltab-index_html" class="dropdown">
+                    <a
+                      title="Institucional"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >INSTITUCIONAL</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/agende-sua-visita"
+                          title="Agende sua visita"
+                          >Agende sua visita</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/avaliacao-institucional"
+                          title="Agende sua visita"
+                          >Avaliação Institucional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/dirigentes"
+                          title="Dirigentes"
+                          >Dirigentes</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://editora.metodista.br/"
+                          target="_blank"
+                          title="Editora Metodista"
+                          >Editora Metodista</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://educacaometodista.org.br"
+                          target="_blank"
+                          title="Educação Metodista"
+                          >Educação Metodista</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/faculdade-de-teologia"
+                          target="_blank"
+                          title="Faculdade de Teologia"
+                          >Faculdade de Teologia</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/historia"
+                          title="História"
+                          >História</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://espacoeduca.uol.com.br"
+                          target="_blank"
+                          title="Loja Online"
+                          >Loja Online</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/missao-visao-e-valores"
+                          title="Missão, Visão e Valores"
+                          >Missão, Visão e Valores</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/premios-e-reconhecimentos"
+                          title="Prêmios e Reconhecimento"
+                          >Prêmios e Reconhecimento</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="portaltab-eventos" class="dropdown">
+                    <a
+                      title="Vestibular"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >VESTIBULAR</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="https://vestibularmetodista.com.br/?utm_source=Portal&utm_medium=Links&utm_campaign=Portal_Presencial&utm_term=internos"
+                          target="_blank"
+                          title="Graduação Presencial"
+                          >Graduação Presencial</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://portal.metodista.br/ead/receba-informacoes"
+                          title="Graduação a Distância"
+                          >Graduação a Distância</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/processo-seletivo/edital-processo-seletivo-2s2019-presencial.pdf"
+                          title="Edital do Vestibular"
+                          target="_blank"
+                          ><i class="far fa-file-pdf"></i> Edital do
+                          Vestibular</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://portal.metodista.br/ead/processo-seletivo/edital/"
+                          target="_blank"
+                          title="Edital Vestibular EAD"
+                          ><i class="far fa-file-pdf"></i> Edital Vestibular
+                          EAD</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="portaltab-Cursos" class="dropdown">
+                    <a
+                      title="Cursos"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >CURSOS</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="https://metodista.br/graduacao-presencial/"
+                          title="Graduação Presencial"
+                          >Graduação Presencial</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/graduacao-a-distancia"
+                          title="Graduação a Distância"
+                          >Graduação a Distância (EAD)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/lato-sensu"
+                          title="Especialização e MBA"
+                          >Pós-Graduação - Especialização</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/stricto-sensu"
+                          title="Mestrado e Doutorado"
+                          >Pós-Graduação - Mestrado e Doutorado</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://portal.metodista.br/ead/processo-seletivo/segunda-licenciatura/"
+                          title="Segunda Licenciatura a Distância"
+                          >Segunda Licenciatura</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://portal.metodista.br/curta-duracao/"
+                          title="Curta Duração"
+                          >Curta Duração</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/centro-de-linguas"
+                          title="Centro de Línguas"
+                          >Idiomas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/nucleo-de-arte-e-cultura/sobre-o-nac/programa-aquarela"
+                          title="Terceira Idade"
+                          >Terceira Idade</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="portaltab-Pesquisa" class="dropdown">
+                    <a
+                      title="Pesquisa"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >PESQUISA</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="https://metodista.br/pos-graduacao-e-pesquisa"
+                          title="Pós-graduação e Pesquisa"
+                          >Pós-graduação e Pesquisa</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/gestao-de-cidades"
+                          title="Cátedra Gestão de Cidades"
+                          >Cátedra Gestão de Cidades</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/unesco"
+                          title="Cátedra Unesco/Metodista"
+                          >Cátedra Unesco/Metodista</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.metodista.br/periodicos/"
+                          title="Portal de Revistas Metodista"
+                          >Portal de Revistas Metodista</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="http://portal.metodista.br/congresso-metodista"
+                          title="Congresso Metodista"
+                          >Congresso Metodista</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="portaltab-noticias">
+                    <a
+                      title="Colégios"
+                      href="http://colegiometodista.g12.br"
+                      target="_blank"
+                      role="button"
+                      >COLÉGIOS</a
+                    >
+                  </li>
+
+                  <li id="portaltab-Extensao">
+                    <a href="https://metodista.br/extensao" title="Extensão"
+                      >EXTENSÃO</a
+                    >
+                  </li>
+
+                  <li id="portaltab-Alunos" class="dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      title="Alunos"
+                      >ALUNOS</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="https://metodista.br/area-do-aluno"
+                          title="Área do aluno"
+                          >Área do aluno</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/institucional/avaliacao-institucional"
+                          title="Avaliação Institucional"
+                          >Avaliação Institucional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/biblioteca"
+                          title="Biblioteca"
+                          >Biblioteca</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/central-de-estagios"
+                          title="Central de Estágios"
+                          >Central de Estágios</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="http://portal.metodista.br/enade"
+                          title="ENADE"
+                          >ENADE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/financeiro"
+                          title="Financeiro"
+                          >Financeiro</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/formaturas"
+                          title="Formaturas"
+                          >Formaturas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://espacoeduca.uol.com.br/loja/index.php"
+                          title="Loja Online"
+                          >Loja Online</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/pastoral-universitaria"
+                          title="Pastoral Universitária"
+                          >Pastoral Universitária</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.metodista.br/portalims/web/index.html"
+                          target="_blank"
+                          title="Portal do Aluno"
+                          >Portal do Aluno</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://metodista.br/assessoria-de-relacoes-internacionais"
+                          title="Relações Internacionais"
+                          >Relações Internacionais</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
         </div>
-        <footer id="portal-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <h5>Publicações</h5>
-                        <ul>
-                            <li><a href="http://canalmeto.com.br" title="Canal Metô">Canal Metô</a></li>
-                            <li><a href="http://editora.metodista.br/" title="Editora Metodista">Editora Metodista</a></li>
-                            <li><a target="_self" href="https://metodista.br/unesco" title="Jornal Brasileiro de Ciência da Comunicação">Jornal Brasileiro de Ciência da Comunicação</a></li>
-                            <li><a href="http://portal.metodista.br/jornal-da-metodista" title="Jornal da Metodista">Jornal da Metodista</a></li>
-                            <li><a href="http://portal.metodista.br/observatorio-economico/" title="Observatório Econômico">Observatório Econômico</a></li>
-                            <li><a href="https://www.metodista.br/periodicos/" title="Portal Metodista de Periódicos">Portal Metodista de Periódicos</a></li>
-                            <li><a href="http://sonica.metodista.br/" title="Rádio Sonica">Rádio Sônica</a></li>
-                            <li><a href="http://www.metodista.br/rronline" title="Rudge Ramos Online">Rudge Ramos Online</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <h5>Serviços à Comunidade</h5>
-                        <ul>
-                            <li><a target="_self" href="https://metodista.br/academia-escola" title="Academia-escola">Academia-escola</a></li>
-                            <li><a target="_self" href="https://metodista.br/agencia-metodista-de-consultoria" title="Agência Metodista de Consultoria">Agência Metodista de Consultoria</a></li>
-                            <li><a target="_self" href="https://metodista.br/metodista-lab.com/metodista-lab.com" title="Agência Integrada de Comunicação">Agência Integrada de Comunicação</a></li>
-                            <li><a target="_self" href="https://metodista.br/graduacao-presencial/direito/nucleo-de-praticas-juridicas" title="Assistência Jurídica">Assistência Jurídica</a></li>
-                            <li><a target="_self" href="https://metodista.br/graduacao-presencial/pedagogia/espacos-pedagogicos/brinquedoteca" title="Brinquedoteca">Brinquedoteca</a></li>
-                            <li><a target="_self" href="https://metodista.br/gestao-de-cidades" title="Cátedra Gestão de Cidades">Cátedra Gestão de Cidades</a></li>
-                            <li><a target="_self" href="https://metodista.br/unesco" title="Cátedra Unesco Metodista">Cátedra Unesco Metodista</a></li>
-							<li><a target="_self" href="https://metodista.br/centro-de-linguas" title="Centro de Línguas">Centro de Línguas</a></li>
-                            <li><a href="https://metodista.br/nucleo-de-sustentabilidade" title="Núcleo de Sustentabilidade">Núcleo de Sustentabilidade</a></li>
-                            <li><a href="http://portal.metodista.br/centrootiliachaves"target="_blank" title="Centro Otília Chaves">Centro Otília Chaves</a></li>
-                            <li><a target="_self" href="https://metodista.br/extensao" title="Extensão Acadêmica">Extensão Acadêmica</a></li>
-                            <li><a target="_blank" href="http://portal.metodista.br/mondo" title="Mondó">Mondó</a></li>
-                            <li><a target="_self" href="https://metodista.br/graduacao-presencial/medicina-veterinaria/infraestrutura" title="Hospital Veterinário">Hospital Veterinário</a></li>
-                            <li><a target="_self" href="https://metodista.br/nucleo-de-acessibilidade" title="Núcleo de Acessibilidade">Núcleo de Acessibilidade</a></li>
-                            <li><a target="_self" href="https://metodista.br/nucleo-de-arte-e-cultura" title="Núcleo de Arte e Cultura">Núcleo de Arte e Cultura</a></li>
-                            <li><a target="_self" href="https://metodista.br/policlinica" title="Núcleo de Exercício Físico e Saúde">Núcleo de Exercício Físico e Saúde</a></li>
-                            <li><a target="_self" href="https://metodista.br/nucleo-de-formacao-cidada" title="Núcleo de Formação Cidadã">Núcleo de Formação Cidadã</a></li>
-                            <li><a target="_self" href="https://metodista.br/policlinica" title="Policlínica">Policlínica</a></li>
-                            <li><a target="_self" href="https://metodista.br/graduacao-presencial/administracao/projetos" title="SBCSOL">SBCSOL</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <h5>Serviços aos Alunos</h5>
-                        <ul>
-                            <li><a target="_self" href="https://metodista.br/area-do-aluno" title="Área do aluno">Área do aluno</a></li>
-                            <li><a target="_self" href="https://metodista.br/biblioteca" title="Biblioteca">Biblioteca</a></li>
-                            <li><a target="_self" href="https://metodista.br/central-de-estagios" title="Central de Estágios">Central de Estágios</a></li>
-                            <li><a href="http://portal.metodista.br/enade" title="ENADE">ENADE</a></li>
-                            <li><a target="_self" href="https://metodista.br/financeiro" title="Financeiro">Financeiro</a></li>
-                            <li><a target="_self" href="https://metodista.br/formaturas" title="Formaturas">Formaturas</a></li>
-                            <li><a href="http://espacoeduca.uol.com.br/loja/index.php" title="Loja Online">Loja Online</a></li>
-                            <li><a target="_self" href="https://metodista.br/pastoral-universitaria" title="Pastoral Universitária">Pastoral Universitária</a></li>
-                            <li><a href="https://www.metodista.br/portalims/web/index.html" title="Portal do Aluno">Portal do Aluno</a></li>
-                            <li><a target="_self" href="https://metodista.br/assessoria-de-relacoes-internacionais" title="Relações Internacionais">Relações Internacionais</a></li>
-                            <!--<li><a href="" title="Secretaria Acadêmica">Secretaria Acadêmica</a></li>-->
-                            <li><a href="https://www.metodista.br/siga" title="SIGA">SIGA</a></li>
-                            <li><a href="http://moodle.metodista.br/moodle-ead/" title="MOODLE">MOODLE</a></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <h5>Contato</h5>
-                        <ul>
-                            <li><a target="_self" href="https://metodista.br/atendimento-online" title="Fale Conosco">Atendimento Online</a></li>
-                            <li><a target="_self" href="https://metodista.br/institucional/campi-e-localizacao" title="Como chegar">Como chegar</a></li>
-                            <li><a href="http://portal.metodista.br/sala-de-imprensa" title="Sala de Imprensa">Sala de Imprensa</a></li>
-                            <li><a href="https://www.catho.com.br/empregos/metodista" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
-                            <li>Grande São Paulo: (11) 4366-5000</li>
-                            <li>Outras localidades: 0800 889 2222</li>
-                        </ul>
-
-                        <h5>Redes Sociais</h5>
-                        <ul class="footer-social">
-                            <li><a href="https://www.facebook.com/universidade.metodista" title="Facebook Metodista"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/metodista" title="Twitter Metodista" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="http://www.youtube.com/user/MetodistaWebTV" title="Youtube Metodista" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                            <!--<li><a href="https://www.flickr.com/photos/metodista-br" title="Flickr Metodista" target="_blank"><i class="fab fa-flickr"></i></a></li>-->
-                            <li><a href="https://www.instagram.com/metodista/" title="Instagram Metodista" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="http://www.linkedin.com/company/universidade-metodista-de-sao-paulo" title="Linkedin Metodista" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="http://vimeo.com/univmetodista/" title="Vimeo Metodista" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
-                        </ul>
-
-                        <h5>Receba nossas informações</h5>
-                        <script type='text/javascript' charset='iso-8859-1' src='//optin-static.akna.com.br/lib/integracaoForm/main.js'></script>
-                        <form action="" id='lista-integracao-form' hash='2cafe370' method="post" name="mc-embedded-subscribe-form" target="_blank" class="newsletter-form lista-integracao-form">
-                            <div class="theme-input-group">
-                                <input id='lista-integracao-email' type='text' placeholder='Digite seu e-mail'>
-                                <button onclick='onSubmitClick(this)' class="btn plone-btn plone-btn-block">Enviar<i class="material-icons">send</i></button>
-                            </div>
-                            <div id="lista-integracao-sucessmsg"></div>
-                        </form>
-
-                    </div>
-                </div>
-
-                <div class="row footer-copy">
-                    <div class="col-xs-12 col-sm-6">
-                        <p class="copy-footer">Universidade Metodista de São Paulo</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <img src="assets/img/logo-educacao.metodista.png" class="educacao" alt="Educação Metodista" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- INÍCIO DO MODAL -->
-        <div id="atendimentoUMESP" style="display: none">
-            <h6 class="atendimento-modal">Atendimento Online</h6>
-            <div class="row">
-
-                <div class="col-xs-6 col-md-6 col-lg-3 atendimento-online" style="text-align:center;">
-                    <a href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1082&idtemplate=0" target="_blank" title="Candidato ao Vestibular">
-                        <i class="material-icons icone-atendimento">check_circle</i>
-                        <br /> Candidato ao Vestibular
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-md-6 col-lg-3 atendimento-online" style="text-align:center;">
-                    <a href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1082&idtemplate=0" target="_blank" title="Transferência Externa">
-                        <i class="material-icons icone-atendimento">swap_horizontal_circle</i>
-                        <br /> Transferência Externa
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-md-6 col-lg-3 atendimento-online" style="text-align:center;">
-                    <a href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1084&idtemplate=0" target="_blank" title="Aluno ou Ex-aluno">
-                        <i class="material-icons icone-atendimento">account_circle</i>
-                        <br /> Aluno ou Ex-aluno
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-md-6 col-lg-3 atendimento-online" style="text-align:center;">
-                    <a href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1084&idtemplate=0" target="_blank" title="Outros">
-                        <i class="material-icons icone-atendimento">more_horiz</i>
-                        <br /> Outros
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <!-- TÉRMINO DO MODAL -->
-
-        <div id="ouibounce-modal">
-            <script type="text/javascript" charset="utf-8" src="//optin-static.akna.com.br/lib/integracaoForm/main.js"></script>
-            <div class="underlay"></div>
-
-            <div class="modal">
-                <div class="modal-title">
-                    <h3>Agradecemos a visita!</h3>
-                </div>
-
-                <div class="modal-body">
-
-                    <p>Gostaria de mais informações sobre a universidade?
-                        <br /> Siga-nos no facebook</p>
-                    <br />
-                    <p class="facebookModal">
-                        <i class="fab fa-facebook-square"></i>
-                        <a href="https://www.facebook.com/universidade.metodista/" target="blank">/universidade.metodista</a>
-                    </p>
-                    <br />
-                    <p>Para receber informações sobre o vestibular e cursos, cadastre seu e-mail.</p>
-
-                    <div id="mc_embed_signup">
-
-                        <form id="lista-integracao-form" hash="5fe06a4a" class="lista-integracao-form" onsubmit="return false;">
-
-                            <!--<form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://portal.metodista.br/teste-de-exit-intent-em-processo-seletivo/cadastro-e-mail" id="fg-base-edit">-->
-
-                            <div id="pfg-fieldwrapper">
-                                <div class="field ArchetypesStringWidget" data-fieldname="replyto" id="archetypes-fieldname-replyto">
-                                    <input id="lista-integracao-email" type="text" placeholder="Digite seu e-mail">
-                                    <button class="envia-form" onclick="onSubmitClick(this)">Receber informações</button>
-                                </div>
-                                <div id="lista-integracao-sucessmsg"></div>
-                            </div>
-
-                        </form>
-
-                    </div>
-                    <!--End mc_embed_signup-->
-
-                </div>
-
-                <div class="modal-footer">
-                    <p>não, obrigado!</p>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div id="hero" class="principal">
         <div class="container">
-            <div id="comunicarErro" style="display:none">
-                <h3>Reportar Erros</h3>
-                <p>Para comunicar erros nos textos publicados em nosso portal preencha os dados abaixo e clique em Enviar. </p>
-                <em>ATENÇÃO: Este formulário é dedicado apenas à comunicação de erros encontrados em nosso textos e notícias. Caso deseje enviar um e-mail sobre outros assuntos utilize o formulário de <a href="/Metodista/fale-conosco" style="color:#FFD50F;">Fale Conosco</a>.</em>
-                <div class="pfg-form formid-reportar-erro" style="margin-top:20px;">
+          <div class="gigantic"></div>
+        </div>
+      </div>
+      <div id="above-content-wrapper">
+        <div id="above-content"></div>
+      </div>
 
-                    <form name="edit_form" method="post" enctype="multipart/form-data" class="fgBaseEditForm enableUnloadProtection enableAutoFocus" action="https://metodista.br/reportar-erro" id="fg-base-edit">
-                        <div id="pfg-fieldwrapper">
-                            <fieldset class="PFGFieldsetWidget" id="pfg-fieldsetname-formulario-campos">
-                                <div class="formHelp" id="formulario-campos_help"></div>
-                                <div class="field ArchetypesStringWidget " id="archetypes-fieldname-nome" data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="nome">
-                                    <span></span>
-                                    <label class="formQuestion" for="nome">
-                                        Nome
-                                        <span class="required" title="Obrigatório"> </span>
-                                        <span class="formHelp" id="nome_help"></span>
-                                    </label>
-                                    <div class="fieldErrorBox"></div>
-                                    <input id="reportar_nome" type="text" name="nome" class="blurrable firstToFocus" id="nome" size="30" placeholder="" maxlength="255" />
-                                </div>
-                                <div class="field ArchetypesStringWidget " id="archetypes-fieldname-email" data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="email">
-                                    <span></span>
-                                    <label class="formQuestion" for="email">
-                                        Seu E-mail
-                                        <span class="required" title="Obrigatório"> </span>
-                                        <span class="formHelp" id="email_help"></span>
-                                    </label>
-                                    <div class="fieldErrorBox"></div>
-                                    <input id="reportar_mail" type="text" name="email" class="blurrable firstToFocus" id="email" size="30" placeholder="" maxlength="255" />
-                                </div>
-                                <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-url" data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="url">
-                                    <span></span>
-                                    <label class="formQuestion" for="url">
-                                        URL
-                                        <span class="formHelp" id="url_help"></span>
-                                    </label>
-                                    <div class="fieldErrorBox"></div>
-                                    <input class="blurrable firstToFocus" type="text" name="url" size="" id="url" placeholder="" maxlength="False" readonly />
-                                </div>
-                                <div class="field ArchetypesIntegerWidget " id="archetypes-fieldname-data-e-hora" data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="data-e-hora">
-                                    <span></span>
-                                    <label class="formQuestion" for="data-e-hora">
-                                        Data e Hora
-                                        <span class="formHelp" id="data-e-hora_help"></span>
-                                    </label>
-                                    <div class="fieldErrorBox"></div>
-                                    <input class="blurrable firstToFocus" readonly type="text" name="data-e-hora" size="" id="data-e-hora" placeholder="" maxlength="False" />
-                                </div>
-                            </fieldset>
-                            <div class="field ArchetypesTextAreaWidget " id="archetypes-fieldname-comentarios" data-uid="96f46bd0f5474dc38673354e9e380ad6" data-fieldname="comentarios">
-                                <span></span>
-                                <label class="formQuestion" for="comentarios">
-                                    Comentários
-                                    <span class="formHelp" id="comentarios_help"></span>
-                                </label>
-                                <div class="fieldErrorBox"></div>
-                                <textarea class="blurrable firstToFocus" name="comentarios" id="comentarios" cols="40" rows="5" placeholder=""></textarea>
-                            </div>
-                        </div>
-                        <div class="formControls">
-                            <input type="hidden" name="fieldset" value="default" />
-                            <input type="hidden" name="form.submitted" value="1" />
-                            <input type="hidden" name="add_reference.field:record" value="" />
-                            <input type="hidden" name="add_reference.type:record" value="" />
-                            <input type="hidden" name="add_reference.destination:record" value="" />
-                            <input type="hidden" name="last_referer" value="https://metodista.br/Metodista" />
-                            <input type="hidden" name="_authenticator" value="a35ad8a20a660c774f4ecb034947b0106ba1195e" />
-                            <input class="context btn plone-btn-block plone-btn-warning" type="submit" name="form_submit" value="Enviar" />
-                        </div>
-                    </form>
+      <div class="container-fluid nopadding">
+        <div class="banner-fluido-novo">
+          <div class="tit-grad"></div>
+          <div class="subtit-grad"></div>
+        </div>
+      </div>
 
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <aside id="global_statusmessage"></aside>
+        </div>
+        <main id="main-container" class="row row-offcanvas row-offcanvas-right">
+          <div id="content-container"></div>
+          <div id="column1-container"></div>
+          <div id="column2-container"></div>
+        </main>
+        <!--/row-->
+        <!--/container-->
+      </div>
+    </div>
+    <!--/outer-wrapper -->
+    <div class="reportarErrosDiv">
+      <div class="container">
+        <p>
+          <a
+            class="pat-plone-modal reportar-erro"
+            href="#comunicarErro"
+            data-pat-plone-modal="width: 50%"
+            >Reportar Erros <i class="fas fa-exclamation-triangle"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+    <footer id="portal-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <h5>Publicações</h5>
+            <ul>
+              <li>
+                <a href="http://canalmeto.com.br" title="Canal Metô"
+                  >Canal Metô</a
+                >
+              </li>
+              <li>
+                <a href="http://editora.metodista.br/" title="Editora Metodista"
+                  >Editora Metodista</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/unesco"
+                  title="Jornal Brasileiro de Ciência da Comunicação"
+                  >Jornal Brasileiro de Ciência da Comunicação</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.metodista.br/jornal-da-metodista"
+                  title="Jornal da Metodista"
+                  >Jornal da Metodista</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.metodista.br/observatorio-economico/"
+                  title="Observatório Econômico"
+                  >Observatório Econômico</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.metodista.br/periodicos/"
+                  title="Portal Metodista de Periódicos"
+                  >Portal Metodista de Periódicos</a
+                >
+              </li>
+              <li>
+                <a href="http://sonica.metodista.br/" title="Rádio Sonica"
+                  >Rádio Sônica</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.metodista.br/rronline"
+                  title="Rudge Ramos Online"
+                  >Rudge Ramos Online</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <h5>Serviços à Comunidade</h5>
+            <ul>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/academia-escola"
+                  title="Academia-escola"
+                  >Academia-escola</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/agencia-metodista-de-consultoria"
+                  title="Agência Metodista de Consultoria"
+                  >Agência Metodista de Consultoria</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/metodista-lab.com/metodista-lab.com"
+                  title="Agência Integrada de Comunicação"
+                  >Agência Integrada de Comunicação</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/graduacao-presencial/direito/nucleo-de-praticas-juridicas"
+                  title="Assistência Jurídica"
+                  >Assistência Jurídica</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/graduacao-presencial/pedagogia/espacos-pedagogicos/brinquedoteca"
+                  title="Brinquedoteca"
+                  >Brinquedoteca</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/gestao-de-cidades"
+                  title="Cátedra Gestão de Cidades"
+                  >Cátedra Gestão de Cidades</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/unesco"
+                  title="Cátedra Unesco Metodista"
+                  >Cátedra Unesco Metodista</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/centro-de-linguas"
+                  title="Centro de Línguas"
+                  >Centro de Línguas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://metodista.br/nucleo-de-sustentabilidade"
+                  title="Núcleo de Sustentabilidade"
+                  >Núcleo de Sustentabilidade</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.metodista.br/centrootiliachaves"
+                  target="_blank"
+                  title="Centro Otília Chaves"
+                  >Centro Otília Chaves</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/extensao"
+                  title="Extensão Acadêmica"
+                  >Extensão Acadêmica</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="http://portal.metodista.br/mondo"
+                  title="Mondó"
+                  >Mondó</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/graduacao-presencial/medicina-veterinaria/infraestrutura"
+                  title="Hospital Veterinário"
+                  >Hospital Veterinário</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/nucleo-de-acessibilidade"
+                  title="Núcleo de Acessibilidade"
+                  >Núcleo de Acessibilidade</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/nucleo-de-arte-e-cultura"
+                  title="Núcleo de Arte e Cultura"
+                  >Núcleo de Arte e Cultura</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/policlinica"
+                  title="Núcleo de Exercício Físico e Saúde"
+                  >Núcleo de Exercício Físico e Saúde</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/nucleo-de-formacao-cidada"
+                  title="Núcleo de Formação Cidadã"
+                  >Núcleo de Formação Cidadã</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/policlinica"
+                  title="Policlínica"
+                  >Policlínica</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/graduacao-presencial/administracao/projetos"
+                  title="SBCSOL"
+                  >SBCSOL</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <h5>Serviços aos Alunos</h5>
+            <ul>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/area-do-aluno"
+                  title="Área do aluno"
+                  >Área do aluno</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/biblioteca"
+                  title="Biblioteca"
+                  >Biblioteca</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/central-de-estagios"
+                  title="Central de Estágios"
+                  >Central de Estágios</a
+                >
+              </li>
+              <li>
+                <a href="http://portal.metodista.br/enade" title="ENADE"
+                  >ENADE</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/financeiro"
+                  title="Financeiro"
+                  >Financeiro</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/formaturas"
+                  title="Formaturas"
+                  >Formaturas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://espacoeduca.uol.com.br/loja/index.php"
+                  title="Loja Online"
+                  >Loja Online</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/pastoral-universitaria"
+                  title="Pastoral Universitária"
+                  >Pastoral Universitária</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.metodista.br/portalims/web/index.html"
+                  title="Portal do Aluno"
+                  >Portal do Aluno</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/assessoria-de-relacoes-internacionais"
+                  title="Relações Internacionais"
+                  >Relações Internacionais</a
+                >
+              </li>
+              <!--<li><a href="" title="Secretaria Acadêmica">Secretaria Acadêmica</a></li>-->
+              <li>
+                <a href="https://www.metodista.br/siga" title="SIGA">SIGA</a>
+              </li>
+              <li>
+                <a href="http://moodle.metodista.br/moodle-ead/" title="MOODLE"
+                  >MOODLE</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <h5>Contato</h5>
+            <ul>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/atendimento-online"
+                  title="Fale Conosco"
+                  >Atendimento Online</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_self"
+                  href="https://metodista.br/institucional/campi-e-localizacao"
+                  title="Como chegar"
+                  >Como chegar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://portal.metodista.br/sala-de-imprensa"
+                  title="Sala de Imprensa"
+                  >Sala de Imprensa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.catho.com.br/empregos/metodista"
+                  title="Trabalhe Conosco"
+                  >Trabalhe Conosco</a
+                >
+              </li>
+              <li>Grande São Paulo: (11) 4366-5000</li>
+              <li>Outras localidades: 0800 889 2222</li>
+            </ul>
+
+            <h5>Redes Sociais</h5>
+            <ul class="footer-social">
+              <li>
+                <a
+                  href="https://www.facebook.com/universidade.metodista"
+                  title="Facebook Metodista"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/metodista"
+                  title="Twitter Metodista"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="http://www.youtube.com/user/MetodistaWebTV"
+                  title="Youtube Metodista"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <!--<li><a href="https://www.flickr.com/photos/metodista-br" title="Flickr Metodista" target="_blank"><i class="fab fa-flickr"></i></a></li>-->
+              <li>
+                <a
+                  href="https://www.instagram.com/metodista/"
+                  title="Instagram Metodista"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="http://www.linkedin.com/company/universidade-metodista-de-sao-paulo"
+                  title="Linkedin Metodista"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="http://vimeo.com/univmetodista/"
+                  title="Vimeo Metodista"
+                  target="_blank"
+                  ><i class="fab fa-vimeo-v"></i
+                ></a>
+              </li>
+            </ul>
+
+            <h5>Receba nossas informações</h5>
+            <script
+              type="text/javascript"
+              charset="iso-8859-1"
+              src="//optin-static.akna.com.br/lib/integracaoForm/main.js"
+            ></script>
+            <form
+              action=""
+              id="lista-integracao-form"
+              hash="2cafe370"
+              method="post"
+              name="mc-embedded-subscribe-form"
+              target="_blank"
+              class="newsletter-form lista-integracao-form"
+            >
+              <div class="theme-input-group">
+                <input
+                  id="lista-integracao-email"
+                  type="text"
+                  placeholder="Digite seu e-mail"
+                />
+                <button
+                  onclick="onSubmitClick(this)"
+                  class="btn plone-btn plone-btn-block"
+                >
+                  Enviar<i class="material-icons">send</i>
+                </button>
+              </div>
+              <div id="lista-integracao-sucessmsg"></div>
+            </form>
+          </div>
         </div>
 
-        <script>
-            ouibounce(document.getElementById('ouibounce-modal'), {
-                aggressive: false
-            });
-            $('body').on('click', function() {
-                $('#ouibounce-modal').hide();
-            });
-            $('#ouibounce-modal .modal-footer').on('click', function() {
-                $('#ouibounce-modal').hide();
-            });
-            $('#ouibounce-modal .modal').on('click', function(e) {
-                e.stopPropagation();
-            });
+        <div class="row footer-copy">
+          <div class="col-xs-12 col-sm-6">
+            <p class="copy-footer">Universidade Metodista de São Paulo</p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <img
+              src="assets/img/logo-educacao.metodista.png"
+              class="educacao"
+              alt="Educação Metodista"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        </script>
+    <!-- INÍCIO DO MODAL -->
+    <div id="atendimentoUMESP" style="display: none">
+      <h6 class="atendimento-modal">Atendimento Online</h6>
+      <div class="row">
+        <div
+          class="col-xs-6 col-md-6 col-lg-3 atendimento-online"
+          style="text-align:center;"
+        >
+          <a
+            href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1082&idtemplate=0"
+            target="_blank"
+            title="Candidato ao Vestibular"
+          >
+            <i class="material-icons icone-atendimento">check_circle</i>
+            <br />
+            Candidato ao Vestibular
+          </a>
+        </div>
 
-        <!-- ======= AddThis JS ======= -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d8cd0f7677b58cf"></script>
-        <!-- INÍCIO DO POPUP VESTIBULAR -->
+        <div
+          class="col-xs-6 col-md-6 col-lg-3 atendimento-online"
+          style="text-align:center;"
+        >
+          <a
+            href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1082&idtemplate=0"
+            target="_blank"
+            title="Transferência Externa"
+          >
+            <i class="material-icons icone-atendimento"
+              >swap_horizontal_circle</i
+            >
+            <br />
+            Transferência Externa
+          </a>
+        </div>
+
+        <div
+          class="col-xs-6 col-md-6 col-lg-3 atendimento-online"
+          style="text-align:center;"
+        >
+          <a
+            href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1084&idtemplate=0"
+            target="_blank"
+            title="Aluno ou Ex-aluno"
+          >
+            <i class="material-icons icone-atendimento">account_circle</i>
+            <br />
+            Aluno ou Ex-aluno
+          </a>
+        </div>
+
+        <div
+          class="col-xs-6 col-md-6 col-lg-3 atendimento-online"
+          style="text-align:center;"
+        >
+          <a
+            href="https://webapp-metodista.ideacrm.com.br/chat.aspx?idc=4581&pre_empresa=71&pre_depto=1084&idtemplate=0"
+            target="_blank"
+            title="Outros"
+          >
+            <i class="material-icons icone-atendimento">more_horiz</i>
+            <br />
+            Outros
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- TÉRMINO DO MODAL -->
+
+    <div id="ouibounce-modal">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        src="//optin-static.akna.com.br/lib/integracaoForm/main.js"
+      ></script>
+      <div class="underlay"></div>
+
+      <div class="modal">
+        <div class="modal-title">
+          <h3>Agradecemos a visita!</h3>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            Gostaria de mais informações sobre a universidade? <br />
+            Siga-nos no facebook
+          </p>
+          <br />
+          <p class="facebookModal">
+            <i class="fab fa-facebook-square"></i>
+            <a
+              href="https://www.facebook.com/universidade.metodista/"
+              target="blank"
+              >/universidade.metodista</a
+            >
+          </p>
+          <br />
+          <p>
+            Para receber informações sobre o vestibular e cursos, cadastre seu
+            e-mail.
+          </p>
+
+          <div id="mc_embed_signup">
+            <form
+              id="lista-integracao-form"
+              hash="5fe06a4a"
+              class="lista-integracao-form"
+              onsubmit="return false;"
+            >
+              <!--<form name="edit_form" method="post" enctype="multipart/form-data" class="" action="http://portal.metodista.br/teste-de-exit-intent-em-processo-seletivo/cadastro-e-mail" id="fg-base-edit">-->
+
+              <div id="pfg-fieldwrapper">
+                <div
+                  class="field ArchetypesStringWidget"
+                  data-fieldname="replyto"
+                  id="archetypes-fieldname-replyto"
+                >
+                  <input
+                    id="lista-integracao-email"
+                    type="text"
+                    placeholder="Digite seu e-mail"
+                  />
+                  <button class="envia-form" onclick="onSubmitClick(this)">
+                    Receber informações
+                  </button>
+                </div>
+                <div id="lista-integracao-sucessmsg"></div>
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+
+        <div class="modal-footer">
+          <p>não, obrigado!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="comunicarErro" style="display:none">
+        <h3>Reportar Erros</h3>
+        <p>
+          Para comunicar erros nos textos publicados em nosso portal preencha os
+          dados abaixo e clique em Enviar.
+        </p>
+        <em
+          >ATENÇÃO: Este formulário é dedicado apenas à comunicação de erros
+          encontrados em nosso textos e notícias. Caso deseje enviar um e-mail
+          sobre outros assuntos utilize o formulário de
+          <a href="/Metodista/fale-conosco" style="color:#FFD50F;"
+            >Fale Conosco</a
+          >.</em
+        >
+        <div class="pfg-form formid-reportar-erro" style="margin-top:20px;">
+          <form
+            name="edit_form"
+            method="post"
+            enctype="multipart/form-data"
+            class="fgBaseEditForm enableUnloadProtection enableAutoFocus"
+            action="https://metodista.br/reportar-erro"
+            id="fg-base-edit"
+          >
+            <div id="pfg-fieldwrapper">
+              <fieldset
+                class="PFGFieldsetWidget"
+                id="pfg-fieldsetname-formulario-campos"
+              >
+                <div class="formHelp" id="formulario-campos_help"></div>
+                <div
+                  class="field ArchetypesStringWidget "
+                  id="archetypes-fieldname-nome"
+                  data-uid="96f46bd0f5474dc38673354e9e380ad6"
+                  data-fieldname="nome"
+                >
+                  <span></span>
+                  <label class="formQuestion" for="nome">
+                    Nome
+                    <span class="required" title="Obrigatório"> </span>
+                    <span class="formHelp" id="nome_help"></span>
+                  </label>
+                  <div class="fieldErrorBox"></div>
+                  <input
+                    id="reportar_nome"
+                    type="text"
+                    name="nome"
+                    class="blurrable firstToFocus"
+                    id="nome"
+                    size="30"
+                    placeholder=""
+                    maxlength="255"
+                  />
+                </div>
+                <div
+                  class="field ArchetypesStringWidget "
+                  id="archetypes-fieldname-email"
+                  data-uid="96f46bd0f5474dc38673354e9e380ad6"
+                  data-fieldname="email"
+                >
+                  <span></span>
+                  <label class="formQuestion" for="email">
+                    Seu E-mail
+                    <span class="required" title="Obrigatório"> </span>
+                    <span class="formHelp" id="email_help"></span>
+                  </label>
+                  <div class="fieldErrorBox"></div>
+                  <input
+                    id="reportar_mail"
+                    type="text"
+                    name="email"
+                    class="blurrable firstToFocus"
+                    id="email"
+                    size="30"
+                    placeholder=""
+                    maxlength="255"
+                  />
+                </div>
+                <div
+                  class="field ArchetypesIntegerWidget "
+                  id="archetypes-fieldname-url"
+                  data-uid="96f46bd0f5474dc38673354e9e380ad6"
+                  data-fieldname="url"
+                >
+                  <span></span>
+                  <label class="formQuestion" for="url">
+                    URL
+                    <span class="formHelp" id="url_help"></span>
+                  </label>
+                  <div class="fieldErrorBox"></div>
+                  <input
+                    class="blurrable firstToFocus"
+                    type="text"
+                    name="url"
+                    size=""
+                    id="url"
+                    placeholder=""
+                    maxlength="False"
+                    readonly
+                  />
+                </div>
+                <div
+                  class="field ArchetypesIntegerWidget "
+                  id="archetypes-fieldname-data-e-hora"
+                  data-uid="96f46bd0f5474dc38673354e9e380ad6"
+                  data-fieldname="data-e-hora"
+                >
+                  <span></span>
+                  <label class="formQuestion" for="data-e-hora">
+                    Data e Hora
+                    <span class="formHelp" id="data-e-hora_help"></span>
+                  </label>
+                  <div class="fieldErrorBox"></div>
+                  <input
+                    class="blurrable firstToFocus"
+                    readonly
+                    type="text"
+                    name="data-e-hora"
+                    size=""
+                    id="data-e-hora"
+                    placeholder=""
+                    maxlength="False"
+                  />
+                </div>
+              </fieldset>
+              <div
+                class="field ArchetypesTextAreaWidget "
+                id="archetypes-fieldname-comentarios"
+                data-uid="96f46bd0f5474dc38673354e9e380ad6"
+                data-fieldname="comentarios"
+              >
+                <span></span>
+                <label class="formQuestion" for="comentarios">
+                  Comentários
+                  <span class="formHelp" id="comentarios_help"></span>
+                </label>
+                <div class="fieldErrorBox"></div>
+                <textarea
+                  class="blurrable firstToFocus"
+                  name="comentarios"
+                  id="comentarios"
+                  cols="40"
+                  rows="5"
+                  placeholder=""
+                ></textarea>
+              </div>
+            </div>
+            <div class="formControls">
+              <input type="hidden" name="fieldset" value="default" />
+              <input type="hidden" name="form.submitted" value="1" />
+              <input type="hidden" name="add_reference.field:record" value="" />
+              <input type="hidden" name="add_reference.type:record" value="" />
+              <input
+                type="hidden"
+                name="add_reference.destination:record"
+                value=""
+              />
+              <input
+                type="hidden"
+                name="last_referer"
+                value="https://metodista.br/Metodista"
+              />
+              <input
+                type="hidden"
+                name="_authenticator"
+                value="a35ad8a20a660c774f4ecb034947b0106ba1195e"
+              />
+              <input
+                class="context btn plone-btn-block plone-btn-warning"
+                type="submit"
+                name="form_submit"
+                value="Enviar"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ouibounce(document.getElementById("ouibounce-modal"), {
+        aggressive: false
+      });
+      $("body").on("click", function() {
+        $("#ouibounce-modal").hide();
+      });
+      $("#ouibounce-modal .modal-footer").on("click", function() {
+        $("#ouibounce-modal").hide();
+      });
+      $("#ouibounce-modal .modal").on("click", function(e) {
+        e.stopPropagation();
+      });
+    </script>
+
+    <!-- ======= AddThis JS ======= -->
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d8cd0f7677b58cf"
+    ></script>
+    <!-- INÍCIO DO POPUP VESTIBULAR -->
     <script type="text/javascript">
       if (
         window.location.href == "https://metodista.br" ||
@@ -652,8 +1593,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div-->
 
         <div class="pop">
-          <a href="https://vestibularmetodista.com.br/?utm_source=Pop_Up&utm_medium=Pop_Up&utm_campaign=Pop_Presencial&utm_term=externos" target="_blank" class="btpresencial" title="Inscrições Gratuítas Presencial" >PRESENCIAL E EAD - SÃO BERNARDO</a>
-          <a href="http://portal.metodista.br/ead/polos-1/selecao/?utm_source=pop_up_a_distancia&utm_medium=pop_up_a_distancia&utm_campaign=pop_up_a_distancia" class="btead" target="_blank" title="Inscrições Gratuitas a Distância">EAD – DEMAIS CIDADES</a>
+          <a
+            href="https://vestibularmetodista.com.br/?utm_source=Pop_Up&utm_medium=Pop_Up&utm_campaign=Pop_Presencial&utm_term=externos"
+            target="_blank"
+            class="btpresencial"
+            title="Inscrições Gratuítas Presencial"
+            >PRESENCIAL E EAD - SÃO BERNARDO</a
+          >
+          <a
+            href="http://portal.metodista.br/ead/polos-1/selecao/?utm_source=pop_up_a_distancia&utm_medium=pop_up_a_distancia&utm_campaign=pop_up_a_distancia"
+            class="btead"
+            target="_blank"
+            title="Inscrições Gratuitas a Distância"
+            >EAD – DEMAIS CIDADES</a
+          >
         </div>
       </div>
 
@@ -662,7 +1615,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- FIM DO POPUP VESTIBULAR -->
 
     <!-- INÍCIO DAS MENSALIDADES EM REACTJS -->
-        <script>
+    <script>
       !(function(e) {
         function r(r) {
           for (
@@ -705,19 +1658,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               Object.defineProperty(e, r, { enumerable: !0, get: t });
           }),
           (p.r = function(e) {
-            'undefined' != typeof Symbol &&
+            "undefined" != typeof Symbol &&
               Symbol.toStringTag &&
-              Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
-              Object.defineProperty(e, '__esModule', { value: !0 });
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
           }),
           (p.t = function(e, r) {
             if ((1 & r && (e = p(e)), 8 & r)) return e;
-            if (4 & r && 'object' == typeof e && e && e.__esModule) return e;
+            if (4 & r && "object" == typeof e && e && e.__esModule) return e;
             var t = Object.create(null);
             if (
               (p.r(t),
-              Object.defineProperty(t, 'default', { enumerable: !0, value: e }),
-              2 & r && 'string' != typeof e)
+              Object.defineProperty(t, "default", { enumerable: !0, value: e }),
+              2 & r && "string" != typeof e)
             )
               for (var n in e)
                 p.d(
@@ -738,14 +1691,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 : function() {
                     return e;
                   };
-            return p.d(r, 'a', r), r;
+            return p.d(r, "a", r), r;
           }),
           (p.o = function(e, r) {
             return Object.prototype.hasOwnProperty.call(e, r);
           }),
-          (p.p = '/');
-        var i = (this['webpackJsonpumesp-prices'] =
-            this['webpackJsonpumesp-prices'] || []),
+          (p.p = "/");
+        var i = (this["webpackJsonpumesp-prices"] =
+            this["webpackJsonpumesp-prices"] || []),
           l = i.push.bind(i);
         (i.push = r), (i = i.slice());
         for (var f = 0; f < i.length; f++) r(i[f]);
@@ -756,6 +1709,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://leunardo.dev/metodista/static/js/2.b60254bb.chunk.js"></script>
     <script src="https://leunardo.dev/metodista/static/js/main.8459a372.chunk.js"></script>
     <!-- FIM DAS MENSALIDADES EM REACTJS -->
-</body>
-
+  </body>
 </html>
