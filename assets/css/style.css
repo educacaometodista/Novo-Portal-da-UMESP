@@ -220,7 +220,7 @@ ul.super-mob li {
     padding:1.3rem 0.5rem;
     line-height: 1;
     margin: 0.5rem 0;
-	text-align:center;
+    text-align:center;
     border-left: 1px solid #ffffff85;
 }
 ul.super-mob li:first-of-type{
@@ -2797,23 +2797,23 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         text-align: center;
    }
    a.col-md-5ths.boxes-lato {
-     width: 23.8%;
-     display: inline-block;
-     font-family: "Oswald", sans-serif;
-     float: left;
-     min-height: 75px;
-     background: var(--dark-blue);
-     color: var(--white-color);
-     text-transform: uppercase;
-     font-size: 16px;
-     padding: 15px;
-     margin-left: 1.5%;
-     margin-bottom: 20px;
-     border-radius: 4px;
-     text-align: center;
+        width: 18.8%;
+        display: inline-block;
+        font-family: "Oswald", sans-serif;
+        float: left;
+        min-height: 75px;
+        background: var(--dark-blue);
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 15px;
+        margin-left: 1.5%;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        text-align: center;
    }
    a.col-md-3.boxes-lato {
-        width: 18.8%;
+        width: 23.8% !important;
         display: inline-block;
         font-family: "Oswald", sans-serif;
         float: left;
@@ -2861,12 +2861,12 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         border-radius: 4px;
         text-align: center;
    }
-   a.col-md-5ths.boxes:first-child,
-   a.col-md-3.boxes:first-child {
+    a.col-md-5ths.boxes:first-child,
+    a.col-md-3.boxes:first-child {
         margin-left: 0;
    }
-   a.col-md-5ths.boxes:hover,
-   a.col-md-3.boxes:hover {
+    a.col-md-5ths.boxes:hover,
+    a.col-md-3.boxes:hover {
         background: #0f2f4e;
         text-decoration: none;
         box-shadow: 2px 2px 5px #8a8686;
@@ -4042,7 +4042,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
        }
    }
     @media only screen and (min-width: 992px) {
-      .col-md-5ths {
+        .col-md-5ths {
             width: 20%;
             float: left;
        }
@@ -4063,8 +4063,8 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         body.section-home .tileItem.visualIEFloatFix a.summary-image {
             height: 150px;
        }
-        a.col-md-5ths.boxes-lato,
-        a.col-md-3.boxes-lato {
+       a.col-md-5ths.boxes-lato,
+       a.col-md-3.boxes-lato {
             min-height: 100px;
        }
         body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid, body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
@@ -4284,4 +4284,288 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
             border-radius: 0 0 4px 4px;
        }
    }
-cc
+
+
+
+   /* LIXO DO LIGHTBOX HOME */
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#boxes .window {
+    position: absolute;
+    width: 900px;
+    height: 580px;
+    display: none;
+    z-index: 9999;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.window .pop {
+    width: 900px;
+    height: 550px;
+    margin-top: 30px;
+    background: url(../img/umesp-2020.jpg) no-repeat;
+}
+
+#boxes .window a.btpresencial {
+    display: block;
+    color: #a43b0b;
+    position: absolute;
+    background: #ecba01;
+    top: 450px;
+    width: 320px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: solid 3px #a43b0b;
+    text-decoration: none;
+    left: 480px;
+}
+
+#boxes .window a.btead {
+    display: block;
+    text-align: center;
+    width: 320px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 14px;
+    position: absolute;
+    top: 515px;
+    text-decoration: none;
+    color: #FFF;
+    background: #2d4a8c;
+    left: 480px;
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: solid 3px #192b51;
+}
+
+#boxes #dialog2 {
+    background: transparent;
+}
+
+.close {
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 5px 10px;
+    border: solid 1px #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #boxes .window {
+        position: absolute;
+        width: 700px;
+        height: 428px;
+        display: none;
+        z-index: 9999;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    #boxes .window img {
+        width: 100%;
+        height: 428px;
+    }
+    .window .pop {
+        width: 700px;
+        height: 428px;
+        margin-top: 30px;
+        background: url(../img/umesp-2020.jpg) no-repeat;
+        background-size: contain;
+    }
+    #boxes .window a.btpresencial {
+        display: block;
+        color: #a43b0b;
+        position: absolute;
+        background: #ecba01;
+        top: 320px;
+        width: 320px;
+        font-size: 14px !important;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        border-bottom: solid 3px #a43b0b;
+        text-decoration: none;
+        left: 340px;
+    }
+    #boxes .window a.btead {
+        display: block;
+        text-align: center;
+        width: 320px;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+        font-size: 14px !important;
+        position: absolute;
+        top: 370px;
+        text-decoration: none;
+        color: #FFF;
+        background: #2d4a8c;
+        left: 340px;
+        padding: 10px;
+        border-radius: 6px;
+        border-bottom: solid 3px #192b51;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    #boxes .window {
+        position: absolute;
+        width: 450px;
+        height: 275px;
+        display: none;
+        z-index: 9999;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    #boxes .window img {
+        width: 100%;
+        height: 275px;
+    }
+    .window .pop {
+        width: 450px;
+        height: 275px;
+        margin-top: 30px;
+        background: url(../img/umesp-2020.jpg) no-repeat;
+        background-size: contain
+    }
+    #boxes .window a.btpresencial {
+        display: block;
+        color: #a43b0b;
+        position: absolute;
+        background: #ecba01;
+        top: 220px;
+        width: 210px;
+        font-size: 10px !important;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        border-bottom: solid 3px #a43b0b;
+        text-decoration: none;
+        left: 215px;
+    }
+    #boxes .window a.btead {
+        display: block;
+        text-align: center;
+        width: 210px;
+        font-size: 10px !important;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" !important;
+        position: absolute;
+        top: 260px;
+        text-decoration: none;
+        color: #FFF;
+        background: #2d4a8c;
+        left: 215px;
+        padding: 10px;
+        border-radius: 6px;
+        border-bottom: solid 3px #192b51;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    #boxes .window {
+        position: absolute;
+        width: 320px;
+        height: 196px;
+        display: none;
+        z-index: 9999;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .window .pop {
+        width: 320px;
+        height: 196px;
+        background-size: contain;
+    }
+    #boxes .window a.btpresencial {
+        display: block;
+        color: #a43b0b;
+        position: absolute;
+        background: #ecba01;
+        top: 160px;
+        font-size: 11px;
+        width: auto;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        text-align: center;
+        padding: 3px;
+        border-radius: 6px;
+        border-bottom: solid 3px #a43b0b;
+        text-decoration: none;
+        left: 0;
+        right: 0;
+    }
+    #boxes .window a.btead {
+        display: block;
+        text-align: center;
+        width: auto;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        position: absolute;
+        top: 190px;
+        font-size: 11px;
+        text-decoration: none;
+        color: #FFF;
+        background: #2d4a8c;
+        left: 0;
+        right: 0;
+        padding: 3px;
+        border-radius: 6px;
+        border-bottom: solid 3px #192b51;
+    }
+    #boxes .window img {
+        width: 100%;
+        height: 196px;
+    }
+}
+
+/* FIM DO LIGHTBOX DA HOME */
+
+/*CONVÊNIOS E PARCERIAS*/
+body.section-convenios-e-parcerias {
+    background: #16293c;
+color: #FFF;
+}
+
+body.section-convenios-e-parcerias header {
+    background: #f1f1f1;
+}
+
+body.section-convenios-e-parcerias h3 {
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 30px;
+    font-size: 38px;
+}
+body.section-convenios-e-parcerias h4 {
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 30px;
+    font-size: 24px;
+}
+.mosaic-grid-row.box-convenios div.mosaic-grid-cell .mosaic-tile {
+    border: solid 2px #FFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    min-height: 180px;
+    box-shadow: 0 10px 10px #ffffff40;
+}
