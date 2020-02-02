@@ -30,15 +30,15 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/Metodista/++theme++portal-umesp/assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" class="customcss" type="text/css" href="/Metodista/++theme++portal-umesp/assets/css/style.css" />
+    <link rel="stylesheet" class="customcss" type="text/css" href="/Metodista/++theme++teste-mascara/assets/css/style.css" />
 
-    <script type="text/javascript" src="/Metodista/++theme++portal-umesp/assets/js/functions.js"></script>
+    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/functions.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/Metodista/++theme++portal-umesp/assets/js/jquery.mask.min.js"></script>
-    <script type="text/javascript" src="/Metodista/++theme++portal-umesp/assets/js/ouibounce.min.js"></script>
+    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="/Metodista/++theme++teste-mascara/assets/js/ouibounce.min.js"></script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -209,7 +209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li id="portaltab-eventos" class="dropdown">
                                     <a title="Vestibular" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">VESTIBULAR</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="https://vestibularmetodista.com.br/" target="_blank" title="Graduação Presencial">Graduação Presencial</a></li>
+                                        <li><a href="https://vestibularmetodista.com.br/?utm_source=Portal&utm_medium=Links&utm_campaign=Portal_Presencial&utm_term=internos" target="_blank" title="Graduação Presencial">Graduação Presencial</a></li>
                                         <li><a href="http://portal.metodista.br/ead/receba-informacoes" title="Graduação a Distância">Graduação a Distância</a></li>
                                         <li><a href="https://metodista.br/processo-seletivo/edital-processo-seletivo-2s2019-presencial.pdf" title="Edital do Vestibular" target="_blank"><i class="far fa-file-pdf"></i> Edital do Vestibular</a></li>
                                         <li><a href="http://portal.metodista.br/ead/processo-seletivo/edital/" target="_blank" title="Edital Vestibular EAD"><i class="far fa-file-pdf"></i> Edital Vestibular EAD</a></li>
@@ -341,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li><a target="_self" href="https://metodista.br/unesco" title="Cátedra Unesco Metodista">Cátedra Unesco Metodista</a></li>
 							<li><a target="_self" href="https://metodista.br/centro-de-linguas" title="Centro de Línguas">Centro de Línguas</a></li>
                             <li><a href="https://metodista.br/nucleo-de-sustentabilidade" title="Núcleo de Sustentabilidade">Núcleo de Sustentabilidade</a></li>
-                            <li><a href="http://portal.metodista.br/centrootiliachaves" title="Centro Otília Chaves">Centro Otília Chaves</a></li>
+                            <li><a href="http://portal.metodista.br/centrootiliachaves"target="_blank" title="Centro Otília Chaves">Centro Otília Chaves</a></li>
                             <li><a target="_self" href="https://metodista.br/extensao" title="Extensão Acadêmica">Extensão Acadêmica</a></li>
                             <li><a target="_blank" href="http://portal.metodista.br/mondo" title="Mondó">Mondó</a></li>
                             <li><a target="_self" href="https://metodista.br/graduacao-presencial/medicina-veterinaria/infraestrutura" title="Hospital Veterinário">Hospital Veterinário</a></li>
@@ -598,6 +598,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- ======= AddThis JS ======= -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d8cd0f7677b58cf"></script>
+        <!-- INÍCIO DO POPUP VESTIBULAR -->
+    <script type="text/javascript">
+      if (
+        window.location.href == "https://metodista.br" ||
+        window.location.href == "https://metodista.br/"
+      ) {
+        $(document).ready(function() {
+          var maskHeight = $(document).height();
+          var maskWidth = $(window).width();
+
+          $("#mask").css({ width: maskWidth, height: maskHeight });
+
+          $("#mask").fadeIn(800);
+          //$('#mask').fadeTo("slow",0.8);
+
+          //Get the window height and width
+          var winH = $(window).height();
+          var winW = $(window).width();
+
+          $("#dialog2").css("top", winH / 2 - $("#dialog2").height() / 2);
+          $("#dialog2").css("left", winW / 2 - $("#dialog2").width() / 2);
+
+          $("#dialog2").fadeIn(500);
+
+          $(".window .close").click(function(e) {
+            e.preventDefault();
+
+            $("#mask").hide();
+            $(".window").hide();
+          });
+
+          $("#mask").click(function() {
+            $(this).hide();
+            $(".window").hide();
+          });
+        });
+      }
+    </script>
+
+    <div id="boxes">
+      <div id="dialog2" class="window">
+        <div align="right">
+          <span class="close"> X </span>
+        </div>
+
+        <!-- div class="pop">
+                <a href="https://vestibularmetodista.com.br" target="_blank" class="btpresencial" title="Inscrições Gratuítas Presencial">INSCRIÇÕES GRATUITAS PRESENCIAL</a>
+                <a href="https://vestibularmetodista.com.br" class="btead" target="_blank" title="Inscrições Gratuitas a Distância">INSCRIÇÕES GRATUITAS EAD</a>
+            </div-->
+
+        <div class="pop">
+          <a href="https://vestibularmetodista.com.br/?utm_source=Pop_Up&utm_medium=Pop_Up&utm_campaign=Pop_Presencial&utm_term=externos" target="_blank" class="btpresencial" title="Inscrições Gratuítas Presencial" >PRESENCIAL E EAD - SÃO BERNARDO</a>
+          <a href="http://portal.metodista.br/ead/polos-1/selecao/?utm_source=pop_up_a_distancia&utm_medium=pop_up_a_distancia&utm_campaign=pop_up_a_distancia" class="btead" target="_blank" title="Inscrições Gratuitas a Distância">EAD – DEMAIS CIDADES</a>
+        </div>
+      </div>
+
+      <div id="mask"></div>
+    </div>
+    <!-- FIM DO POPUP VESTIBULAR -->
+
+
 </body>
 
 </html>
