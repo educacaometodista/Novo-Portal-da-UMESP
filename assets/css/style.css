@@ -3012,7 +3012,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
     h2.destaques-home {
         text-align: center;
         background: transparent;
-        width: 98%;
+        width: 100%;
         padding-top: 75px !important;
         display: table;
         white-space: nowrap;
