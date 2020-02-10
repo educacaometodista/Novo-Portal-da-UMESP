@@ -1,0 +1,8 @@
+{
+  "name": "portal.umesp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/educacaometodista/portal.umesp.git",
+  "author": "LeuAlmeida <leo@webid.net.br>",
+  "license": "MIT"
+}
