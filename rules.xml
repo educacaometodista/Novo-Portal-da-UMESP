@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo"
-       xmlns:css="http://namespaces.plone.org/diazo/css"
-       xmlns:xhtml="http://www.w3.org/1999/xhtml"
-       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-       xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="utf-8" ?>
+<rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
@@ -36,150 +32,158 @@
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 -->
   <!-- move hero to top -->
-  <replace css:theme-children="#hero .gigantic" css:content-children=".hero"/>
+  <replace css:theme-children="#hero .gigantic" css:content-children=".hero" />
   <drop css:theme="#hero" css:if-not-content=".hero" />
   <drop css:content=".hero" />
 
   <!-- full-width breadcrumb -->
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
 
-  <drop css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider "/>
-      <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider" />
+  <drop css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider " />
+  <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-home .mosaic-grid-cell.mosaic-width-full.mosaic-position-leftmost .slider" />
 
-    <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+  <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />-->
 
-<!--TESTE-->
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-estagios-exatas" css:content-children="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-financeiro" css:content-children="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-graduacao-a-distancia" css:content-children="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-stricto-sensu" css:content-children="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-lato-sensu" css:content-children="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-pos-graduacao-e-pesquisa" css:content-children="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-linguas" css:content-children="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-formaturas" css:content-children="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-pastoral-universitaria" css:content-children="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-eventos" css:content-children="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-academia-escola" css:content-children="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-agencia-metodista-de-consultoria" css:content-children="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-	   <replace css:theme-children=".tit-grad" css:if-content="body.section-setor-de-produtos-artesanais" css:content-children="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
-
-       <!--<replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade .mosaic-grid-row.contador-enade" />-->
-       <replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
+  <!--TESTE-->
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-estagios-exatas" css:content-children="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-financeiro" css:content-children="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-graduacao-a-distancia" css:content-children="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-stricto-sensu" css:content-children="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-lato-sensu" css:content-children="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-pos-graduacao-e-pesquisa" css:content-children="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-linguas" css:content-children="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-formaturas" css:content-children="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-pastoral-universitaria" css:content-children="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-eventos" css:content-children="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades" css:content-children="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-academia-escola" css:content-children="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-agencia-metodista-de-consultoria" css:content-children="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-setor-de-produtos-artesanais" css:content-children="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 
 
-       <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-       <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	   <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
-	<drop css:content="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content"/>
+  <!--<replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade .mosaic-grid-row.contador-enade" />-->
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-enade" css:content-children="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
 
-     <drop css:content="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador"/>
-<!--       <drop css:content="body.section-enade .mosaic-grid-row.contador-enade"/>-->
 
-       <!-- replace css:theme-children=".banner-fluido-novo" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>-->
+  <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
 
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-estagios-exatas" css:content-children="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-financeiro" css:content-children="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-a-distancia" css:content-children="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-stricto-sensu" css:content-children="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-lato-sensu" css:content-children="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-pos-graduacao-e-pesquisa" css:content-children="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-linguas" css:content-children="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-formaturas" css:content-children="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-pastoral-universitaria" css:content-children="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-eventos" css:content-children="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-academia-escola" css:content-children="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-agencia-metodista-de-consultoria" css:content-children="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <replace css:theme-children=".subtit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <replace css:theme-children=".subtit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	<replace css:theme-children=".subtit-grad" css:if-content="body.section-setor-de-produtos-artesanais" css:content-children="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	
-       <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-assessoria-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-       <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	   <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
-	  <drop css:content="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
 
-<!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
+  <drop css:content="body.section-enade aside#portal-column-one .portletStaticText.portlet-static-contador" />
+  <!--       <drop css:content="body.section-enade .mosaic-grid-row.contador-enade"/>-->
+
+  <!-- replace css:theme-children=".banner-fluido-novo" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>-->
+
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-presencial" css:content-children="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-institucional" css:content-children="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-estagios-exatas" css:content-children="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-financeiro" css:content-children="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-graduacao-a-distancia" css:content-children="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-stricto-sensu" css:content-children="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-lato-sensu" css:content-children="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-pos-graduacao-e-pesquisa" css:content-children="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-linguas" css:content-children="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-formaturas" css:content-children="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-pastoral-universitaria" css:content-children="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-eventos" css:content-children="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-area-do-aluno" css:content-children="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-academia-escola" css:content-children="body.section-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-agencia-metodista-de-consultoria" css:content-children="body.section-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades" css:content-children="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-english" css:content-children="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-espanol" css:content-children="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-convenios-e-parcerias" css:content-children="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-setor-de-produtos-artesanais" css:content-children="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+
+
+  <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-institucional .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-estagios-exatas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-financeiro .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-graduacao-a-distancia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-stricto-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-lato-sensu .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-pos-graduacao-e-pesquisa .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-centro-de-linguas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-formaturas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-pastoral-universitaria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-eventos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-assessoria-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-assessoria-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-assessoria-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-assessoria-academia-escola .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-assessoria-agencia-metodista-de-consultoria .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-area-do-aluno .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-english .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-espanol .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-convenios-e-parcerias .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-setor-de-produtos-artesanais .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+
+
+  <!--<drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".documentFirstHeading" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
        <drop css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription"/>
       <before method="raw" css:theme=".banner-fluido-novo" css:content="body.section-graduacao-presencial .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />-->
@@ -251,24 +255,15 @@
 
 
   <!-- Replace footer information with Plone version. -->
-  <replace
-      css:theme-children="#portal-footer .copyright > div"
-      css:content-children="#portal-footer-wrapper #portal-footer-signature .portletContent"
-      />
+  <replace css:theme-children="#portal-footer .copyright > div" css:content-children="#portal-footer-wrapper #portal-footer-signature .portletContent" />
   <drop css:theme="#portal-footer .copyright" css:if-not-content="#portal-footer-wrapper #portal-footer-signature" />
 
   <!-- Replace colophon information with Plone version. -->
-  <replace
-      css:theme-children="#portal-footer .colophon > div"
-      css:content-children="#portal-footer-wrapper #portal-colophon .portletContent"
-      />
+  <replace css:theme-children="#portal-footer .colophon > div" css:content-children="#portal-footer-wrapper #portal-colophon .portletContent" />
   <drop css:theme="#portal-footer .colophon" css:if-not-content="#portal-footer-wrapper #portal-colophon" />
 
   <!-- Replace site-actions with Plone version. -->
-  <replace
-      css:theme-children="#portal-footer .site-actions > div"
-      css:content="#portal-footer-wrapper .actions-site_actions"
-      />
+  <replace css:theme-children="#portal-footer .site-actions > div" css:content="#portal-footer-wrapper .actions-site_actions" />
   <drop css:theme="#portal-footer .site-actions" css:if-not-content="#portal-footer-wrapper .actions-site_actions" />
 
   <!-- Move all other footer portlets into doormat area. -->
@@ -287,7 +282,11 @@
             <xsl:when css:test=".portlet">
               <xsl:choose>
                 <xsl:when css:test=".portletHeader:not(.titleless)">
-                  <div class="headline"><h2><xsl:value-of css:select=".portletHeader" /></h2></div>
+                  <div class="headline">
+                    <h2>
+                      <xsl:value-of css:select=".portletHeader" />
+                    </h2>
+                  </div>
                 </xsl:when>
               </xsl:choose>
               <xsl:choose>
@@ -295,8 +294,13 @@
                   <ul>
                     <xsl:for-each css:select=".portletItem">
                       <li>
-                        <a><xsl:copy-of select="a/attribute::*" /><xsl:apply-templates select="./a/text()" /></a>
-                        <small><xsl:value-of css:select=".portletItemDetails" /></small>
+                        <a>
+                          <xsl:copy-of select="a/attribute::*" />
+                          <xsl:apply-templates select="./a/text()" />
+                        </a>
+                        <small>
+                          <xsl:value-of css:select=".portletItemDetails" />
+                        </small>
                       </li>
                     </xsl:for-each>
                   </ul>
@@ -306,7 +310,9 @@
                 </xsl:otherwise>
               </xsl:choose>
               <xsl:if css:test=".portletFooter">
-                <p><xsl:apply-templates select="./node()[@class='portletFooter']/node()" /></p>
+                <p>
+                  <xsl:apply-templates select="./node()[@class='portletFooter']/node()" />
+                </p>
               </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -319,10 +325,7 @@
   </replace>
 
   <!-- Add additional footer content, like script tags (from site settings). -->
-  <after
-      css:theme-children="html body"
-      content="//footer[@id='portal-footer-wrapper']/*[not(@class='row')]"
-      />
+  <after css:theme-children="html body" content="//footer[@id='portal-footer-wrapper']/*[not(@class='row')]" />
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
