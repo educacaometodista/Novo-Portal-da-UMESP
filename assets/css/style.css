@@ -538,7 +538,8 @@ body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content,
 body:not(.userrole-authenticated).section-english #content,
 body:not(.userrole-authenticated).section-espanol #content,
 body:not(.userrole-authenticated).section-convenios-e-parcerias #content,
-body:not(.userrole-authenticated).section-setor-de-produtos-artesanais #content {
+body:not(.userrole-authenticated).section-setor-de-produtos-artesanais #content,
+body:not(.userrole-authenticated).section-central-de-estagios .subsection-feira-de-carreiras-e-oportunidades #content {
     background: var(--white-color);
     padding: 15px;
     border-radius: 4px;
@@ -667,6 +668,7 @@ body.section-nucleo-de-sustentabilidade .plone-breadcrumb,
 body.section-english .plone-breadcrumb,
 body.section-espanol .plone-breadcrumb,
 body.section-convenios-e-parcerias .plone-breadcrumb,
+body.subsection-feira-de-carreiras-e-oportunidades .plone-breadcrumb,
 body.section-setor-de-produtos-artesanais .plone-breadcrumb {
     margin-bottom: 0;
 }
@@ -683,6 +685,7 @@ body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mos
 body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl,
 body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row,
 body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document #content,
+body:not(.userrole-authenticated).subsection-feira-de-carreiras-e-oportunidades.layout-default-document #content,
 body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu #content {
     background: var(--white-color);
     padding: 15px;
@@ -710,6 +713,7 @@ body.userrole-authenticated.section-formaturas .plone-breadcrumb,
 body.userrole-authenticated.section-pastoral-universitaria .plone-breadcrumb,
 body.userrole-authenticated.section-eventos .plone-breadcrumb,
 body.userrole-authenticated.section-rh-rapido .plone-breadcrumb,
+body.userrole-authenticated.subsection-feira-de-carreiras-e-oportunidades .plone-breadcrumb,
 body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb,
 body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
 body.userrole-authenticated.section-nucleo-de-acessibilidade .plone-breadcrumb,
@@ -741,6 +745,7 @@ body.section-formaturas .container-fluid.nopadding,
 body.section-pastoral-universitaria .container-fluid.nopadding,
 body.section-eventos .container-fluid.nopadding,
 body.section-rh-rapido .container-fluid.nopadding,
+body.subsection-feira-de-carreiras-e-oportunidades .container-fluid.nopadding,
 body.section-area-do-aluno .container-fluid.nopadding,
 body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
 body.section-nucleo-de-acessibilidade .container-fluid.nopadding,
@@ -1183,6 +1188,12 @@ body.section-financeiro .container-fluid.nopadding {
     background: url(https://metodista.br/financeiro/imagens/topo-financeiro.jpg) no-repeat;
     background-size: cover;
 }
+/* IMAGEM DA FEIRA DA CENTRAL DE ESTÁGIOS */
+body.subsection-feira-de-carreiras-e-oportunidades .container-fluid.nopadding {
+    background: url(https://metodista.br/central-de-estagios/feira-de-carreiras-e-oportunidades/imagens/feira-de-carreiras-e-oportunidades.jpg) no-repeat;
+    background-size: cover;
+}
+
 /* IMAGEM DO TOPO DE ESTÁGIOS EXATAS */
 body.section-estagios-exatas .container-fluid.nopadding {
     background: url(https://metodista.br/estagios-exatas/imagens/topo-estagios-exatas.jpg) no-repeat;
