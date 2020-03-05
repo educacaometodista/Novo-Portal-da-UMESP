@@ -141,15 +141,23 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <script>
-        // Suporte para navegadores antigos
-        var $buoop = {required:{e:-1,f:63,o:56,s:-1,c:70},insecure:true,style:"bottom",api:2020.02 };
-        function $buo_f(){
-         var e = document.createElement("script");
-         e.src = "//browser-update.org/update.min.js";
-         document.body.appendChild(e);
-        };
-        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-        catch(e){window.attachEvent("onload", $buo_f)}
+      // Suporte para navegadores antigos
+      var $buoop = {
+        required: { e: -1, f: 63, o: 56, s: -1, c: 70 },
+        insecure: true,
+        style: "bottom",
+        api: 2020.02
+      };
+      function $buo_f() {
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+      }
+      try {
+        document.addEventListener("DOMContentLoaded", $buo_f, false);
+      } catch (e) {
+        window.attachEvent("onload", $buo_f);
+      }
     </script>
 
     <section id="portal-toolbar"></section>
@@ -1595,16 +1603,18 @@
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5de544f943be710e1d202f6e/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5de544f943be710e1d202f6e/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
       })();
     </script>
-  <!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
   </body>
 </html>
