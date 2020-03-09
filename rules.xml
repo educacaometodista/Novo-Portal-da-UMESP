@@ -62,6 +62,7 @@
   <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-arte-e-cultura" css:content-children="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <replace css:theme-children=".tit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <replace css:theme-children=".tit-grad" css:if-content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades" css:content-children="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <replace css:theme-children=".tit-grad" css:if-content="body.section-saude-de-portas-abertas" css:content-children="body.section-saude-de-portas-abertas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <replace css:theme-children=".tit-grad" css:if-content="body.section-nucleo-de-acessibilidade" css:content-children="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <replace css:theme-children=".tit-grad" css:if-content="body.section-policlinica" css:content-children="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <replace css:theme-children=".tit-grad" css:if-content="body.section-biblioteca" css:content-children="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
@@ -98,6 +99,7 @@
   <drop css:content="body.section-nucleo-de-arte-e-cultura .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <drop css:content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
+  <drop css:content="body.section-saude-de-portas-abertas .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <drop css:content="body.section-nucleo-de-acessibilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <drop css:content="body.section-policlinica .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
   <drop css:content="body.section-biblioteca .movable.removable.mosaic-tile.mosaic-IDublinCore-title-tile .mosaic-tile-content" />
@@ -142,6 +144,7 @@
   <replace css:theme-children=".subtit-grad" css:if-content="body.section-rh-rapido" css:content-children="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <!-- <replace css:theme-children=".subtit-grad" css:if-content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades" css:content-children="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" /> -->
   <replace css:theme-children=".subtit-grad" css:if-content="body.section-faculdade-de-teologia" css:content-children="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <replace css:theme-children=".subtit-grad" css:if-content="body.section-saude-de-portas-abertas" css:content-children="body.section-saude-de-portas-abertas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-otilia-chaves" css:content-children="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <replace css:theme-children=".subtit-grad" css:if-content="body.section-centro-de-estudos-wesleyanos" css:content-children="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <replace css:theme-children=".subtit-grad" css:if-content="body.section-nucleo-de-sustentabilidade" css:content-children="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
@@ -174,6 +177,7 @@
   <drop css:content="body.section-rh-rapido .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <drop css:content="body.section-central-de-estagios.subsection-feira-de-carreiras-e-oportunidades .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <drop css:content="body.section-faculdade-de-teologia .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
+  <drop css:content="body.section-saude-de-portas-abertas .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <drop css:content="body.section-centro-otilia-chaves .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <drop css:content="body.section-centro-de-estudos-wesleyanos .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
   <drop css:content="body.section-nucleo-de-sustentabilidade .movable.removable.mosaic-tile.mosaic-IDublinCore-description-tile .mosaic-tile-content .documentDescription" />
