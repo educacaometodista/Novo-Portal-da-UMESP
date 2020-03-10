@@ -3809,6 +3809,7 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell:first-of-typ
         .menu-stricto-sensu .movable.removable.mosaic-tile, .menu-area-do-aluno .movable.removable.mosaic-tile, .menu-estagios-exatas .movable.removable.mosaic-tile{
             background: var(--white-color);
             padding: 15px;
+            min-height: 120px;
             border-radius: 0 0 4px 4px;
             border-top: solid 3px #ffd400;
             box-shadow: 2px 2px 3px #d0d0d0;
