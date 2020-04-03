@@ -6,6 +6,7 @@
     * Autores:
     * Fernando Henrique Zancopé, @fernandozancope <fernando.zancope@yahoo.com.br>
     * Léu Almeida, @LeuAlmeida <leo@webid.net.br>
+    * Thiago Tamosauskas, @TTamosauskas <thiago.gt@gmail.com>
     *
     *
     * CORES DO TEMA
@@ -256,7 +257,7 @@ i.material-icons.icone-atendimento {
   border-color: #2e6da4;
 }
 a.inscrevase-vestib {
-  display: block;
+  display: none;
   text-align: center;
   padding: 10px 0;
   text-transform: uppercase;
@@ -274,7 +275,7 @@ a.inscrevase-vestib:hover {
 }
 
 a.transf-vestib {
-  display: block;
+  display: none;
   text-align: center;
   padding: 10px 0;
   text-transform: uppercase;
@@ -298,6 +299,10 @@ a.transf-vestib:hover {
   border: solid 2px #ffd421;
   padding: 15px 60px;
 }
+
+.section-lato-sensu a.transf-vestib,
+.section-lato-sensu a.inscrevase-vestib {display:block !Important;}
+
 .mosaic-grid-row.avisos h2 {
   margin: 10px 0;
 }
@@ -3822,8 +3827,13 @@ body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao
   padding: 15px;
   border-radius: 4px;
   margin: 10px 0;
-  min-height: 160px;
+  min-height: 160px; 
 }
+
+.homebox .box-home.destaques {
+    min-height: 465px !important;
+}
+
 body.section-stricto-sensu
   .destaque-home-stricto
   .mosaic-grid-cell
@@ -3866,7 +3876,10 @@ body.section-stricto-sensu
 .mosaic-grid-row.bolsas-intercambio
   .mosaic-grid-cell
   .movable.removable.mosaic-tile:nth-child(even)
-  .mosaic-tile-content {
+  .mosaic-tile-content,
+
+/* Remover quando retornar o Espaço Universitário */
+.mosaic-grid-row.bolsas-intercambio {
   background: var(--white-color);
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
@@ -5745,6 +5758,11 @@ div#lista-integracao-sucessmsg {
     margin-right: 0;
   }
   /* EVENTOS HOME */
+  
+  body.section-home .mosaic-tile-content section.eventos-home nav.pagination {
+    display: none !important;
+  }
+
   body.section-stricto-sensu .mosaic-tile-content section.eventos-home article,
   body.section-home .mosaic-tile-content section.eventos-home article,
   body.section-home-2 .mosaic-tile-content section.eventos-home article {
