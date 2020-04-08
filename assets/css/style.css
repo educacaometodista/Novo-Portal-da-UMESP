@@ -3828,7 +3828,7 @@ body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao
   padding: 15px;
   border-radius: 4px;
   margin: 10px 0;
-  min-height: 160px; 
+  min-height: 160px;
 }
 
 .homebox .box-home.destaques {
@@ -6209,7 +6209,20 @@ body.userrole-authenticated .barra-institucional {
 /* E S T I L O   P A R A   F I R E F O X */
 @media screen and (min--moz-device-pixel-ratio: 0) {
   nav#portal-globalnav-wrapper ul#portal-globalnav li ul {
-    display: none !important;
+    display: none;
+    overflow: hidden;
+    margin: 0;
+    position: absolute !important;
+    padding: 5px 10px !important;
+    margin-left: 0px !important;
+    border-bottom: 3px solid #f5cb00;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 0) {
+  nav#portal-globalnav-wrapper ul#portal-globalnav li ul {
+    display: contents;
     overflow: hidden;
     margin: 0;
     position: absolute !important;
