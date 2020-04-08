@@ -3,10 +3,8 @@
     *
     * GitHub: https://github.com/educacaometodista/portal.umesp
     *
-    * Autores:
-    * Fernando Henrique Zancopé, @fernandozancope <fernando.zancope@yahoo.com.br>
-    * Léu Almeida, @LeuAlmeida <leo@webid.net.br>
-    * Thiago Tamosauskas, @TTamosauskas <thiago.gt@gmail.com>
+    * Autor: Fernando Henrique Zancopé
+    * Assistente: Léu Almeida
     *
     *
     * CORES DO TEMA
@@ -300,8 +298,11 @@ a.transf-vestib:hover {
   padding: 15px 60px;
 }
 
+/* .section-lato-sensu a.transf-vestib,
+.section-lato-sensu a.inscrevase-vestib {display:block !important;} */
+
 .section-lato-sensu a.transf-vestib,
-.section-lato-sensu a.inscrevase-vestib {display:block !Important;}
+.section-lato-sensu a.inscrevase-vestib {visibility: hidden; !important;}
 
 .mosaic-grid-row.avisos h2 {
   margin: 10px 0;
@@ -2966,7 +2967,7 @@ body.userrole-authenticated .container-fluid.nopadding {
   .tit-grad
   h1.documentFirstHeading {
   text-align: center;
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   font-size: 50px;
   line-height: 1;
   margin: 0;
@@ -3876,10 +3877,7 @@ body.section-stricto-sensu
 .mosaic-grid-row.bolsas-intercambio
   .mosaic-grid-cell
   .movable.removable.mosaic-tile:nth-child(even)
-  .mosaic-tile-content,
-
-/* Remover quando retornar o Espaço Universitário */
-.mosaic-grid-row.bolsas-intercambio {
+  .mosaic-tile-content {
   background: var(--white-color);
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
@@ -5758,11 +5756,6 @@ div#lista-integracao-sucessmsg {
     margin-right: 0;
   }
   /* EVENTOS HOME */
-  
-  body.section-home .mosaic-tile-content section.eventos-home nav.pagination {
-    display: none !important;
-  }
-
   body.section-stricto-sensu .mosaic-tile-content section.eventos-home article,
   body.section-home .mosaic-tile-content section.eventos-home article,
   body.section-home-2 .mosaic-tile-content section.eventos-home article {
