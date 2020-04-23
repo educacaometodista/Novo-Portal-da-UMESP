@@ -4564,7 +4564,7 @@ body.section-home-2 div.reportarErrosDiv
 }
 /* EVENTOS */
 @media only screen and (min-width: 767px) {
-  .eventos-home .space {
+  .eventos-home .mosaic-grid-cell.mosaic-width-half.mosaic-position-half {
     margin-top: 40px;
   }
 }
