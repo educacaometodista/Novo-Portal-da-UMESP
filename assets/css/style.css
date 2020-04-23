@@ -3884,7 +3884,7 @@ body.section-stricto-sensu
   border-radius: 0 4px 4px 0;
   border-left: solid 10px var(--red-color);
   padding: 15px;
-  min-height: 180px;
+  min-height: 250px;
   margin-top: 15px;
   margin-bottom: 45px;
 }
@@ -4350,6 +4350,10 @@ div.box-home.inscricoes p {
   overflow: hidden;
 }
 /* PAGINAÇÕES */
+body.section-home .pagination {
+  display: none;
+}
+
 .pagination li.active > span {
   font-weight: 500;
   background-color: var(--primary-color);
@@ -4559,6 +4563,12 @@ body.section-home-2 div.reportarErrosDiv
   display: none;
 }
 /* EVENTOS */
+@media only screen and (min-width: 767px) {
+  .eventos-home .space {
+    margin-top: 40px;
+  }
+}
+
 .eventos-home h2 {
   color: var(--primary-color);
 }
