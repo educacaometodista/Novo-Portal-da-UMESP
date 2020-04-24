@@ -5,7 +5,7 @@ $(document).ready(function(){
   if (countEvent > 6) {
     hasEvent.slice(6).remove();
 
-    $("section.existing-content-tile.eventos-home div section").append("<div class='todosEventos'><div class='container'><p><a href='https://portalpreprd.metodista.br/Metodista/eventos/'>Ver todos os eventos</a></p></div></div>");
+    $("section.existing-content-tile.eventos-home div section").append("<div class='todosEventos'><div class='container'><p><a href='https://metodista.br/eventos/'>Ver todos os eventos</a></p></div></div>");
   }
 
   const eventDescription = $('section.existing-content-tile.eventos-home .documentDescription.description');
