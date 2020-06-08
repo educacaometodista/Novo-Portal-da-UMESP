@@ -4953,15 +4953,15 @@ div#lista-integracao-sucessmsg {
     color: #ffffff36;
   }
   div.inscricoes-abertas .mosaic-tile-content a:last-of-type {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #252525;
     text-align: center;
     border-radius: 5px;
     padding: 6px 0px 3px 0px;
-    width: 80%;
+    width: 100%;
     margin-top: 15px;
-    position: absolute;
-    bottom: 40px;
   }
   div.inscricoes-abertas .mosaic-tile-content a:last-of-type:hover {
     background: #252525c2;
@@ -5668,16 +5668,14 @@ div#lista-integracao-sucessmsg {
     color: #ffffff36;
   }
   div.inscricoes-abertas .mosaic-tile-content a:last-of-type {
-    display: block;
     background: rgba(37, 37, 37, 0.7);
     text-align: center;
+    display: flex;
     border-radius: 5px;
     padding: 6px 0px 3px 0px;
-    width: 80%;
-    left: 10%;
-    margin-top: 15px;
-    position: absolute;
-    bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   div.inscricoes-abertas .mosaic-tile-content a:last-of-type:hover {
     /*background: #252525c2;
