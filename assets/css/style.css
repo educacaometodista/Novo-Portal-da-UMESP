@@ -2776,6 +2776,14 @@ video#videoInstitucional {
   max-height: 300px;
 }
 @media only screen and (max-width: 767px) {
+  span#breadcrumbs-current {
+    line-height: 15px;
+  }
+
+  body.section-noticias .documentFirstHeading {
+    font-size: 28px;
+  }
+
   video#videoInstitucional {
     height: 350px;
     max-height: 350px;
